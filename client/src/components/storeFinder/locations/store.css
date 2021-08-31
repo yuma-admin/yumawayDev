@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Montserrat:wght@200&display=swap');
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@1,200&display=swap"); */
+
+col-6 {
+  -ms-flex: 0 0 50%;
+  flex: 1 0 50%;
+  max-width: 50%;
+}
+
+.yumaBorder {
+  position: relative;
+  /* z-index: 100; */
+  padding: 0 !important;
+}
+
+
+.yumaBorder::before {
+  content: '';
+  position: absolute;
+  border: 1px solid #d9ab73;
+  left: 0;
+  right: 0;
+  transform: scale(0.97,0.94);
+  /* --webkit-transform: scale(97%,94%); */
+  width: 100%;
+  /* z-index: 100; */
+  height: 100%;
+  pointer-events: none;
+  
+}
+
+.yumaBorder::after {
+  content: '';
+  position: absolute;
+  border: 1px solid #d9ab73;
+  left: 0;
+  top: 0;
+  right: 0;
+  transform:scale(0.95,0.98);
+  /* --webkit-transform: scale(97%,94%); */
+  width: 100%;
+  /* z-index: 100; */
+  height: 100%;
+  pointer-events: none;
+}
+
+button {
+  cursor: pointer !important;
+}
+
+#store {
+  display: flex;
+  width: auto;
+  /* cursor: pointer; */
+  text-align: left;
+  /* pointer-events: none; */
+  flex-shrink: 0;
+  max-width: 100%;
+  -webkit-box-align: center;
+  align-items: center;
+  color: #d9ab73;
+  height: 11.5em;
+  position: relative;
+  background: rgb(0, 0, 0, 0);
+  font-family: "Linux Libertine";
+}
+
+#store img {
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  max-height: 100%;
+  margin-top: -22px;
+  padding-bottom: 10px;
+}
+
+#store h4 {
+  font-size: 1em;
+  font-weight: bolder;
+  margin-bottom: 6px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 100;
+  line-height: 0.9em;
+}
+
+#store svg.rotated {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  stroke-width: 0.2px;
+  /* z-index: 1; */
+  /* pointer-events: none; */
+}
+
+#store svg.line {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  stroke-width: 0.3px;
+  /* z-index: -1; */
+}
+
+#store p {
+  text-align: center;
+}
+
+#storeInfo {
+  margin: 0;
+  position: absolute;
+  top: 55%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 90%;
+  left: 2%;
+}
+
+.separatorBox {
+  height: 10vw;
+}
+
+#buttonWrapper {
+  background: transparent;
+  padding: 0px;
+  border: none;
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  max-width: 600px;
+}
+
+.reactButtonContainer {
+  position: relative;
+  text-align: center;
+  display:block;
+  width: 100%;
+
+}
+
+.storeButtonReact {
+  cursor: pointer !important;
+  position: relative;
+
+  line-height: 2vw;
+  padding: 0px 1vw 0px 1vw;
+  
+  text-align: center;
+  /* margin-top: -10px;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto; */
+
+  border: 1px solid transparent;
+  font-weight: 800;
+
+  background: rgba(201, 76, 76, 0);
+  color: #d9ab73;
+  
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9vw;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  /* max-width: 14vw;
+  max-height: 3.45vw; */
+
+  transition: all 0.2s ease-in-out;
+  
+  border: 1px solid #d9ab73;
+  border-radius: 8px;
+  text-decoration: none;
+  pointer-events: all;
+  
+}
+
+.storeButtonReact:hover {
+  cursor: pointer !important;
+  background: #d9ab73 !important;
+  color: #181818 !important;
+  pointer-events: all;
+}
+
+
+#svgSeparator {
+  width: 100%;
+  height: 50px;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+
+.lineBox {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  stroke-width: 0.5;
+  z-index: 10;
+}
+
+#logoColumn {
+  /* padding-left: 3%; */
+  /* left: 2%; */
+}
+
+#logoColumn img {
+  width: 65%;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+#distanceToStore {
+  text-decoration-color: #d9ab73;
+  font-size: 1.5em !important;
+  font-family: "Crimson Pro", serif;
+  font-weight: 300;
+  padding-bottom: 5px;
+}
+
+#storeSearchInfo {
+  font-family: "Montserrat", sans-serif;
+  text-decoration-color: #d9ab73;
+}
+
+#storeContainer {
+  background: transparent;
+}
+
+@media (max-width: 1024px) {
+  
+  .storeButtonReact {
+    border-radius: 6px;
+  }
+
+  .storeButtonReact {
+    font-size: 2vw !important;
+    /* top: -20px !important; */
+    padding: 1vw 2vw 1vw 2vw !important;
+  }
+  
+}
+
+@media (max-width: 500px) {
+  .storeButtonReact {
+    font-size: 2.5vw !important;
+    top: 10px !important;
+    padding: 2vw 4vw 2vw 4vw !important;
+  }
+}
+
+@media (max-width: 500px) {
+
+  #logoColumn img {
+    width: 85%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+
+}
+
+
+/* @media (max-width: 500px) {
+  #logoColumn img {
+    width: 80%;
+    padding-top: none;
+    padding-bottom: none;
+  }
+
+} */

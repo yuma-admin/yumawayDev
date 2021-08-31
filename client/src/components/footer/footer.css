@@ -1,0 +1,48 @@
+.footerBackground {
+    display: block;
+    top:0;
+    background-color: #0e0d0d;
+    height: 4vw;
+    width: 100%;
+    z-index: 100;
+    text-align: right;
+    padding: 14px;
+}
+
+.footerTM {
+    color: white;
+    float: left;
+    padding-left: 2vw;
+    margin-top: 0.5vw;
+}
+
+.footerTM:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.footerNav {
+    
+    color: white;
+    
+    text-decoration: none;
+    float: right;
+    
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    
+    margin-right: 1vw;
+    margin-top: 0.5vw;
+    
+ }
+
+ .footerNav:hover {
+    color: white;
+    /* text-decoration: underline; */
+ } 
+
+ #spacer:hover {
+     text-decoration: none;
+ }
+
+ 

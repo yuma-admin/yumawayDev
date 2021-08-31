@@ -1,0 +1,61 @@
+.hourRow {
+  box-shadow: rgba(0, 0, 0, 0.75) 0px 0px 6px;
+  margin-bottom: 15px;
+  border-top: 1px solid rgb(242, 230, 213, 0.3);
+  border-bottom: 1px solid rgb(242, 230, 213, 0.3);
+  font-family: "Montserrat", sans-serif;
+}
+
+.day {
+  text-transform: capitalize;
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  max-width: 80%;
+}
+.hours {
+  text-align: right;
+  font-family: "Montserrat", sans-serif;
+  max-width: 40%;
+}
+
+@media only screen and (max-width: 767px) {
+
+  .hours {
+    text-align: right;
+    font-family: "Montserrat", sans-serif;
+    max-width: none;
+  }
+
+}
+
+.hourContainer {
+  background-color: transparent !important;
+}
+
+@media only screen and (max-width: 767px) {
+
+  .hours {
+    text-align: right;
+    font-family: "Montserrat", sans-serif;
+    max-width: none;
+  }
+
+}
+
+@media only screen and (max-width: 500px) {
+  .hoursContainer {
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .hoursContainer {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .hoursContainer {
+    font-size: 0.7rem;
+  }
+}

@@ -1,0 +1,29 @@
+#navbar {
+    position: sticky;
+    display: block;
+    top:0;
+    background-color: #0e0d0d;
+    width: 100%;
+    z-index: 100;
+    text-align: right;
+    padding: 14px;
+  }
+  
+  #navbar img {
+    
+    width: 20%;
+    float: left;
+    
+  }
+  
+  .mainNavItem {
+    
+    color: #f2e6d5;
+    
+    text-decoration: none;
+    
+    font-size: 28px;
+    font-family: "Crimson Text Pro", serif;
+    padding: 14px;
+    
+  }

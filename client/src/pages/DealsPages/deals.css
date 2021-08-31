@@ -1,0 +1,909 @@
+/* Deals Page */
+
+.stateSelector {
+    background-color: #181818 !important;
+    
+    position:relative;
+  
+    justify-self: center;
+    text-align: center;
+    align-content: center;
+  
+    padding-top: 20px;
+    
+    z-index: 98;
+  }
+  
+  
+  
+  .stateSelector .currentState {
+    font-family: "Crimson Text",serif;
+  
+    /* cursor: pointer; */
+    width: max-content;
+    margin: auto;
+    position: relative;
+    text-align: center;
+  }
+  
+  .currentState {
+    position: absolute;
+    color: #d9ab73;
+    font-size: 30px;
+  }
+  
+  .currentState::before {
+    
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -16px;
+    border: 5px solid transparent;
+    border-top: 5px solid #d9ab73;
+    text-align: center;
+  }
+  
+  .selectableStates {
+    font-family: "Crimson Text",serif;
+    display: none;
+    position:absolute;
+    
+    color: #d9ab73;
+  
+    left: 50%;
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
+    z-index: 99;
+  
+    border-radius: 12px;
+    background-color: rgb(24,24,24);
+  }
+  
+  .stateSelector:hover .selectableStates {
+    cursor: pointer;
+    display: block;
+    z-index:99;
+  }
+  
+  .selectableStates h4 {
+    margin: 0;
+    cursor: pointer;
+  
+    font-size: 25px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+  
+    /* margin-top: 5px;
+    margin-bottom: 5px; */
+    
+    color: #d9ab73 !important;
+    /* border-bottom: 1px #d9ab73 solid; */
+    text-decoration: none !important;
+  }
+  
+  .selectableStates a {
+    text-decoration: none !important;
+    border-radius: 12px;
+  }
+  
+  .selectableStates h4:hover {
+    text-decoration: none !important;
+    border-radius: 12px;
+    color: #181818 !important;
+    background-color:#d9ab73 !important;
+  }
+  
+  .dealContainer {
+    background-color: #181818 !important;
+    max-width: 100% !important;
+    /* padding-left: 50px !important; */
+  }
+  #carousel-background-top {
+    width: 100%;
+    height: 32vw;
+    min-height: 40vh;
+    position: relative;
+    border: 4px solid #d9ab73;
+  }
+  
+  #firstRow {
+    padding-top: 20px;
+    margin-top: none;
+    /* margin-left: 15px; */
+    /* padding-right: 3px; */
+    width: 100%;
+    padding-bottom:15px;
+  }
+  
+  #firstRowMobile{
+    padding-top: 20px;
+    padding-bottom:20px;
+  }
+  
+  #svgCarousel {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    stroke-width: 0.5;
+    z-index:1;
+  }
+  
+  .dealHeroImageContainer {
+    position: relative;
+    display: relative;
+    
+    height: 100%;
+    width: 100%;
+    
+  }
+  
+  .carousel-item img {
+    /* position: relative; */
+    /* align-content: center; */
+    width: 100%;
+  }
+  
+  .heroYumaLogo {
+    position: absolute;
+    max-width: 100%;
+    top: 20%;
+    left: 17vw;
+    /* top: 10vw; */
+    /* left: 1vw; */
+  
+  }
+  
+  
+  /* Main Carousel  */
+  
+  #mainTopCarousel {
+    position: relative;
+    width: 100%;
+    /* z-index: 1; */
+  }
+  
+  .rightTopColumn {
+    position: relative;
+    width: 100%;
+    margin: none !important;
+    padding: none !important; 
+  }
+  
+  #topCarousel {
+    border: 1px solid #d9ab73;
+  }
+  
+  .carouselImage {
+    width: 100%;
+    object-fit: contain;
+  }
+  
+  .heroButtonBackground {
+    position: absolute; 
+    background-color: rgb(0,0,0);
+    opacity: 0.7;
+    z-index: 9;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2) !important;
+  
+    width: 40%;
+    height: 100%;
+  }
+  
+  .michiganHeroButtonBackground {
+    position: absolute; 
+    background-color: rgb(0,0,0);
+    opacity: 0.7;
+    z-index: 9;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2) !important;
+  
+    width: 40%;
+    height: 100%;
+  }
+  
+  .heroButtonContainer {
+    display: flex;
+    position:relative;
+    text-align: center;
+    left: 10%;
+    z-index: 10;
+  }
+  
+  .michiganHeroButtonContainer {
+    display: flex;
+    position:relative;
+    text-align: center;
+    left: 10%;
+    z-index: 10;
+  }
+  
+  .heroDealsLogo {
+    cursor: pointer;
+    width: 145%;
+    position: absolute;
+    top: 3vw;
+  
+    left: 50%;
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
+  }
+  
+  .heroDealsLogo img {
+    max-width: none !important;
+  }
+  
+  .michiganHeroDealsLogo {
+    cursor: pointer;
+    width: 120%;
+    position: absolute;
+    top: 3vw;
+  
+    left: 50%;
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
+  
+    margin-bottom: 20px !important;
+  }
+  
+  
+  .newDealButton {
+    cursor: pointer;
+  
+    position: absolute;
+    top: 18vw;
+    left: 50%;
+  
+    text-align: center;
+  
+    /* margin-left: 1.4vw; */
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
+  
+    background-color: rgba(201, 76, 76, 0);
+    /* border-radius: 3px; */
+    line-height: 3.2vw;
+    color: #d9ab73;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2vw;
+    font-weight:900;
+    text-transform: uppercase;
+    text-align: center;
+    /* max-width: 14vw; */
+    /* max-height: 3.45vw; */
+    /* transition: all 0.2s ease-in-out; */
+    /* margin: 0 auto; */
+    /* margin-top: 4vh; */
+    padding: 20px 50px 20px 50px;
+    border: 2px solid #d9ab73;
+    border-radius: 12px;
+    text-decoration: none;
+    z-index:2;
+  }
+  
+  
+  .newDealButton:hover {
+    cursor: pointer;
+    background-color: #d9ab73;
+    text-decoration: none;
+    color: #232323;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .topRightCouponContainer {
+    position: relative;
+    width: 100%;
+  }
+  
+  #upperTopCouponContainer {
+    margin-top: 0;
+    width: 100%;
+  
+    margin-bottom: 2vw;
+  
+    border: 1px solid #d9ab73;
+  }
+  #lowerTopCouponContainer {
+    width: 100%;
+    border: 1px solid #d9ab73;
+  }
+  .topRightCouponContainer img {
+    object-fit: cover;
+    width: 100%;
+    
+  }
+  
+  #secondRow {
+    margin-top: 15px;
+    margin-top: none;
+    /* margin-left: 15px; */
+    width: 100%;
+    margin-bottom:15px;
+  }
+  
+  .cannapunchLogoContainer {
+    position: relative;
+  }
+  
+  .cannapunchLogo {
+    width: 100%;
+  }
+  
+  .carouselSmallImageLeft {
+    /* padding-top: 0px !important; */
+    /* margin: auto; */
+    width: 100%;
+    height: 100%;
+    /* max-height: 56vh; */
+    object-fit: scale-down;
+  }
+  
+  .carouselSmallImageRight{
+    padding-top: 0px !important;
+    /* margin: auto; */
+    width: 100%;
+    height: 100%;
+    /* max-height: 56vh; */
+    
+    object-fit: scale-down;
+  }
+  
+  .michiganCarouselSmallImageLeft {
+    margin-top: -50px !important;
+    margin-bottom: 100px !important;
+    /* margin: auto; */
+    width: 100%;
+    height: auto;
+    max-height: 50vh;
+    object-fit: scale-down;
+    
+    position: flex;
+    z-index: 98;
+  }
+  
+  .michiganCarouselSmallImageRight {
+    margin-top: -75px !important;
+    margin-bottom: 100px !important;
+    /* margin: auto; */
+    width: 100%;
+    height: auto;
+    max-height: 50vh;
+    object-fit: scale-down;
+    margin-bottom: 50px;
+    position: flex;
+    z-index: 98;
+  }
+  
+  .carouselSmallText {
+    color: white;
+    text-align: center;
+    font-family: "Montserrat", sans-serif; 
+  }
+  
+  
+  /* #mainCarouselRow {
+    height: 100%;
+  } */
+  
+  
+  
+  
+  .cannaPunchSpacing {
+    margin-top: 30px;
+  }
+  
+  #thirdRow {
+    padding-top: 15px;
+    margin-top: none;
+    /* margin-left: 15px; */
+    width: 100%;
+    padding-bottom: 15px;
+  }
+  
+  .thirdRowBanner {
+    position: relative;
+    width: 100%;
+    border: 1px solid #d9ab73;
+  }
+  
+  .thirdRowBanner img {
+    width: 100%;
+  }
+  
+  #fourthRow {
+    padding-top: 15px;
+    margin-top: none;
+    /* margin-left: 15px; */
+    width: 100%;
+    padding-bottom: 15px;
+  }
+  
+  .fourthRowCoupon {
+    position: relative;
+    border: 1px solid #d9ab73;
+  }
+  
+  .fourthRowCoupon img {
+    position: relative;
+    width: 100%;
+  }
+  
+  .smallCoupon {
+    margin: auto;
+    display: block;
+    height: 15vw;
+  }
+  .smallCouponText {
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 10px;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .largeCoupon {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin-right: 2vw;
+    /* padding-right: 2vw; */
+  }
+  
+  .largeCoupon img {
+    /* object-fit: cover; */
+    width: 100%;
+    height: 100%;
+    /* margin-right: 1.4vw; */
+    border: 1px solid #d9ab73;
+  }
+  
+  #fifthRow {
+    padding-top: 15px;
+    margin-top: none;
+    /* margin-left: 15px; */
+    width: 100%;
+    padding-bottom: 15px;
+  }
+  
+  .bottomLogoContainer {
+    position: relative;
+    text-align: center;
+  }
+  
+  .bottomLogoContainer {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* DEALS MOBILE */
+  
+  #svgCore {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    stroke-width: 0.5;
+  }
+  
+  #dealContainerMobile {
+    display: none;
+  }
+  
+  #carousel-background-top-mobile {
+    width: 100%;
+    height: 80vh;
+    position: relative;
+  }
+  
+  #svgCarouselMobile {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    stroke-width: 0.2;
+    z-index: 100;
+  }
+  
+  .shopButtonMobile {
+    background: #d9ab73;
+    border-radius: 6px;
+    color: rgb(0, 0, 0.9);
+    font-family: "Montserrat", sans-serif;
+    font-weight: bolder;
+    padding: 1vh 2vw 1vh 2vw !important;
+    display: flex;
+    justify-content: center;
+    margin-right: 30vw;
+    margin-left: 30vw;
+    text-decoration: none;
+  }
+  .carouselImageMobile {
+    margin: auto;
+    display: block;
+    width: 100%;
+    height: 40vh;
+    max-height: 40vh;
+    object-fit: none;
+    object-position: 50% 20%;
+    margin-top: 3vh !important;
+  }
+  .carouselLogoMobile {
+    display: block;
+    width: 150px;
+    object-fit: contain;
+  }
+  
+  .mobileLogoWrapper {
+    height: 150px;
+    width: 100%;
+    margin-top: 5vh;
+    margin-bottom: 1vh;
+    display: flex;
+  }
+  
+  .topCouponContainerMobile {
+    height: 30vh;
+    
+  }
+  .topCouponContainerMobile img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .carouselSmallImageMobile {
+    display: block;
+    width: 100%;
+    height: 30vh;
+    object-fit: contain;
+    margin-top: 5vh !important;
+  }
+  
+  .largeCouponMobile {
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .largeCouponMobile img {
+    object-fit: scale-down;
+    width: 100%;
+    height: 100%;
+    min-height: 20vh;
+  }
+  
+  .smallCouponMobile {
+    margin: auto;
+    display: block;
+    height: 20vh;
+    object-fit: contain;
+  }
+  .smallCouponTextMobile {
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 10px;
+    font-family: "Courier New", Courier, monospace;
+  }
+  
+  #smallCouponFirstRow {
+    margin-top: 6vh;
+  }
+  
+  .bannerCouponMobile {
+    width: 100%;
+    height: 40vh;
+  }
+  .bannerCouponMobile img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  #bottomMobileHolder {
+    width: 100%;
+    position: relative;
+    height: 140vh;
+  }
+  
+  #bottomCarouselFirstRow {
+    height: 90vh;
+  }
+  #bottomCarouselFirstRow img {
+    height: 100%;
+    object-fit: contain;
+    margin: auto;
+  }
+  #bottomCarouselSecondRow {
+    height: 30vh;
+    margin-top: 4vh;
+  }
+  #bottomCarouselSecondRow img {
+    width: 60%;
+    margin: auto;
+    max-height: 30vh;
+  }
+  #bottomCarouselThirdRow {
+    height: 10vh;
+    
+  }
+  #bottomCarouselThirdRow a {
+    background: #232323;
+    border-radius: 6px;
+    color: #f2e6d5;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bolder;
+    padding: 1vh 2vw 1vh 2vw !important;
+    width: 30%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    margin-top: 4vh;
+    z-index: 10;
+  }
+  #bottomCarouselThirdRow a:hover {
+    background: #f2e6d5;
+    color: #232323;
+  }
+  
+  #bottomRow {
+    padding-bottom: 15px;
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    .newDealButton {
+      font-size: 2vw;
+      padding: 20px 50px 20px 50px;
+      font-weight: 900;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+  
+    
+  
+    .heroButtonContainer {
+      display: flex;
+      position:relative;
+      text-align: center;
+      left: 10%;
+      z-index: 10;
+      
+    }
+  
+    .heroDealsLogo {
+      cursor: pointer;
+      width: 140%;
+      position: absolute;
+      top: 5vw;
+    
+      left: 50%;
+      -ms-transform: translate(-50%);
+      transform: translate(-50%);
+    
+    }
+  
+    .newDealButton {
+      cursor: pointer;
+  
+      position: absolute;
+      top: 16vw;
+      left: 50%;
+  
+      text-align: center;
+  
+      /* margin-left: 1.4vw; */
+      -ms-transform: translate(-50%);
+      transform: translate(-50%);
+  
+      background-color: rgba(201, 76, 76, 0);
+      line-height: 3.2vw;
+      
+      color: #d9ab73;
+      
+      font-family: "Montserrat", sans-serif;
+      font-size: 2vw;
+      font-weight: 900;
+      
+      max-width: none;
+      max-height: none;
+  
+      
+      padding: 5px 20px 5px 20px;
+  
+      border-radius: 8px;
+      border: 2px solid #d9ab73;
+      text-decoration: none;
+      z-index:2;
+    }
+  }
+  
+  @media only screen and (min-width: 425px) {
+    #desktopAndTabletView {
+      display: block;
+    }
+    #mobileView {
+      display: none;
+    }
+  }
+  
+  @media only screen and (max-width: 425px) {
+  
+    #firstRow {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  
+    #desktopAndTabletView {
+      display: none;
+    }
+    #mobileView {
+      display: block;
+      /* padding: 0px; */
+    }
+  
+    .michiganHeroButtonContainer {
+      left: 0;
+    }
+  
+    .michiganHeroDealsLogo {
+      cursor: pointer;
+      width: 110% !important;
+      position: absolute;
+      top: 3vw;
+    
+      left: 50%;
+      -ms-transform: translate(-50%);
+      transform: translate(-50%);
+    
+      margin-bottom: 20px !important;
+    }
+  
+    .heroButtonBackground {
+      width: 49%;
+    }
+  
+    .michiganHeroButtonBackground {
+      width: 40% !important;
+    }
+  
+    .heroDealsLogo {
+      width: 160%;
+      top: 2vw;
+    }
+  
+    .newDealButton {
+      top: 22vw;
+      left: 50%;
+  
+      line-height: 3.2vw;
+      
+      font-family: "Montserrat", sans-serif;
+      font-size: 4vw;
+      font-weight: 900;
+      
+      max-width: none;
+      max-height: none;
+  
+      padding: 10px 15px 10px 15px;
+  
+      border-radius: 8px;
+      border: 2px solid #d9ab73;
+    }
+  
+    #secondRow {
+      padding-top: 10px !important;
+      padding-bottom: 10px !important;
+  
+      margin-top: 0;
+      margin-bottom: -10px;
+    }
+  
+    #thirdRow {
+      padding-top: 10px !important;
+      padding-bottom: 10px !important;
+    }
+    .carouselColumnLeft {
+      height: 50vh;
+    }
+  
+    .carouselColumnRight {
+      height: 50vh;
+    }
+    #fourthRow {
+      padding-top: 10px !important;
+      padding-bottom: 10px !important;
+    }
+  
+    #fifthRow {
+      padding-top: 10px !important;
+      padding-bottom: 10px !important;
+    }
+  
+    #sixthRow {
+      padding-top: 10px !important;
+      padding-bottom: 10px !important;
+  
+      width: 100%;
+      position: relative;
+    }
+  
+    .mobileBottomCoupons {
+      position: relative;
+      width: 100%;
+    }
+  
+    .cannaPunchSpacing {
+      margin-top: 10px;
+    }
+  }
+  
+  @media only screen and (max-width: 375px) {
+  
+    /* .heroDealsLogo {
+      top: 5vw;
+    }
+  
+    .newDealButton {
+      top: 18vw;
+    } */
+  
+    .carouselColumnLeft {
+      height: 42vh;
+    }
+  
+    .carouselColumnRight {
+      height: 42vh;
+    }
+  
+    .mobileBottomCoupons {
+      position: relative;
+      width: 100%;
+    }
+  
+    .cannaPunchSpacing {
+      margin-top: 10px;
+    }
+  }
+  
+  @media only screen and (max-width: 320px) {
+  
+    .heroButtonBackground {
+      width: 49%;
+    }
+  
+  
+    .heroDealsLogo {
+      width: 160%;
+      top: 2vw;
+    }
+  
+    .newDealButton {
+      top: 21vw;
+      left: 50%;
+  
+      line-height: 3.2vw;
+      
+      font-family: "Montserrat", sans-serif;
+      font-size: 5vw;
+      font-weight: 900;
+      
+      max-width: none;
+      max-height: none;
+  
+      padding: 10px 15px 10px 15px;
+  
+      border-radius: 8px;
+      border: 2px solid #d9ab73;
+    }
+    
+    .carouselColumnLeft {
+      height: 35vh;
+    }
+  
+    .carouselColumnRight {
+      height: 35vh;
+    }
+  }
