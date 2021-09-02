@@ -1,4 +1,5 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
+import Cookies from "js-cookie"
 import "./App.css";
 
 import {
@@ -6,6 +7,9 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
+
+//AGE GATE
+import AgeGateModal from './pages/AgeGateModal/AgeGateModal'
 
 // MAIN PAGES 
 import Home from './pages/Home/Home'
@@ -20,15 +24,55 @@ import Menu from './components/menu/menu'
 // NAV AND FOOTER COMPONENTS
 import NavBar from './components/navbar/navBar'
 import Footer from './components/footer/footer'
+import { createPortal } from "react-dom"
 
 function App() {
+  const yumaCookie = Cookies.get('yumaway')
+  const [showAgeGate,setAgeGate] = useState([true])
+  console.log(yumaCookie)
+
+  useEffect(() => {
+    console.log(yumaCookie)
+    if (yumaCookie==="legalAge"){
+      console.log(yumaCookie)
+      setAgeGate(false)
+    }
+  })
+
+  // Age Gate Display
+ 
+ 
+  //Age Gate Status
+  const yesLegal = () => {
+    Cookies.set('yumaway', "legalAge")
+    setAgeGate(false)
+  }
+
   
-  // Creates an overarching empty state that looks for
+
+  function handleCookie() {
+    
+  }
+
+  
+
+    const Modal = ({showAgeGate, setAgeGate}) => {
+      const content = showAgeGate && (
+        <AgeGateModal
+          className="ageGateBox"
+          yesButton={yesLegal}
+          noButton={false}
+
+        />
+        )
+        return createPortal(content, document.body)
+  }
+
+  // Creates an overarching empty state that looks for store (-Tyler)
   const [storeSelected, setStoreSelected] = useState({
     storeId: '',
   });
 
-  // If there is no store ID return the storeFinder component 
   return (
     
     <Router basename="/">
@@ -41,6 +85,10 @@ function App() {
           <Route exact path="/" >
             <Home />
           </Route>
+
+          {/* <Route exact path="/verify-your-age" >
+            <AgeGate />
+          </Route> */}
 
           {/* DEALS PAGE ROUTES */}
           <Route exact path="/colorado-deals" >
@@ -69,7 +117,13 @@ function App() {
         </Switch>
         <Footer></Footer>
       </div>
+      <Modal
+          showAgeGate={showAgeGate}
+          onClick={handleCookie}
+        >
+      </Modal>
     </Router>
+    
   );
 
 }
