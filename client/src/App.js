@@ -16,10 +16,10 @@ import Home from './pages/Home/Home'
 import ColoradoDeals from './pages/DealsPages/ColoradoDeals'
 import MichiganDeals from './pages/DealsPages/MichiganDeals'
 import About from './pages/About/About'
-import StoreFinder from './pages/StoreFinder/StoreFinder'
 import TermsOfUse from './pages/TermsOfUse/TermsOfUse'
 
 // STORE FINDER COMPONENTS
+import StoreFinder from './components/storeFinder/StoreFinder'
 import Menu from './components/menu/menu'
 
 // NAV AND FOOTER COMPONENTS

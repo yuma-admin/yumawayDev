@@ -1039,7 +1039,7 @@
     }
   
     section.app-download {
-        background-image: url("./phoneApp-Background2.png");
+        background-image: url("./phoneApp-Background-mobile-skinnytall.png");
         /* background-color: #ffffff; */
         background-position: left; 
         background-repeat: no-repeat; /* Do not repeat the image */
@@ -1221,7 +1221,7 @@
   
     section.app-download {
         height: 70vh !important;
-        background-image: url("./phoneApp-Background2.png");
+        background-image: url("./phoneApp-Background-mobile-skinnytall.png");
         /* background-color: #f2e6d5; */
         background-position: 0px 0px; /* Center the image */
         background-repeat: no-repeat; /* Do not repeat the image */

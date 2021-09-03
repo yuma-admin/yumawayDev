@@ -151,7 +151,7 @@ const storeJson = [
         address2:'Denver CO, 80204',
         escapedUrlAddress:'1136+Yuma+Ct%2C+Denver%2C+CO+80204',
         lat: 39.734320,
-        lng: -105.014450,
+        lng: -105.014451,
         phone:'(720) 900-1136',
         phoneLink:'tel:+1-720-900-1136',
         type:{

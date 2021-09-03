@@ -27,23 +27,23 @@ function AgeGateModal(props) {
           <div className="ageGateButtons">
             <div className="row">
                  
-                <div className="col-6">
-                  <button id="yesAgeGate" className="yesNoButton"
-                  onClick={props.yesButton}
+              <div className="col-6">
+                <button id="yesAgeGate" className="yesNoButton"
+                onClick={props.yesButton}
+                >
+                  Yes
+                </button>
+              </div>
+              <div className="col-6">
+                <a href="/terms-of-use">
+                  <button id="noAgeGate" className="yesNoButton"
+                  onClick={props.noButton}
+                  href="/terms-of-use"
                   >
-                    Yes
+                    No
                   </button>
-                </div>
-                <div className="col-6">
-                  <a href="/terms-of-use">
-                    <button id="noAgeGate" className="yesNoButton"
-                    onClick={props.noButton}
-                    href="/terms-of-use"
-                    >
-                      No
-                    </button>
-                  </a>
-                </div>  
+                </a>
+              </div>  
             </div>
           </div>
 

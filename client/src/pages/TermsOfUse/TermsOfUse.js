@@ -3,10 +3,10 @@ import './termsOfUse.css'
 function TermsOfUse() {
 
     return (
-
+<div className="container-fluid">
         <div className="termsOfUseContainer">
             <div className="termsOfUseLogoContainer">
-                <img src="/images/homeImages/yumawayLogoHome.png">
+                <img className="termsLogo" src="/images/homeImages/yumawayLogoHome.png">
                 </img>
             </div>
             <div className="termsOfUseTextContainer">
@@ -79,6 +79,7 @@ function TermsOfUse() {
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     )
 }

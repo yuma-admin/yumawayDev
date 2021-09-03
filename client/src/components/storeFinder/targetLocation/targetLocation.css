@@ -23,6 +23,7 @@
   max-height: 100%;
   margin-top: 15px;
   margin-bottom: 15px;
+  stroke-width: 0;
 }
 
 .backDiv {
@@ -38,6 +39,7 @@
   border: transparent;
   color: #d9ab73;
   padding: 0px !important;
+  stroke-width: 0;
 }
 
 @media (max-width: 768px) {

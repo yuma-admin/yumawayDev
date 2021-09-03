@@ -17,15 +17,18 @@ export default function Maps(props) {
 
   function Map() {
     const[selectedStore, setSelectedStore] = useState(null)
+    
     return(
       // Calls the react-google-maps library
         <GoogleMap 
         defaultZoom={zoom} 
+        
         defaultCenter={{lat: center.lat, lng: center.lng}}
         options={options}
         >
         {storeJson.map((coordinates) => (
           // Places markers on the map for each store
+          
           <Marker
             key={coordinates.id}
             position={{ lat: coordinates.lat, lng: coordinates.lng }}

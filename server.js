@@ -1,5 +1,7 @@
 const express = require("express");
 const path = require("path");
+const routes = require("./routes")
+
 const PORT = process.env.PORT || 3001;
 const app = express();
 
@@ -17,8 +19,7 @@ app.use(express.json());
 app.use(express.static('public'));
 
 // Define API routes here
-
-
+app.use(routes);
 
 // Send every other request to the React app
 // Define any API routes before this runs

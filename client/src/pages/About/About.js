@@ -41,7 +41,7 @@ function About() {
 
                                 <div class="offerCopy">
                                     <p>
-                                        <a href="/storefinder/" class="aLink">Use our store locator</a> to find the most convenient cannabis dispensary near you. We have seven cannabis dispensaries in cities across Colorado and Michigan, with plans of expanding to many more cities and states in the near future.
+                                        <a href="/locations" class="aLink">Use our store locator</a> to find the most convenient cannabis dispensary near you. We have seven cannabis dispensaries in cities across Colorado and Michigan, with plans of expanding to many more cities and states in the near future.
                                     </p>
                                 </div>
                             </div>

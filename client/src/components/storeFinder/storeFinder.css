@@ -5,9 +5,11 @@
 }
 
 @media (max-width: 991px) {
-
+  .stickyMap {
+    position: relative !important;
+  }
   .mapCol {
-    position: fixed;
+    position: relative;
     right:0;
   }
   .search {
@@ -15,6 +17,7 @@
   }
   .storeCards {
     margin-top: 20px;
+    /* z-index: 1000; */
   }
   .mobileSearch {
     display: block !important;

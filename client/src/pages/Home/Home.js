@@ -1,11 +1,23 @@
 import "./homeStyle.css"
+import API from '../../utils/API'
 
 function Home() {
+
+    function submitSearch() {
+        const queryURL = 'https://staging-api.iheartjane.com/partner/v1/stores/17/menu_products?visible=true&count=10&pagination_id=0'
+
+        API.getJaneAPI(queryURL)
+        .then(res =>
+            console.log(res.data)
+        )
+        .catch(err => console.log(err))
+    
+    }
 
     return (
 
     // HTML START: EVERYTHING IN THESE RETURN PARENTGESIS IS HTML-ISH
-    // A FEW EXCEPTIONS; FOR EXAMPLE: 'class' SHOULD BE 'className'
+    // A FEW EXCEPTIONS; FOR EXAMPLE: 'className' SHOULD BE 'className'
     <div className="container-fluid">
         <section className="hero" id="desktopHeroView">
         
@@ -16,27 +28,60 @@ function Home() {
                     
                     <div className="logo">
                         
-                            <a href="/locations"><img class="displayLogo" src="/images/homeImages/yumawayLogoHome.png" alt="YumaWay Logo" />
+                            <a href="/locations"><img className="displayLogo" src="/images/homeImages/yumawayLogoHome.png" alt="YumaWay Logo" />
                             </a>
-                            <a className="storeFinderButton" href="/locations">Find Store</a>
+                            <a className="storeFinderButton" 
+                                href="/locations"
+                                // onClick={submitSearch}
+                            >
+                                Find Store
+                            </a>
         
                     </div>
                 </div>
-                <div class="col-6" id="imageCol">
+                <div className="col-6" id="imageCol">
                     <img className="displayImage" src="/images/homeImages/homeHero.png" alt="YumaWay Shopping Bag" />
                 </div>                      
             </div>
             
         </section>
 
-        <section class="QuoteBanner left">
-            <div class="row">
+        <section className="hero" id="mobileHeroView">
+      
+            <div className="heroCol yumaBorder" id="mobileTabletContentHolder">
+                
+                <div className="tabletContainer">
+                    <div className="row">
+                        <div className="displayLogoContainer">
+                            <a href="/locations"><img className="displayLogo" src="/images/homeImages/yumawayLogoHome.png" alt="YumaWay Logo"/></a>
+                        </div>
+                    </div>
+
+                    <div className="row">
+                        <div className="displayImageContainer">
+                            <a href="/locations"><img className="displayImage" src="/images/homeImages/homeHero.png" alt="YumaWay Shopping Bag"/></a>
+                        </div>
+                    </div>
+
+                    <div className="row">
+                        <div className="displayButtonContainer">
+                            <a className="storeFinderButton" href="/locations">Find Store</a>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+            
+                
+        </section>
+
+        <section className="QuoteBanner left">
+            <div className="row">
         
-                <div class="col-6 non-mobile-only">
+                <div className="col-6 non-mobile-only">
                 <img src="/images/homeImages/MassiveSelectionSection.png" alt="Marijuana Grow House" />
                 </div>
         
-                <div class="col-sm-6">
+                <div className="col-sm-6">
                     <article>
         
                     <h2>A Massive Product Selection </h2>
@@ -49,79 +94,79 @@ function Home() {
             </div>
         </section>
 
-        <section class="ShopNow">
-            <div class="yumaBorder">
-            <div class="row">
+        <section className="ShopNow">
+            <div className="yumaBorder">
+            <div className="row">
 
-                <div class="image-col">
-                <img alt="Cannabis Products on Display - Left" class="non-mobile-only lazyloaded" role="presentation" src="/images/homeImages/newProductsSection-Left-TINY.png" />
+                <div className="image-col">
+                <img alt="Cannabis Products on Display - Left" className="non-mobile-only lazyloaded" role="presentation" src="/images/homeImages/newProductsSection-Left-TINY.png" />
                 </div>
             
-                <div class="col">
+                <div className="col">
                 <article>
                     <h2>THC Products? </h2>
                     <h2>We Have it All </h2>
-                    <p class="non-mobile-only">Our shelves are stocked with products from Lucky Turtle, Double Black Extracts, Shift Cannabis, Harmony Extracts, Pyramid, Viola, Smokiez, The Flower Collective and so much more! Visit your nearest Yuma Way location for access to the largest selection of cannabis products. </p>
-                    <p class="mobile-only">Our shelves are stocked with products from Lucky Turtle, Double Black Extracts, Shift Cannabis, Harmony Extracts, Pyramid, Viola, Smokiez, The Flower Collective and so much more! Visit your nearest Yuma Way location for access to the largest selection of cannabis products. 
+                    <p className="non-mobile-only">Our shelves are stocked with products from Lucky Turtle, Double Black Extracts, Shift Cannabis, Harmony Extracts, Pyramid, Viola, Smokiez, The Flower Collective and so much more! Visit your nearest Yuma Way location for access to the largest selection of cannabis products. </p>
+                    <p className="mobile-only">Our shelves are stocked with products from Lucky Turtle, Double Black Extracts, Shift Cannabis, Harmony Extracts, Pyramid, Viola, Smokiez, The Flower Collective and so much more! Visit your nearest Yuma Way location for access to the largest selection of cannabis products. 
                     </p>
             
-                    <a class="storeFinderButton" href="/locations">Find Store</a>
+                    <a className="storeFinderButton" href="/locations">Find Store</a>
                 </article>
                 </div>
     
-                <div class="image-col" id="hideOnMobile">
-                <img alt="Cannabis Products on Display - Right" id="hideOnMobile" class="non-mobile-only lazyloaded" role="presentation" src="/images/homeImages/newProductsSection-Right-TINY.png" />
+                <div className="image-col" id="hideOnMobile">
+                <img alt="Cannabis Products on Display - Right" id="hideOnMobile" className="non-mobile-only lazyloaded" role="presentation" src="/images/homeImages/newProductsSection-Right-TINY.png" />
                 </div>     
 
             </div>
             </div>   
         </section>
 
-        <section class="threeMainProducts">
-            <div class="row">                          
-                    <div class="col-sm-4 productSquareColumn">
-                        <div class="flowerBox">
-                            <img id="flowerImage" class="threeProductCategoryImages" src="/images/homeImages/flower-pattern.png" alt="Cannabis Flowers" />
+        <section className="threeMainProducts">
+            <div className="row">                          
+                    <div className="col-sm-4 productSquareColumn">
+                        <div className="flowerBox">
+                            <img id="flowerImage" className="threeProductCategoryImages" src="/images/homeImages/flower-pattern.png" alt="Cannabis Flowers" />
                                 <a href="/locations/">
-                                    <div class="overlay">
-                                        <img id="flowerImageHover" class="threeProductCategoryImages" src="/images/homeImages/flower-flip.png" alt="Marijuana Flower" />
+                                    <div className="overlay">
+                                        <img id="flowerImageHover" className="threeProductCategoryImages" src="/images/homeImages/flower-flip.png" alt="Marijuana Flower" />
                                     </div>
                                 </a>
                             
                             <a href="/locations/">
-                                <div class="threeProductCategoryHeadline">
+                                <div className="threeProductCategoryHeadline">
                                     Flower
                                 </div>
                             </a>
                         </div>
                     </div>
 
-                    <div class="col-sm-4 productSquareColumn">
-                        <div class="edibleBox">
-                            <img id="edibleImage" class="threeProductCategoryImages" src="/images/homeImages/edible-pattern.png" alt="Cannabis Edibles" />
+                    <div className="col-sm-4 productSquareColumn">
+                        <div className="edibleBox">
+                            <img id="edibleImage" className="threeProductCategoryImages" src="/images/homeImages/edible-pattern.png" alt="Cannabis Edibles" />
                             <a href="/locations/">
-                                <div class="overlay">
-                                    <img id="edibleImageHover" class="threeProductCategoryImages" src="/images/homeImages/edible-flip.png" alt="Marijuana Edibles" />
+                                <div className="overlay">
+                                    <img id="edibleImageHover" className="threeProductCategoryImages" src="/images/homeImages/edible-flip.png" alt="Marijuana Edibles" />
                                 </div>
                             </a>
                             <a href="/locations/">
-                                <div class="threeProductCategoryHeadline">
+                                <div className="threeProductCategoryHeadline">
                                     Edibles
                                 </div>
                             </a>
                         </div>
                     </div>
 
-                    <div class="col-sm-4 productSquareColumn">
-                        <div class="concentrateBox">
-                            <img id="concentrateImage" class="threeProductCategoryImages" src="/images/homeImages/concentrate-pattern.png" alt="Cannabis Concentrates" />
+                    <div className="col-sm-4 productSquareColumn">
+                        <div className="concentrateBox">
+                            <img id="concentrateImage" className="threeProductCategoryImages" src="/images/homeImages/concentrate-pattern.png" alt="Cannabis Concentrates" />
                                 <a href="/locations/">
-                                    <div class="overlay">
-                                        <img id="concentrateImageHover" class="threeProductCategoryImages" src="/images/homeImages/concentrate-flip.png" alt="Marijuana Concentrates" />
+                                    <div className="overlay">
+                                        <img id="concentrateImageHover" className="threeProductCategoryImages" src="/images/homeImages/concentrate-flip.png" alt="Marijuana Concentrates" />
                                     </div>
                                 </a>
                             <a href="/locations/">
-                                <div class="threeProductCategoryHeadline">
+                                <div className="threeProductCategoryHeadline">
                                     Concentrates
                                 </div>
                             </a>
@@ -130,18 +175,18 @@ function Home() {
             </div>      
         </section>
 
-        <section class="Categories" aria-label="Categories of products to search for">
+        <section className="Categories" aria-label="Categories of products to search for">
   
-            <div class="yumaBorder">
-            <div class="article-container">
+            <div className="yumaBorder">
+            <div className="article-container">
                 <article id="list-items"> 
-                    <input aria-label="expand category menu" class="mobile-only" type="checkbox"/>
+                    <input aria-label="expand category menu" className="mobile-only" type="checkbox"/>
                     <header aria-label="Flower category.">
-                    <span class="yellowText">Flower</span>
+                    <span className="yellowText">Flower</span>
                     <i role="presentation"></i>
                     </header>
             
-                    <ul class="lightText">
+                    <ul className="lightText">
                         <li>
                         <a aria-label="Platinum." href="/locations">
                             Yuma Way 
@@ -180,12 +225,12 @@ function Home() {
                 </svg>
                 </div>
                 <article id="list-items"> 
-                <input aria-label="expand category menu" class="mobile-only" type="checkbox"/>
+                <input aria-label="expand category menu" className="mobile-only" type="checkbox"/>
                 <header aria-label="Topical category.">
-                    <span class="yellowText">Topicals</span>
+                    <span className="yellowText">Topicals</span>
                     <i role="presentation"></i>
                 </header>
-                    <ul class="lightText">
+                    <ul className="lightText">
                     <li>
                         <a aria-label="White Wine." href="/locations">
                         Escape Artists
@@ -224,13 +269,13 @@ function Home() {
                 </svg>
                 </div>
                 <article id="list-items">
-                <input aria-label="expand category menu" class="mobile-only" type="checkbox"/>
+                <input aria-label="expand category menu" className="mobile-only" type="checkbox"/>
                 <header aria-label="Edibles category.">
-                    <span class="yellowText">Edibles</span>
+                    <span className="yellowText">Edibles</span>
                     <i role="presentation"></i>
                 </header>
         
-                    <ul class="lightText">
+                    <ul className="lightText">
                     <li>
                         <a aria-label="Vodka." href="/locations">
                             Wana
@@ -269,13 +314,13 @@ function Home() {
                 </svg>
                 </div>
                 <article id="list-items">
-                <input aria-label="expand category menu" class="mobile-only" type="checkbox"/>
+                <input aria-label="expand category menu" className="mobile-only" type="checkbox"/>
                 <header aria-label="Extract category.">
-                    <span class="yellowText">Extract</span>
+                    <span className="yellowText">Extract</span>
                     <i role="presentation"></i>
                 </header>
         
-                    <ul class="lightText">
+                    <ul className="lightText">
                     <li>
                         <a aria-label="Mixers." href="/locations">
                             Eureka Vapor 
@@ -308,24 +353,24 @@ function Home() {
             </div>
   </section>
   
-  <section class="app-download">
-      <div class="content">
-        <h2 class="desktop-only">Join Our Rewards </h2>
-        <h2 class="non-desktop-only">Join Our Rewards</h2>
+  <section className="app-download">
+      <div className="content">
+        <h2 className="desktop-only">Join Our Rewards </h2>
+        <h2 className="non-desktop-only">Join Our Rewards</h2>
   
           <p>Come join our awesome rewards program. Access exclusive deals and earn points with your purchases to get free products.</p>
   
-          <a class="get-app-link" role="button" rel="noopener noreferrer" href="https://enrollnow.vip/login/2966">Join Now</a>
+          <a className="get-app-link" role="button" rel="noopener noreferrer" href="https://enrollnow.vip/login/2966">Join Now</a>
   
       </div>
   
-      <svg class="rotated non-mobile-only" viewBox="0 0 100 100" preserveAspectRatio="none">
+      <svg className="rotated non-mobile-only" viewBox="0 0 100 100" preserveAspectRatio="none">
         <polygon fill="#181818" opacity="100%" points="0,100 0,0 100,0, 100,10, 39.5,100"></polygon>
         <line stroke="#d9ab73" x1="39" y1="100" x2="100" y2="9"></line>
         <line stroke="#d9ab73" x1="38" y1="100" x2="100" y2="8"></line>
       </svg>
        
-      <svg class="rotated mobile-only" viewBox="0 0 100 100" preserveAspectRatio="none">
+      <svg className="rotated mobile-only" viewBox="0 0 100 100" preserveAspectRatio="none">
         <polygon fill="#181818" opacity="100%" points="0,0 0,92 100,59, 100,0 0,0"></polygon>
         <polyline stroke="#d9ab73" fill="none" points="5,1 5,88 95,59, 95,1 5,1 "></polyline>
         <polyline stroke="#d9ab73" fill="none" points="3,2.5 3,87 97,57 97,2.5 3,2.5"></polyline>
