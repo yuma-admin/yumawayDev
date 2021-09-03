@@ -688,7 +688,7 @@
   section.app-download div.content {
     display: flex;
     color: #d9ab73;
-    opacity: 100%;
+    /* opacity: 100%; */
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
@@ -788,7 +788,7 @@
     width: 100%;
     height: 100%;
     stroke-width: 0.1px;
-    opacity: 97%;
+    /* opacity: 97%; */
   }
   
   @media screen and (min-width: 576px) {

@@ -31,7 +31,7 @@ function Menu(props){
     <div className="container-fluid">
       <div onClick={backClick} className="menuBackButtonBar">Back</div>
 
-      <div id="jane-frame-script"></div>
+      <div class="test" id="jane-frame-script"></div>
     </div>
     </>
   )
