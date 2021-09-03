@@ -68,7 +68,7 @@
 
 .aboutHeader .centeredImageContainer img {
     width: 100%;
-    opacity: 90%;
+    /* opacity: 90%; */
 }
 
 .aboutPeople {
