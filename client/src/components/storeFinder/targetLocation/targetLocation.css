@@ -1,3 +1,4 @@
+
 .containerPadding {
   padding: 0px;
   background-color: transparent !important;
@@ -39,7 +40,13 @@
   border: transparent;
   color: #d9ab73;
   padding: 0px !important;
-  stroke-width: 0;
+  stroke-width: 0 !important;
+  outline: 0 !important;
+}
+
+.backArrow {
+  stroke-width: 0 !important;
+  outline:0 !important;
 }
 
 @media (max-width: 768px) {

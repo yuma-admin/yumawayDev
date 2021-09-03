@@ -4,7 +4,6 @@ import { Container, Row} from 'react-bootstrap';
 import './targetLocation.css'
 import storeJson from '../locations/storeJson.js'
 import {BiLeftArrow} from 'react-icons/bi'
-console.log(BiLeftArrow)
 import {FaPhoneAlt, FaMapMarkerAlt} from 'react-icons/fa'
 import DayCard from './dayCard/dayCard'
 import {Link, useHistory} from 'react-router-dom'
@@ -102,10 +101,11 @@ const shopCBD = ()=>{
         <div>
             <Container className='containerPadding stickyContainer'>
                 <Row>
-                    <div className='backDiv'><button onClick={()=>goBack()} className='backButton'><BiLeftArrow size={28} strokeWidth={0}/></button></div>
+                    <div className='backDiv'><button strokeWidth={0} onClick={()=>goBack()} className='backButton'><BiLeftArrow className='backArrow' size={28} outline="0" strokeWidth="0"/></button></div>
                     <img className='logo' src={`${process.env.PUBLIC_URL}${filteredStore[0].logoPinch}`} alt={filteredStore[0].alt}></img>
                 </Row>
                 <Row>
+                    {/* THIS IS WHERE BUTTONS APPEAR */}
                    <div className='buttonContainer'>{determineButtonNumber()}</div>
                 </Row>
             </Container>

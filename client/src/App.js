@@ -108,15 +108,17 @@ const noLegal = () => {
           </Route>
           
           {/* STORE LOCATOR ROUTES */}
-          <Route exact path="/locations/menu/:id" >
-            <Menu Id={storeSelected.storeId} callBack={() => setStoreSelected}></Menu>
-          </Route>
-          <Route exact path='/locations/:store'>
-            <StoreFinder callBack={setStoreSelected}></StoreFinder>
-          </Route>
-          <Route exact path='/locations'>
-            <StoreFinder callBack={setStoreSelected}></StoreFinder>
-          </Route>
+          <Router basename="/locations">
+            <Route exact path="/menu/:id" >
+              <Menu Id={storeSelected.storeId} callBack={() => setStoreSelected}></Menu>
+            </Route>
+            <Route exact path='/:store'>
+              <StoreFinder callBack={setStoreSelected}></StoreFinder>
+            </Route>
+            <Route exact path='/'>
+              <StoreFinder callBack={setStoreSelected}></StoreFinder>
+            </Route>
+          </Router>
 
           {/* ABOUT PAGE ROUTE */}
           <Route exact path="/about" >
