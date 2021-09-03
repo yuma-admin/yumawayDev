@@ -17,6 +17,7 @@ import ColoradoDeals from './pages/DealsPages/ColoradoDeals'
 import MichiganDeals from './pages/DealsPages/MichiganDeals'
 import About from './pages/About/About'
 import StoreFinder from './pages/StoreFinder/StoreFinder'
+import TermsOfUse from './pages/TermsOfUse/TermsOfUse'
 
 // STORE FINDER COMPONENTS
 import Menu from './components/menu/menu'
@@ -27,46 +28,53 @@ import Footer from './components/footer/footer'
 import { createPortal } from "react-dom"
 
 function App() {
-  const yumaCookie = Cookies.get('yumaway')
+  const yumaCookie = Cookies.get('yumawayAgeGateKey')
   const [showAgeGate,setAgeGate] = useState([true])
   console.log(yumaCookie)
 
   useEffect(() => {
-    console.log(yumaCookie)
-    if (yumaCookie==="legalAge"){
+    // If User Has LegalAge Cookie, Remove Modal
+    if (yumaCookie==="yesLegalAge"){
       console.log(yumaCookie)
+      document.getElementById("ageGateBackground").style.display = "none"
+      setAgeGate(false)
+
+    } 
+
+    const url = window.location.href;
+    const str = url.split("/")
+    const currentHref = str[(str.length - 1)]
+    console.log("Current HREF: " + currentHref)
+
+    if (currentHref==="terms-of-use"){
+      document.getElementById("ageGateBackground").style.display = "none"
       setAgeGate(false)
     }
   })
 
-  // Age Gate Display
- 
- 
-  //Age Gate Status
-  const yesLegal = () => {
-    Cookies.set('yumaway', "legalAge")
-    setAgeGate(false)
-  }
+// Sets State and Cookie with Legal Age
+const yesLegal = () => {
+  Cookies.set('yumawayAgeGateKey', "yesLegalAge")
+  setAgeGate(false)
+}
 
-  
-
-  function handleCookie() {
-    
-  }
-
-  
-
-    const Modal = ({showAgeGate, setAgeGate}) => {
+const noLegal = () => {
+  setAgeGate(false)
+}
+  // Builds Age Gate Modal
+  const Modal = ({showAgeGate, setAgeGate}) => {
       const content = showAgeGate && (
         <AgeGateModal
           className="ageGateBox"
           yesButton={yesLegal}
-          noButton={false}
+          noButton={noLegal}
 
         />
         )
         return createPortal(content, document.body)
   }
+
+  
 
   // Creates an overarching empty state that looks for store (-Tyler)
   const [storeSelected, setStoreSelected] = useState({
@@ -77,6 +85,7 @@ function App() {
     
     <Router basename="/">
       <div className='holder'>
+      <div id="ageGateBackground"></div>
 
         <NavBar></NavBar>
         <Switch>
@@ -113,13 +122,18 @@ function App() {
           <Route exact path="/about" >
             <About />
           </Route>
+
+          {/* TERMS OF USE */}
+          <Route exact path="/terms-of-use">
+            <TermsOfUse/>
+          </Route>
           
         </Switch>
         <Footer></Footer>
       </div>
       <Modal
           showAgeGate={showAgeGate}
-          onClick={handleCookie}
+          // data-keyboard="false" data-backdrop="static"
         >
       </Modal>
     </Router>

@@ -4,16 +4,26 @@
     top:0;
     background-color: #0e0d0d;
     width: 100%;
-    z-index: 100;
+    z-index: 98;
     text-align: right;
     padding: 14px;
   }
   
-  #navbar img {
-    
-    width: 20%;
+  .navbarImage {
     float: left;
-    
+  }
+
+  .navbarImage img {
+    float: left;
+    width: 12em;
+  }
+
+  .navbarMainItems {
+    float: right;
+  }
+
+  #navbar a:hover {
+    color: #d9ab73;
   }
   
   .mainNavItem {
@@ -27,3 +37,34 @@
     padding: 14px;
     
   }
+
+@media screen and (max-width: 768px){
+  #navbar img {
+    width: 10em;
+  }
+  .mainNavItem {
+  font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 425px){
+  #navbar {
+    padding: 10px;
+  }
+  #navbar img {
+    width: 8em;
+  }
+  .mainNavItem {
+    font-size: 18px;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 375px){
+  #navbar img {
+    width: 7em;
+  }
+  .mainNavItem {
+    font-size: 16px;
+  }
+}

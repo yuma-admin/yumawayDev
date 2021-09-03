@@ -73,7 +73,7 @@ let history= useHistory();
 function goBack(){
     
     props.callBack({id:''})
-    history.push("/");
+    history.push("/locations");
 
 }
 

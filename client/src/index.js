@@ -4,7 +4,6 @@ import { createPortal } from 'react-dom'
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { CookiesProvider } from "react-cookie"
 
 
 
@@ -16,9 +15,7 @@ const appAnchorElement = document.querySelector(appSelector)
 if (appAnchorElement) {
   ReactDOM.render(
     <React.StrictMode>
-      <CookiesProvider>
         <App />
-      </CookiesProvider>
     </React.StrictMode>,
     appAnchorElement
   )
