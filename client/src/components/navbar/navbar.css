@@ -2,11 +2,12 @@
     position: sticky;
     display: block;
     top:0;
-    background-color: #0e0d0d;
+    background-color: rgb(24,24,24);
     width: 100%;
     z-index: 98;
     text-align: right;
     padding: 14px;
+    box-shadow: 0 4px 2px -2px black;
   }
   
   .navbarImage {
