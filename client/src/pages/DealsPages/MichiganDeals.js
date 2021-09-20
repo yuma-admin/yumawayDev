@@ -141,6 +141,7 @@ function MichiganDeals() {
             <div id="bottomRow"></div>
         </div>
 
+        {/* MOBILE VIEW */}
         <div class="container dealContainer" id="mobileView">
 
             <div class="row">
@@ -148,7 +149,7 @@ function MichiganDeals() {
                     <div class="stateSelector">
                         <h3 class="currentState">Michigan Deals</h3>
                         <div class="selectableStates">
-                            <a href="/home/super-deals/"><h4>Colorado Deals</h4></a>
+                            <a href="/colorado-deals/"><h4>Colorado Deals</h4></a>
                         </div>
                     </div>
                 </div>

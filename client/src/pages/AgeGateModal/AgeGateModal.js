@@ -18,7 +18,8 @@ function AgeGateModal(props) {
             <div className="row">
               <div className="col-12">      
                 <div className="ageGateHeadline">
-                  Are you age 21 or older? Or do you own a medical card?
+                  <p className="ageGateCopyPadding">Are you age 21 or older?</p>
+                  <p className="ageGateCopyPadding">Or do you own a medical card?</p>
                 </div>
               </div>
             </div>

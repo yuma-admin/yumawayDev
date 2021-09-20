@@ -1,6 +1,14 @@
+import { BiSlider } from "react-icons/bi";
+import Carousel from 'react-bootstrap/Carousel'
 import "./deals.css"
 
+
 function ColoradoDeals() {
+
+    // useEffect(() => {
+    //     // If User Has LegalAge Cookie, Remove Modal
+    //     slide.bs.carousel
+    // })
 
     return (
         <>
@@ -28,51 +36,60 @@ function ColoradoDeals() {
                         <div className="col-4">
                             
                             <div className="heroButtonContainer">
-                                <img className="heroDealsLogo" src="/images/coloradoDeals/YumaWay_Horizontal_BlackGold_Solid.png" alt="YumaWay Logo" />
+                                <img className="heroDealsLogo" 
+                                    src="/images/coloradoDeals/YumaWay_Horizontal_BlackGold_Solid.png" 
+                                    alt="YumaWay Logo" 
+                                />
                                 <a href="/locations" className="newDealButton">
-                                Shop 
+                                    Shop 
                                 </a>
                             </div>
                             
                         </div>
 
+                        {/* REACT CAROUSEL */}
+
                         <div id="mainTopCarousel">
-                            <div id="topCarousel" className="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-wrap="true">
-                                <div className="carousel-inner">
+                        <div className="heroButtonBackground"></div>
+                            <Carousel 
+                                controls={false} 
+                                interval={4000} 
+                                wrap={true}
+                            >    
+                                <Carousel.Item>
+                                
+                                    <a href="/locations">
+                                        <img src="/images/coloradoDeals/A_heroHalfOunce-fullPhoto-noshade.png" 
+                                        className=" carouselImage" 
+                                        alt="Primary Cannabis Coupon One"
+                                        />
+                                    </a>
+                                        
+                                </Carousel.Item>
+                                <Carousel.Item>
+                                
+                                    <a href="/locations">
+                                        <img src="/images/coloradoDeals/hero420Joints-fullPhoto-noshade.png" 
+                                        className=" carouselImage" 
+                                        alt="Primary Cannabis Coupon Two"
+                                        />
+                                    </a>
+                                        
+                                </Carousel.Item>
+                                <Carousel.Item>
+                                
+                                    <a href="/locations">
+                                        <img src="/images/coloradoDeals/heroConcentrates-fullPhoto-half-GRAM.png" 
+                                        className=" carouselImage" 
+                                        alt="Primary Cannabis Coupon Three"
+                                        />
+                                    </a>
+                                        
+                                </Carousel.Item>
                                     
-                                    <div className="heroButtonBackground"></div>
-                                    <div className="carousel-item active" data-interval="3000">
-                                        
-                                            <div className="d-block w-100">
-                                                <a href="/locations">
-                                                    <img src="/images/coloradoDeals/A_heroHalfOunce-fullPhoto-noshade.png" className=" carouselImage" alt="Primary Cannabis Coupon One" />
-                                                </a>
-                                            </div>
-                                                                                    
-                                    </div>
-                                    <div className="carousel-item" data-interval="3000"> 
-                                        
-                                            
-                                            <div className="d-block w-100">
-                                                <a href="/locations">
-                                                    <img src="/images/coloradoDeals/hero420Joints-fullPhoto-noshade.png" className=" carouselImage" alt="Primary Cannabis Coupon Two"/>
-                                                </a>
-                                            </div>
-                                        
-                                    </div>
-                                    <div className="carousel-item" data-interval="3000">
-                                        
-                                            
-                                            <div className="d-block w-100">
-                                                <a href="/locations">
-                                                    <img src="/images/coloradoDeals/heroConcentrates-fullPhoto-half-GRAM.png" className=" carouselImage" alt="Primary Cannabis Coupon Three"/>
-                                                </a>
-                                            </div>
-                                        
-                                    </div>
-                                </div>
-                            </div>
+                            </Carousel>
                         </div>
+                        
                         
                     </div> 
                 </div>  
@@ -138,6 +155,8 @@ function ColoradoDeals() {
         
             <div id="bottomRow"></div>
         </div>
+
+        {/* MOBILE VIEW */}
         
         <div className="container dealContainer" id="mobileView">
     
@@ -168,42 +187,49 @@ function ColoradoDeals() {
                                 
                             </div>
         
-                            <div id="mainTopCarousel">
-                                <div id="topCarousel" className="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-wrap="true">
-                                    <div className="carousel-inner">
-        
-                                        <div className="heroButtonBackground"></div>
-                                        <div className="carousel-item active" data-interval="3000">
-                                            
-                                                <div className="d-block w-100">
-                                                    <a href="/locations">
-                                                        <img src="/images/coloradoDeals/A_heroHalfOunce-fullPhoto-noshade.png" className=" carouselImage" alt="Primary Cannabis Coupon Mobile One"/>
-                                                    </a>
-                                                </div>
-                                                                                        
-                                        </div>
-                                        <div className="carousel-item" data-bs-interval="3000"> 
-                                            
-                                                <div className="d-block w-100">
-                                                    <a href="/locations">
-                                                        <img src="/images/coloradoDeals/hero420Joints-fullPhoto-noshade.png" className=" carouselImage" alt="Primary Cannabis Coupon Mobile Two"/>
-                                                    </a>
-                                                </div>
-                                            
-                                        </div>
-                                        <div className="carousel-item" data-bs-interval="3000">
-                                            
-                                                
-                                                <div className="d-block w-100">
-                                                    <a href="/locations">
-                                                        <img src="/images/coloradoDeals/heroConcentrates-fullPhoto-half-GRAM.png" className=" carouselImage" alt="Primary Cannabis Coupon Mobile Three"/>
-                                                    </a>
-                                                </div>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            {/* REACT CAROUSEL */}
+
+                        <div id="mainTopCarousel">
+                        <div className="heroButtonBackground"></div>
+                            <Carousel 
+                                controls={false} 
+                                interval={4000} 
+                                wrap={true}
+                                indicators={false}
+                            >    
+                                <Carousel.Item>
+                                
+                                    <a href="/locations">
+                                        <img src="/images/coloradoDeals/A_heroHalfOunce-fullPhoto-noshade.png" 
+                                        className=" carouselImage" 
+                                        alt="Primary Cannabis Coupon One"
+                                        />
+                                    </a>
+                                        
+                                </Carousel.Item>
+                                <Carousel.Item>
+                                
+                                    <a href="/locations">
+                                        <img src="/images/coloradoDeals/hero420Joints-fullPhoto-noshade.png" 
+                                        className=" carouselImage" 
+                                        alt="Primary Cannabis Coupon Two"
+                                        />
+                                    </a>
+                                        
+                                </Carousel.Item>
+                                <Carousel.Item>
+                                
+                                    <a href="/locations">
+                                        <img src="/images/coloradoDeals/heroConcentrates-fullPhoto-half-GRAM.png" 
+                                        className=" carouselImage" 
+                                        alt="Primary Cannabis Coupon Three"
+                                        />
+                                    </a>
+                                        
+                                </Carousel.Item>
+                                    
+                            </Carousel>
+                        </div>
                             
                         </div> 
                     </div>

@@ -106,6 +106,16 @@ const noLegal = () => {
           <Route exact path="/michigan-deals" >
             <MichiganDeals />
           </Route>
+
+          {/* ABOUT PAGE ROUTE */}
+          <Route exact path="/about" >
+            <About />
+          </Route>
+
+          {/* TERMS OF USE */}
+          <Route exact path="/terms-of-use">
+            <TermsOfUse/>
+          </Route>
           
           {/* STORE LOCATOR ROUTES */}
           <Router basename="/locations">
@@ -120,15 +130,7 @@ const noLegal = () => {
             </Route>
           </Router>
 
-          {/* ABOUT PAGE ROUTE */}
-          <Route exact path="/about" >
-            <About />
-          </Route>
-
-          {/* TERMS OF USE */}
-          <Route exact path="/terms-of-use">
-            <TermsOfUse/>
-          </Route>
+          
           
         </Switch>
         <Footer></Footer>

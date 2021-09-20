@@ -40,9 +40,14 @@
 
   font-size: 18px;
   
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
   
+}
+
+.ageGateCopyPadding {
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .ageGateButtons {
@@ -149,8 +154,8 @@
 
   .ageGateHeadline {
     font-size: 12px;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
   .termsAndConditions {

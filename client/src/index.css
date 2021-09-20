@@ -13,9 +13,23 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+@media only screen and (max-width: 425px) {
+  body {
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  html {
+    position: relative;
+    overflow-x: hidden;
+  }
 }

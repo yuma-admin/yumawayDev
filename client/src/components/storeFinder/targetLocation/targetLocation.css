@@ -40,13 +40,17 @@
   border: transparent;
   color: #d9ab73;
   padding: 0px !important;
-  stroke-width: 0 !important;
-  outline: 0 !important;
+  /* stroke-width: 0 !important;
+  outline: 0 !important; */
+}
+
+.backButton:focus {
+  outline: none;
 }
 
 .backArrow {
-  stroke-width: 0 !important;
-  outline:0 !important;
+  /* stroke-width: 0 !important;
+  outline:0 !important; */
 }
 
 @media (max-width: 768px) {
@@ -73,12 +77,17 @@
   margin: auto;
   min-width: auto !important;
   font-weight: bolder;
+  outline: none;
 }
 
 .button:hover {
   cursor: pointer !important;
   background: #d9ab73;
   color: #181818;
+}
+
+.button:focus {
+  outline: none;
 }
 
 .tri {
@@ -94,6 +103,7 @@
   min-width: 18vh;
   margin-right: 3px;
   margin-left: 3px;
+  outline: none;
 }
 
 .phoneAndAddress {

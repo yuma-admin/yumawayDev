@@ -14,8 +14,6 @@
     z-index: 98;
   }
   
-  
-  
   .stateSelector .currentState {
     font-family: "Crimson Text",serif;
   
@@ -190,6 +188,8 @@
   
     width: 40%;
     height: 100%;
+
+    pointer-events: none;
   }
   
   .michiganHeroButtonBackground {

@@ -137,6 +137,8 @@ button {
   max-width: 600px;
 }
 
+
+
 .reactButtonContainer {
   position: relative;
   text-align: center;
@@ -186,6 +188,10 @@ button {
   background: #d9ab73 !important;
   color: #181818 !important;
   pointer-events: all;
+}
+
+.storeButtonReact:focus {
+  outline: none;
 }
 
 

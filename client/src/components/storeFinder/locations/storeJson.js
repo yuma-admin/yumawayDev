@@ -1,5 +1,40 @@
 const storeJson = [
     {
+        id: '9999',
+        img: '/images/logo/lowell-gardens-logo.svg',
+        alt: 'Lowell Gardens Logo',
+        logoPinch:'/images/logo/lowell-gardens-logo.svg',
+        exteriorStore:'/images/storeExterior/lowellOutdoor.jpg',
+        interiorStore:'/images/storeInterior/lowellOutdoor.jpg',
+        exAlt: 'Lowell Gardens Store Exterior',
+        inAlt: 'Lowell Gardens Store Interior',
+        name: 'Lowell Gardens',
+        address1: '3615 W 49th Ave',
+        address2:'Denver CO, 80221',
+        escapedUrlAddress:'6901+E+Colfax+Ave+Denver%2C+CO+80220',
+        lat: 39.78572,
+        lng: -105.031516,
+        phone:'(720) 362-7095',
+        phoneLink:'tel:+1-720-362-7095',
+        type:{
+            Rec:'3456',
+            Med:'',
+            // Consumption:'1'
+        },
+        hours:{
+            monday:'8am - 10pm',
+            tuesday:'8am - 10pm',
+            wednesday:'8am - 10pm',
+            thursday: '8am - 10pm',
+            friday:'8am - 10pm',
+            saturday:'8am - 10pm',
+            sunday:'8am - 10pm'
+        },
+        storeDescription:"Located in the Berkley Neighborhood near Regis University, Lowell Gardens’ staff is here to help you find the right thc product. We have a vast selection of flower, concentrates, and edibles. Our flower is carefully picked and packaged deli style.",
+        shop: "Now Open",
+        href: "lowellgardens"
+    },
+    {
     
         id: '1671',
         img: '/images/logo/cherry-peak-svg-logo.svg',
@@ -70,40 +105,6 @@ const storeJson = [
         href: "twinpeaks"
     },
     {
-        id: '1525',
-        img: '/images/logo/cannacity-svg-logo.svg',
-        alt: 'Cannacity Logo',
-        logoPinch:'/images/logo/cannacity-svg-logo.svg',
-        exteriorStore:'/images/storeExterior/cannacityOutdoor.jpg',
-        interiorStore:'/images/storeInterior/cannacityIndoor.jpg',
-        exAlt: 'Cannacity Store Exterior',
-        inAlt: 'Cannacity Store Interior',
-        name: 'Canna City',
-        address1: '7150 Eudora Dr',
-        address2:'Commerce City CO, 80022',
-        escapedUrlAddress:'7150+Eudora+Drive,+Commerce+City,+CO+80022',
-        lat: 39.825870,
-        lng: -104.927450,
-        phone:'(720) 336-8689',
-        phoneLink:'tel:+1-720-336-8689',
-        type:{
-            Rec:'1525',
-            Med:''
-        },
-        hours:{
-            monday:'8am - 9:45pm',
-            tuesday:'8am - 9:45pm',
-            wednesday:'8am - 9:45pm',
-            thursday: '8am - 9:45pm',
-            friday:'8am - 9:45pm',
-            saturday:'8am - 9:45pm',
-            sunday:'8am - 9:45pm'
-        },
-        storeDescription:"A dispensary managed by locals, Canna City serves the surrounding neighborhoods in Commerce City. Despite the local feel, Canna City is a great stop for commuters as it is located off Highway 85. Similar to Yuma Way’s other locations, Canna City carries a wide selection of THC edibles, concentrates, topicals, and cannabis flower. Anything from high exposure brands like Snaxland, Cookies, GKUA to regional favorite products from N-Fuzed, Incredibles, Koala Bars can be found on the shelves. Visit us today and explore all our options! ",
-        shop: "Shop",
-        href: "cannacity"
-    },
-    {
         id: '1693',
         img: '/images/logo/berkley-svg-logo.svg',
         alt: 'Berkeley Logo',
@@ -171,6 +172,42 @@ const storeJson = [
         shop: "Shop",
         href: "1136yuma"
     },
+    {
+        id: '1525',
+        img: '/images/logo/cannacity-svg-logo.svg',
+        alt: 'Cannacity Logo',
+        logoPinch:'/images/logo/cannacity-svg-logo.svg',
+        exteriorStore:'/images/storeExterior/cannacityOutdoor.jpg',
+        interiorStore:'/images/storeInterior/cannacityIndoor.jpg',
+        exAlt: 'Cannacity Store Exterior',
+        inAlt: 'Cannacity Store Interior',
+        name: 'Canna City',
+        address1: '7150 Eudora Dr',
+        address2:'Commerce City CO, 80022',
+        escapedUrlAddress:'7150+Eudora+Drive,+Commerce+City,+CO+80022',
+        lat: 39.825870,
+        lng: -104.927450,
+        phone:'(720) 336-8689',
+        phoneLink:'tel:+1-720-336-8689',
+        type:{
+            Rec:'1525',
+            Med:''
+        },
+        hours:{
+            monday:'8am - 9:45pm',
+            tuesday:'8am - 9:45pm',
+            wednesday:'8am - 9:45pm',
+            thursday: '8am - 9:45pm',
+            friday:'8am - 9:45pm',
+            saturday:'8am - 9:45pm',
+            sunday:'8am - 9:45pm'
+        },
+        storeDescription:"A dispensary managed by locals, Canna City serves the surrounding neighborhoods in Commerce City. Despite the local feel, Canna City is a great stop for commuters as it is located off Highway 85. Similar to Yuma Way’s other locations, Canna City carries a wide selection of THC edibles, concentrates, topicals, and cannabis flower. Anything from high exposure brands like Snaxland, Cookies, GKUA to regional favorite products from N-Fuzed, Incredibles, Koala Bars can be found on the shelves. Visit us today and explore all our options! ",
+        shop: "Shop",
+        href: "cannacity"
+    },
+    
+    
     {
         id: '2600',
         img: '/images/logo/cannabay-svg-logo.svg',
@@ -240,42 +277,7 @@ const storeJson = [
         shop: "Visit",
         href: "coffeejoint"
     },
-    {
     
-        id: '9999',
-        img: '/images/logo/lowell-gardens-logo.svg',
-        alt: 'Lowell Gardens Logo',
-        logoPinch:'/images/logo/lowell-gardens-logo.svg',
-        exteriorStore:'/images/storeExterior/lowellOutdoor.jpg',
-        interiorStore:'/images/storeInterior/lowellOutdoor.jpg',
-        exAlt: 'Lowell Gardens Store Exterior',
-        inAlt: 'Lowell Gardens Store Interior',
-        name: 'Lowell Gardens',
-        address1: '3615 W 49th Ave',
-        address2:'Denver CO, 80221',
-        escapedUrlAddress:'6901+E+Colfax+Ave+Denver%2C+CO+80220',
-        lat: 39.78572,
-        lng: -105.031516,
-        phone:'(720) 362-7095',
-        phoneLink:'tel:+1-720-362-7095',
-        type:{
-            Rec:'3456',
-            Med:'',
-            // Consumption:'1'
-        },
-        hours:{
-            monday:'8am - 10pm',
-            tuesday:'8am - 10pm',
-            wednesday:'8am - 10pm',
-            thursday: '8am - 10pm',
-            friday:'8am - 10pm',
-            saturday:'8am - 10pm',
-            sunday:'8am - 10pm'
-        },
-        storeDescription:"Located in the Berkley Neighborhood near Regis University, Lowell Gardens’ staff is here to help you find the right thc product. We have a vast selection of flower, concentrates, and edibles. Our flower is carefully picked and packaged deli style.",
-        shop: "Now Open",
-        href: "lowellgardens"
-    },
  
 ]
 

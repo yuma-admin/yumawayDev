@@ -101,7 +101,12 @@ const shopCBD = ()=>{
         <div>
             <Container className='containerPadding stickyContainer'>
                 <Row>
-                    <div className='backDiv'><button strokeWidth={0} onClick={()=>goBack()} className='backButton'><BiLeftArrow className='backArrow' size={28} outline="0" strokeWidth="0"/></button></div>
+                    <div className='backDiv'>
+                        <button strokeWidth={0} onClick={()=>goBack()} className='backButton'>
+                        
+                        <BiLeftArrow className='backArrow' size={28} outline="0" strokeWidth="0"/>
+                        </button>
+                    </div>
                     <img className='logo' src={`${process.env.PUBLIC_URL}${filteredStore[0].logoPinch}`} alt={filteredStore[0].alt}></img>
                 </Row>
                 <Row>
