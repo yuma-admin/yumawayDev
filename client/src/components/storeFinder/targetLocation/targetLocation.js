@@ -8,13 +8,6 @@ import {FaPhoneAlt, FaMapMarkerAlt} from 'react-icons/fa'
 import DayCard from './dayCard/dayCard'
 import {Link, useHistory} from 'react-router-dom'
 
-// Social Media Icons
-// import facebookIcon from '../../../'
-// import instagramIcon 
-// import twitterIcon from
-
-// Component that runs when a store has been selected
-
 // Selects the target store's information from the json file
 function TargetLocation(props){
     const filteredStore = storeJson.filter(store => store.id === props.id)
@@ -125,7 +118,9 @@ const shopCBD = ()=>{
                 </div>
                 <div className='phoneAndAddress'>
                     <div className='innerPhoneAndAddress'>
-                        <div className='locationIcon'><FaMapMarkerAlt size={56}></FaMapMarkerAlt></div>
+                        <div className='locationIcon'>
+                            <FaMapMarkerAlt size={56}></FaMapMarkerAlt>
+                        </div>
                         <h4 className='hoverAddress' onClick={()=>{getDirections()}}>{filteredStore[0].address1}</h4>
                         <h4 className='hoverAddress' onClick={()=>{getDirections()}}>{filteredStore[0].address2}</h4> 
                         <div className='phoneIcon'><FaPhoneAlt size={56}></FaPhoneAlt></div>

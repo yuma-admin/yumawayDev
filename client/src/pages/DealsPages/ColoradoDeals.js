@@ -55,6 +55,7 @@ function ColoradoDeals() {
                                 controls={false} 
                                 interval={4000} 
                                 wrap={true}
+                                touch={true}
                             >    
                                 <Carousel.Item>
                                 

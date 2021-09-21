@@ -59,7 +59,7 @@
   
   .stateSelector:hover .selectableStates {
     cursor: pointer;
-    display: block;
+    display:block;
     z-index:99;
   }
   

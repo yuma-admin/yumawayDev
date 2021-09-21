@@ -106,19 +106,7 @@
   outline: none;
 }
 
-.phoneAndAddress {
-  color: #f2e6d5;
-  margin: auto;
-  text-align: Center;
-  margin-top: 15px;
-  width: 75%;
-  margin-bottom: 15px;
-  font-family: "Crimson Pro", serif;
-}
-
-.storeImage {
-  width: 100%;
-}
+/* CONTACT INFO */
 
 .phoneAndAddress {
   color: #f2e6d5;
@@ -127,11 +115,29 @@
   margin-top: 15px;
   width: 85%;
   margin-bottom: 15px;
+  font-family: "Crimson Pro", serif;
+}
+
+.storeImage {
+  width: 100%;
 }
 
 .innerPhoneAndAddress {
   border-top: 1px solid rgb(242, 230, 213, 0.3);
   border-bottom: 1px solid rgb(242, 230, 213, 0.3);
+}
+
+.phoneLink {
+  color: inherit;
+}
+.phoneLink:hover {
+  color: #d9ab73;
+}
+.hoverAddress {
+  cursor: pointer;
+}
+.hoverAddress:hover {
+  color: #d9ab73;
 }
 
 .phoneIcon {
@@ -142,7 +148,7 @@
 
 .locationIcon {
   color: #d9ab73;
-  margin-top: 10px;
+  margin-top: 20px;
   margin-bottom: 10px;
 }
 
@@ -150,16 +156,25 @@
   margin-bottom: 15px;
 }
 
+/* SOCIAL MEDIA */
+
 .socialMediaContainer {
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 
 }
 
 .socialIcon {
   padding-left: 5px;
   padding-right: 5px;
+  transition: all .2s ease-in-out; 
 }
+
+.socialIcon:hover {
+  transform:scale(1.1);
+}
+
+/* STORE HOURS */
 
 .hoursContainer {
   text-align: center;
@@ -206,15 +221,4 @@
   font-size: 17px;
   font-weight: 400;
 }
-.phoneLink {
-  color: inherit;
-}
-.phoneLink:hover {
-  color: #d9ab73;
-}
-.hoverAddress {
-  cursor: pointer;
-}
-.hoverAddress:hover {
-  color: #d9ab73;
-}
+
