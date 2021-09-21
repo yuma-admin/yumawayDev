@@ -8,6 +8,11 @@ import {FaPhoneAlt, FaMapMarkerAlt} from 'react-icons/fa'
 import DayCard from './dayCard/dayCard'
 import {Link, useHistory} from 'react-router-dom'
 
+// Social Media Icons
+// import facebookIcon from '../../../'
+// import instagramIcon 
+// import twitterIcon from
+
 // Component that runs when a store has been selected
 
 // Selects the target store's information from the json file
@@ -122,9 +127,20 @@ const shopCBD = ()=>{
                     <div className='innerPhoneAndAddress'>
                         <div className='locationIcon'><FaMapMarkerAlt size={56}></FaMapMarkerAlt></div>
                         <h4 className='hoverAddress' onClick={()=>{getDirections()}}>{filteredStore[0].address1}</h4>
-                        <h4 className='hoverAddress' onClick={()=>{getDirections()}}>{filteredStore[0].address2}</h4>
+                        <h4 className='hoverAddress' onClick={()=>{getDirections()}}>{filteredStore[0].address2}</h4> 
                         <div className='phoneIcon'><FaPhoneAlt size={56}></FaPhoneAlt></div>
                         <h4 className='phoneNumber'><a className='phoneLink' href={filteredStore[0].phoneLink}>{filteredStore[0].phone}</a></h4>
+                        <div className='socialMediaContainer'>
+                            <a href={filteredStore[0].facebook} target="_blank">
+                                <img className="socialIcon" src="/images/icons/facebook-icon-50px.png" />
+                            </a>
+                            <a href={filteredStore[0].instagram} target="_blank">
+                                <img className="socialIcon" src="/images/icons/instagram-icon-50px.png"/>
+                            </a>
+                            <a href={filteredStore[0].twitter} target="_blank">
+                                <img className="socialIcon" src="/images/icons/twitter-icon-50px.png"/>
+                            </a>
+                        </div>
                     </div>
                    
                 </div>
