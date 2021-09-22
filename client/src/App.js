@@ -15,6 +15,7 @@ import AgeGateModal from './pages/AgeGateModal/AgeGateModal'
 import Home from './pages/Home/Home'
 import ColoradoDeals from './pages/DealsPages/ColoradoDeals'
 import MichiganDeals from './pages/DealsPages/MichiganDeals'
+import TestDeals from './pages/DealsPages/testDeals'
 import About from './pages/About/About'
 import TermsOfUse from './pages/TermsOfUse/TermsOfUse'
 
@@ -95,16 +96,15 @@ const noLegal = () => {
             <Home />
           </Route>
 
-          {/* <Route exact path="/verify-your-age" >
-            <AgeGate />
-          </Route> */}
-
           {/* DEALS PAGE ROUTES */}
           <Route exact path="/colorado-deals" >
             <ColoradoDeals />
           </Route>
           <Route exact path="/michigan-deals" >
             <MichiganDeals />
+          </Route>
+          <Route exact path="/test-deals" >
+            <TestDeals />
           </Route>
 
           {/* ABOUT PAGE ROUTE */}

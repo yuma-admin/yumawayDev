@@ -12,6 +12,10 @@
     padding-top: 20px;
     
     z-index: 98;
+
+    /* To Reduce the Hover Effect */
+    margin-left: auto;
+    margin-right: auto;
   }
   
   .stateSelector .currentState {
@@ -422,6 +426,8 @@
   .fourthRowCoupon {
     position: relative;
     border: 1px solid #d9ab73;
+
+    margin-bottom: 30px;
   }
   
   .fourthRowCoupon img {

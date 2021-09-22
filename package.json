@@ -28,6 +28,7 @@
     "create-react-app": "^4.0.3",
     "dotenv": "^8.2.0",
     "express": "^4.16.3",
+    "fs": "0.0.1-security",
     "gh-pages": "^3.2.3",
     "google-map-react": "^2.1.9",
     "if-env": "^1.0.4",

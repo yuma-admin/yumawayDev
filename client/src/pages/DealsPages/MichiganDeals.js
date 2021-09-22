@@ -1,49 +1,62 @@
 import "./deals.css"
 
+// Deals Data
+import dealsData from "./updateDealsHere/michiganDealsData"
+
+const heroCoupons = dealsData[0]
+const secondaryDeals = dealsData[1]
+const weeklyCouponsChange = dealsData.slice(2);
+const mobileAllExceptHero = dealsData.slice(1);
+
 function MichiganDeals() {
 
     return (
         <>
 
-        <div class="container dealContainer" id="desktopAndTabletView">
+        <div className="container dealContainer" id="desktopAndTabletView">
 
-            <div class="row">
-                <div class="col-12">
-                    <div class="stateSelector">
-                        <h3 class="currentState">Michigan Deals</h3>
-                        <div class="selectableStates">
+            {/* STATE SELECTOR */}
+            <div className="row">
+                <div className="col-12">
+                    <div className="col-3 stateSelector">
+                        <h3 className="currentState">Michigan Deals</h3>
+                        <div className="selectableStates">
                             <a href="/colorado-deals"><h4>Colorado Deals</h4></a>
                         </div>
                     </div>
                 </div>
             </div>
             
-            <div class="row" id="firstRow"> 
+            {/* HERO CAROUSEL */}
+            <div className="row" id="firstRow"> 
                 
-                <div class="col-9">
-                    
-                    <div class="dealHeroImageContainer">
+                <div className="col-9">
+
+                    {/* HERO SHOP BUTTON */}
+                    <div className="dealHeroImageContainer">
         
-                        <div class="col-4">
+                        <div className="col-4">
                             
-                            <div class="michiganHeroButtonContainer">
-                                <img class="michiganHeroDealsLogo" src="/images/michiganDeals/cannabay-OrangeLogo.png" alt="Cannabay Logo"/>
-                                <a href="/locations" class="newDealButton">
+                            <div className="michiganHeroButtonContainer">
+                                <img className="michiganHeroDealsLogo" src="/images/deals/michiganDeals/cannabay-OrangeLogo.png" alt="Cannabay Logo"/>
+                                <a href="/locations" className="newDealButton">
                                 Shop 
                                 </a>
                             </div>
                             
                         </div>
+
+                        {/* HERO SHOP BUTTON */}
                         <div id="mainTopCarousel">
-                            <div id="topCarousel" class="carousel" data-bs-ride="carousel" data-bs-wrap="true">
-                                <div class="carousel-inner">
+                            <div id="topCarousel" className="carousel" data-bs-ride="carousel" data-bs-wrap="true">
+                                <div className="carousel-inner">
                                     
-                                    <div class="michiganHeroButtonBackground"></div>
-                                    <div class="carousel-item active" data-interval="3000">
+                                    <div className="michiganHeroButtonBackground"></div>
+                                    <div className="carousel-item active" data-interval="3000">
                                         
-                                            <div class="d-block w-100">
+                                            <div className="d-block w-100">
                                                 <a href="/locations">
-                                                    <img src="/images/michiganDeals/michiganHero-compressed.png" class=" carouselImage" alt="Cannabay Coupon of the Week"/>
+                                                    <img src={heroCoupons.imgUrl} className=" carouselImage" alt="Cannabay Coupon of the Week"/>
                                                 </a>
                                             </div>
                                                                                     
@@ -56,12 +69,12 @@ function MichiganDeals() {
                     </div> 
                 </div>  
                 
-                <div class="col-3 ">
-                    <div class="rightTopColumn">
+                <div className="col-3 ">
+                    <div className="rightTopColumn">
                         
-                            <div class="topRightCouponContainer" id="upperTopCouponContainer">
+                            <div className="topRightCouponContainer" id="upperTopCouponContainer">
                                 <a href="/locations">
-                                    <img src="/images/michiganDeals/refer5Friends.png" alt="Refer 5 Friends, Receive $50 Store Credit"/>
+                                    <img src={secondaryDeals.imgUrl} alt="Refer 5 Friends, Receive $50 Store Credit"/>
                                 </a>
                             </div>    
                         
@@ -70,71 +83,20 @@ function MichiganDeals() {
 
             </div>
 
-            <div class="row" id="fourthRow">
+            <div className="row" id="fourthRow">
+            
+            {weeklyCouponsChange.map((coupon, index) => (
+                <div key={index} className="col-3">
 
-                <div class="col-3">
-
-                    <div class="fourthRowCoupon">
+                    <div className="fourthRowCoupon">
                         <a href="/locations">
-                            <img src="/images/michiganDeals/yogis-8-23-21.png" alt="Michigan Marijuana Coupon One"/>
+                            <img src={coupon.imgUrl} alt="Michigan Marijuana Coupon One"/>
                         </a>
                     </div>
+            
 
                 </div>
-
-                <div class="col-3">
-                    <div class="fourthRowCoupon">
-                        <a href="/locations">
-                            <img src="/images/michiganDeals/harber-farms-8-23-21.png" alt="Michigan Marijuana Coupon One"/>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-3">
-                    <div class="fourthRowCoupon">
-                        <a href="/locations">
-                            <img src="/images/michiganDeals/fwaygo-8-23-21.png"/>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-3">
-                    <div class="fourthRowCoupon">
-                        <a href="/locations">
-                            <img src="/images/michiganDeals/bogo-8-23-21.png"/>
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="row" id="fourthRow">
-
-                <div class="col-4">
-
-                    <div class="fourthRowCoupon">
-                        <a href="/locations">
-                            <img src="/images/michiganDeals/cannalicious-8-23-21.png" alt="Michigan Marijuana Coupon One"/>
-                        </a>
-                    </div>
-
-                </div>
-
-                <div class="col-4">
-                    <div class="fourthRowCoupon">
-                        <a href="/locations">
-                            <img src="/images/michiganDeals/beaver-farms-1.png" alt="Michigan Marijuana Coupon One"/>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-4">
-                    <div class="fourthRowCoupon">
-                        <a href="/locations">
-                            <img src="/images/michiganDeals/abadoo-8-23-21.png"/>
-                        </a>
-                    </div>
-                </div>
+            ))}
 
             </div>
 
@@ -142,13 +104,13 @@ function MichiganDeals() {
         </div>
 
         {/* MOBILE VIEW */}
-        <div class="container dealContainer" id="mobileView">
+        <div className="container dealContainer" id="mobileView">
 
-            <div class="row">
-                <div class="col-12">
-                    <div class="stateSelector">
-                        <h3 class="currentState">Michigan Deals</h3>
-                        <div class="selectableStates">
+            <div className="row">
+                <div className="col-12">
+                    <div className="stateSelector">
+                        <h3 className="currentState">Michigan Deals</h3>
+                        <div className="selectableStates">
                             <a href="/colorado-deals/"><h4>Colorado Deals</h4></a>
                         </div>
                     </div>
@@ -156,15 +118,15 @@ function MichiganDeals() {
             </div>
 
             <div id="firstRow">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="dealHeroImageContainer">
+                <div className="row">
+                    <div className="col-12">
+                        <div className="dealHeroImageContainer">
             
-                            <div class="col-5">
+                            <div className="col-5">
                                 
-                                <div class="michiganHeroButtonContainer">
-                                    <img class="michiganHeroDealsLogo" src="/images/michiganDeals/cannabay-OrangeLogo.png" alt="Cannabay Logo"/>
-                                    <a href="/locations" class="newDealButton">
+                                <div className="michiganHeroButtonContainer">
+                                    <img className="michiganHeroDealsLogo" src="/images/deals/michiganDeals/cannabay-OrangeLogo.png" alt="Cannabay Logo"/>
+                                    <a href="/locations" className="newDealButton">
                                     Shop 
                                     </a>
                                 </div>
@@ -172,38 +134,20 @@ function MichiganDeals() {
                             </div>
 
                             <div id="mainTopCarousel">
-                                <div id="topCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-wrap="true">
-                                    <div class="carousel-inner">
+                                <div id="topCarousel" className="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-wrap="true">
+                                    <div className="carousel-inner">
 
-                                        <div class="michiganHeroButtonBackground"></div>
-                                        <div class="carousel-item active" data-interval="3000">
+                                        <div className="michiganHeroButtonBackground"></div>
+                                        <div className="carousel-item active" data-interval="3000">
                                             
-                                                <div class="d-block w-100">
+                                                <div className="d-block w-100">
                                                     <a href="/locations">
-                                                        <img src="/images/michiganDeals/michiganHero-compressed.png" class=" carouselImage" alt="Michigan Cannabis Coupon One"/>
+                                                        <img src={heroCoupons.imgUrl} className=" carouselImage" alt="Michigan Cannabis Coupon One"/>
                                                     </a>
                                                 </div>
                                                                                         
                                         </div>
-                                        <div class="carousel-item" data-bs-interval="3000"> 
-                                            
-                                                <div class="d-block w-100">
-                                                    <a href="/locations">
-                                                        <img src="/images/michiganDeals/michiganHero.png" class=" carouselImage" alt="Michigan Cannabis Coupon Two"/>
-                                                    </a>
-                                                </div>
-                                            
-                                        </div>
-                                        <div class="carousel-item" data-bs-interval="3000">
-                                            
-                                                
-                                                <div class="d-block w-100">
-                                                    <a href="/locations">
-                                                        <img src="/images/michiganDeals/michiganHero.png" class=" carouselImage" alt="Michigan Cannabis Coupon Three"/>
-                                                    </a>
-                                                </div>
-                                            
-                                        </div>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -213,101 +157,19 @@ function MichiganDeals() {
                 </div>
             </div>
 
-            <div id="secondRow">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="topRightCouponContainer" id="upperTopCouponContainer">
+            {mobileAllExceptHero.map((coupon, index) => (
+            <div key={index} id="secondRow">
+                <div className="row">
+                    <div className="col-12">
+                        <div className="topRightCouponContainer" id="upperTopCouponContainer">
                             <a href="/locations">
-                                <img src="/images/michiganDeals/yogis-8-23-21.png" alt=""/>
+                                <img src={coupon.imgUrl} alt=""/>
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div id="thirdRow">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="topRightCouponContainer" id="lowerTopCouponContainer">
-                            <a href="/locations">
-                                <img src="/images/michiganDeals/harber-farms-8-23-21.png" alt=""/>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div id="secondRow">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="topRightCouponContainer" id="upperTopCouponContainer">
-                            <a href="/locations">
-                                <img src="/images/michiganDeals/fwaygo-8-23-21.png" alt=""/>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div id="secondRow">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="topRightCouponContainer" id="upperTopCouponContainer">
-                            <a href="/locations">
-                                <img src="/images/michiganDeals/bogo-8-23-21.png" alt=""/>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div id="thirdRow">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="topRightCouponContainer" id="lowerTopCouponContainer">
-                            <a href="/locations">
-                                <img src="/images/michiganDeals/cannalicious-8-23-21.png" alt=""/>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div id="secondRow">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="topRightCouponContainer" id="upperTopCouponContainer">
-                            <a href="/locations">
-                                <img src="/images/michiganDeals/beaver-farms-1.png" alt=""/>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div id="secondRow">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="topRightCouponContainer" id="upperTopCouponContainer">
-                            <a href="/locations">
-                                <img src="/images/michiganDeals/abadoo-8-23-21.png" alt=""/>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div id="secondRow">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="topRightCouponContainer" id="upperTopCouponContainer">
-                            <a href="/locations">
-                                <img src="/images/michiganDeals/refer5Friends.png" alt=""/>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            ))}
 
         </div>
 
