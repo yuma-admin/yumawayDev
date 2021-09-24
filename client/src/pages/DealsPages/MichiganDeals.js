@@ -5,7 +5,10 @@ import dealsData from "./updateDealsHere/michiganDealsData"
 
 const heroCoupons = dealsData[0]
 const secondaryDeals = dealsData[1]
-const weeklyCouponsChange = dealsData.slice(2);
+const weeklyCouponsFirstRow = dealsData.slice(2,6);
+const weeklyCouponsSecondRow = dealsData.slice(6,9);
+const weeklyCouponsThirdRow = dealsData.slice(9,12);
+const weeklyCouponsFourthRow = dealsData.slice(12,15);
 const mobileAllExceptHero = dealsData.slice(1);
 
 function MichiganDeals() {
@@ -85,24 +88,76 @@ function MichiganDeals() {
 
             <div className="row" id="fourthRow">
             
-            {weeklyCouponsChange.map((coupon, index) => (
-                <div key={index} className="col-3">
+                {weeklyCouponsFirstRow.map((coupon, index) => (
+                    <div key={index} className="col-3">
 
-                    <div className="fourthRowCoupon">
-                        <a href="/locations">
-                            <img src={coupon.imgUrl} alt="Michigan Marijuana Coupon One"/>
-                        </a>
+                        <div className="fourthRowCoupon">
+                            <a href="/locations">
+                                <img src={coupon.imgUrl} alt="Michigan Marijuana Coupon One"/>
+                            </a>
+                        </div>
+                
+
                     </div>
-            
+                ))}
 
-                </div>
-            ))}
+            </div>
+
+            <div className="row" id="fourthRow">
+            
+                {weeklyCouponsSecondRow.map((coupon, index) => (
+                    <div key={index} className="col-4">
+
+                        <div className="fourthRowCoupon">
+                            <a href="/locations">
+                                <img src={coupon.imgUrl} alt="Michigan Marijuana Coupon One"/>
+                            </a>
+                        </div>
+                
+
+                    </div>
+                ))}
+
+            </div>
+
+            <div className="row" id="fourthRow">
+            
+                {weeklyCouponsThirdRow.map((coupon, index) => (
+                    <div key={index} className="col-4">
+
+                        <div className="fourthRowCoupon">
+                            <a href="/locations">
+                                <img src={coupon.imgUrl} alt="Michigan Marijuana Coupon One"/>
+                            </a>
+                        </div>
+                
+
+                    </div>
+                ))}
+
+            </div>
+            <div className="row" id="fourthRow">
+            
+                {weeklyCouponsFourthRow.map((coupon, index) => (
+                    <div key={index} className="col-4">
+
+                        <div className="fourthRowCoupon">
+                            <a href="/locations">
+                                <img src={coupon.imgUrl} alt="Michigan Marijuana Coupon One"/>
+                            </a>
+                        </div>
+                
+
+                    </div>
+                ))}
 
             </div>
 
             <div id="bottomRow"></div>
         </div>
 
+
+        
         {/* MOBILE VIEW */}
         <div className="container dealContainer" id="mobileView">
 

@@ -12,7 +12,7 @@ const Navbar=() => {
                 <div className="col-12">
                     <div className="navbarImage">
                         <a href="/" className="navLogo">
-                            <img src="/images/homeImages/yumawayLogoHome.png" />
+                            <img src="/images/homeImages/cropped-TOPNAVLOGO.png" />
                         </a>
                     </div>
                     <div className="navbarMainItems">

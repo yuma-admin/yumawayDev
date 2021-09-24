@@ -15,7 +15,7 @@ const Footer=() => {
 
                 <div className="footerNav">
                     <a href="/about" className="footerNavItem">About Us</a>
-                    <a href="/terms-of-use" className="footerNavItem">Terms of Use</a> 
+                    {/* <a href="/terms-of-use" className="footerNavItem">Terms of Use</a>  */}
                 </div>
             </div>
         </div>

@@ -40,7 +40,9 @@ function App() {
       document.getElementById("ageGateBackground").style.display = "none"
       setAgeGate(false)
 
-    } 
+    } else {
+      setAgeGate(true)
+    }
 
     const url = window.location.href;
     const str = url.split("/")

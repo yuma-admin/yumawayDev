@@ -36,10 +36,10 @@ function AgeGateModal(props) {
                 </button>
               </div>
               <div className="col-6">
-                <a href="/terms-of-use">
+                <a href="https://www.google.com/search?q=marijuana+laws+by+state" target="_blank">
                   <button id="noAgeGate" className="yesNoButton"
                   onClick={props.noButton}
-                  href="/terms-of-use"
+                  href="https://www.google.com/search?q=marijuana+age+laws+by+state"
                   >
                     No
                   </button>
@@ -49,7 +49,7 @@ function AgeGateModal(props) {
           </div>
 
 
-          <div className="termsAndConditions">
+          {/* <div className="termsAndConditions">
             <div className="row">
               <div className="col-12">      
                 <div className="">
@@ -57,7 +57,7 @@ function AgeGateModal(props) {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
         </div>
       </div>
