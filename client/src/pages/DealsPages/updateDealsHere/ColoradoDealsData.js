@@ -11,23 +11,18 @@ const storeJson = [
     },
     // TOP-RIGHT TWO COUPONS
     {
-        imgUrl: '/images/deals/coloradoDeals/TheClear20-off.png'
+        imgUrl: '/images/deals/coloradoDeals/bogo-50-off.png'
     },
-    {
-        imgUrl: '/images/deals/coloradoDeals/keef-4-for-4-20.png'
-    },
+    
     // FIRST ROW OF COUPONS
     {
-        imgUrl: '/images/deals/coloradoDeals/20-half-ounce.png'
+        imgUrl: '/images/deals/coloradoDeals/6-dollar-joints.png'
     },
     {
-        imgUrl: '/images/deals/coloradoDeals/6-dollar-joint.png'
+        imgUrl: '/images/deals/coloradoDeals/2carts.png'
     },
     {
-        imgUrl: '/images/deals/coloradoDeals/rosinCoupon-tiny.png'
-    },
-    {
-        imgUrl: '/images/deals/coloradoDeals/flowerCoupon-3-types.png'
+        imgUrl: '/images/deals/coloradoDeals/nfused-9-23.png'
     }
 ]
 

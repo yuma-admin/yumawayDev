@@ -7,8 +7,8 @@ const fs = require('fs')
 import dealsData from "./updateDealsHere/ColoradoDealsData"
 // Organize Coupons
 const heroCoupons = dealsData.slice(0,3);
-const secondaryDeals = dealsData.slice(3,5)
-const weeklyCouponsChange = dealsData.slice(5);
+const secondaryDeals = dealsData.slice(3,4)
+const weeklyCouponsChange = dealsData.slice(4);
 const mobileAllExceptHero = dealsData.slice(3);
 
 function ColoradoDeals() {
@@ -107,7 +107,7 @@ function ColoradoDeals() {
             <div className="row" id="fourthRow">
 
                 {weeklyCouponsChange.map((coupon, index) => (
-                    <div key={index} className="col-3">
+                    <div key={index} className="col-4">
 
                         <div className="fourthRowCoupon">
                             <a href="/locations">
