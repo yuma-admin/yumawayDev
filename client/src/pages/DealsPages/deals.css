@@ -1,7 +1,6 @@
 /* Deals Page */
 
 .stateSelector {
-    background-color: #181818 !important;
     
     position:relative;
   
@@ -11,7 +10,7 @@
   
     padding-top: 20px;
     
-    z-index: 98;
+    z-index: 1;
 
     /* To Reduce the Hover Effect */
     margin-left: auto;

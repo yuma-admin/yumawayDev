@@ -1,10 +1,29 @@
 .search {
   color: #d9ab73;
+  position: sticky;
   text-align: center;
   margin-bottom: 5vh;
+  z-index: 20;
+  top: 0vh;
+  padding-top: 1px;
+  padding-bottom: 5vh;
 }
 
+/* .search {
+  color: #d9ab73;
+  text-align: center;
+  margin-bottom: 5vh;
+} */
+
+
+
 @media (max-width: 991px) {
+
+  .storeFinderInfo  {
+    height: calc(100vh - 70px);
+    overflow-y: scroll;
+  }
+
   .stickyMap {
     position: relative !important;
   }

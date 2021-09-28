@@ -14,6 +14,12 @@ import About from './Components/About';
 import NotFound from './Components/NotFound';
 import Header from './Components/Header';
 
+//////////////////////////////////////////
+
+// DO NOT DELETE: THIS FILE ISN'T BEING USED, BUT IF YOU EVER GO BACK TO WORDPRESS, YOU WILL NEED THIS CODE. //
+
+/////////////////////////////////////////
+
 const siteURL = 'http://yumawaydev.com';
 const getPages = () => {
   return new Promise((resolve, reject) => {

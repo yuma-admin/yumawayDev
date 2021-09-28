@@ -9,7 +9,7 @@ const storeJson = [
     {
         imgUrl: '/images/deals/coloradoDeals/heroConcentrates.png'
     },
-    // TOP-RIGHT TWO COUPONS
+    // TOP-RIGHT COLUMN
     {
         imgUrl: '/images/deals/coloradoDeals/bogo-50-off.png'
     },

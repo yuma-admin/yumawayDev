@@ -33,6 +33,7 @@
     "google-map-react": "^2.1.9",
     "if-env": "^1.0.4",
     "js-cookie": "^3.0.1",
+    "list-react-files": "^0.2.0",
     "react": "^17.0.1",
     "react-bootstrap": "^2.0.0-beta.6",
     "react-dom": "^17.0.1",
