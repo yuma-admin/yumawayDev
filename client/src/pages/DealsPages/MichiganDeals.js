@@ -1,4 +1,5 @@
 import "./deals.css"
+import Carousel from 'react-bootstrap/Carousel'
 
 // Deals Data
 import dealsData from "./updateDealsHere/michiganDealsData"
@@ -13,7 +14,7 @@ if (dealsData.length > 10){
 // if (dealsData.length > )
 
 const weeklyCouponsUpdated = dealsData // All Deals Except Carousel
-const weeklyCouponsUpdatedMobile = dealsData;
+// const weeklyCouponsUpdatedMobile = dealsData;
 // const weeklyCouponsFirstRow = dealsData.slice(2,6);
 // const weeklyCouponsSecondRow = dealsData.slice(6,9);
 // const weeklyCouponsThirdRow = dealsData.slice(9,12);
@@ -30,7 +31,7 @@ function MichiganDeals() {
             {/* STATE SELECTOR (DESKTOP) */}
             <div className="row">
                 <div className="col-12">
-                    <div className="col-3 stateSelector">
+                    <div className="stateSelector">
                         <h3 className="currentState">Michigan Deals</h3>
                         <div className="selectableStates">
                             <a href="/colorado-deals"><h4>Colorado Deals</h4></a>
@@ -40,79 +41,89 @@ function MichiganDeals() {
             </div>
             
             {/* CAROUSEL */}
-            <div className="row" id="firstRow"> 
-                
-                <div className="col-9">
-                    <div className="dealHeroImageContainer">
-                        
-                        {/* CAROUSEL SHOP BUTTON AND LOGO (DESKTOP)*/}
-                        <div className="col-4">
+            <div id="firstRow">
+                <div className="row"> 
+                    
+                    <div className="col-9">
+                        <div className="dealHeroImageContainer">
                             
-                            <div className="michiganHeroButtonContainer">
-                                <img className="michiganHeroDealsLogo" src="/images/deals/michiganDeals/cannabay-OrangeLogo.png" alt="Cannabay Logo"/>
-                                <a href="/locations" className="newDealButton">
-                                Shop 
-                                </a>
-                            </div>
-                            
-                        </div>
-
-                        {/* CAROUSEL IMAGE(S) (DESKTOP) */}
-                        <div id="mainTopCarousel">
-                            <div id="topCarousel" className="carousel" data-bs-ride="carousel" data-bs-wrap="true">
-                                <div className="carousel-inner">
-                                    
-                                    <div className="michiganHeroButtonBackground"></div>
-                                    <div className="carousel-item active" data-interval="3000">
+                            {/* CAROUSEL SHOP BUTTON AND LOGO (DESKTOP)*/}
+                            <div className="col-5 heroButtonBackground">
+                                
+                                    <div className="heroButtonContainer">
+                                        <img className="heroDealsLogo" src="/images/deals/michiganDeals/carousel/cannabay-OrangeLogo.png" alt="Cannabay Logo"/>
+                                        <a href="/locations" className="newDealButton">
+                                        Shop 
+                                        </a>
                                         
-                                            <div className="d-block w-100">
-                                                <a href="/locations">
-                                                    <img src='/images/deals/michiganDeals/michiganHero-compressed.png' className=" carouselImage" alt="Cannabay Coupon of the Week"/>
-                                                </a>
-                                            </div>
-                                                                                    
                                     </div>
-                                    
+                                
+                            </div>
+
+                            {/* CAROUSEL IMAGE(S) (DESKTOP) */}
+                            <div id="mainTopCarousel">
+                                <div className="carousel" data-bs-ride="carousel" data-bs-wrap="true">
+                                        
+                                        {/* <div className="heroButtonBackground"></div> */}
+                                        
+                                        <Carousel 
+                                            controls={false} 
+                                            interval={false} 
+                                            wrap={false}
+                                            indicators={false}
+                                        >    
+                                            <Carousel.Item>
+                                            
+                                                <a href="/locations">
+                                                    <img src="/images/deals/michiganDeals/carousel/michiganHero-compressed.png" 
+                                                    className="carouselImage" 
+                                                    className=" carouselImage" 
+                                                    alt="Cannabay Coupon of the Week"
+                                                    />
+                                                </a>
+                                                    
+                                            </Carousel.Item>
+                                                
+                                        </Carousel>
                                 </div>
                             </div>
+                            
+                        </div> 
+                    </div>  
+                    
+                    {/* REFER 5 FRIENDS IMAGE (DESKTOP) */}
+                    <div className="col-3 ">
+                        <div className="rightTopColumn">
+                            
+                                <div className="topRightCouponContainer" id="upperTopCouponContainer">
+                                    <a href="/locations">
+                                        <img src='/images/deals/michiganDeals/refer5Friends.png' alt="Refer 5 Friends, Receive $50 Store Credit"/>
+                                    </a>
+                                </div>    
+                            
                         </div>
-                        
-                    </div> 
-                </div>  
-                
-                {/* REFER 5 FRIENDS IMAGE (DESKTOP) */}
-                <div className="col-3 ">
-                    <div className="rightTopColumn">
-                        
-                            <div className="topRightCouponContainer" id="upperTopCouponContainer">
-                                <a href="/locations">
-                                    <img src='/images/deals/michiganDeals/refer5Friends.png' alt="Refer 5 Friends, Receive $50 Store Credit"/>
-                                </a>
-                            </div>    
-                        
                     </div>
+
                 </div>
 
-            </div>
-
-            <div className="row" id="fourthRow">
-            
-                {/* ALL WEEKLY UPDATED COUPONS (DESKTOP) */}
-                {weeklyCouponsUpdated.map((coupon, index) => (
-                    <div key={index} className="col-3">
-
-                        <div className="fourthRowCoupon">
-                            <a href="/locations">
-                                <img src={coupon.imgUrl} alt="Michigan Marijuana Coupon One"/>
-                            </a>
-                        </div>
+                <div className="row" id="weeklyCouponRows">
                 
+                    {/* ALL WEEKLY UPDATED COUPONS (DESKTOP) */}
+                    {weeklyCouponsUpdated.map((coupon, index) => (
+                        <div key={index} className="col-4">
 
-                    </div>
-                ))}
+                            <div className="weeklyCoupon">
+                                <a href="/locations">
+                                    <img src={coupon.imgUrl} alt="Michigan Marijuana Coupon One"/>
+                                </a>
+                            </div>
+                    
 
+                        </div>
+                    ))}
+
+                </div>
             </div>
-
             <div id="bottomRow"></div>
         </div>
 
@@ -127,7 +138,7 @@ function MichiganDeals() {
                     <div className="stateSelector">
                         <h3 className="currentState">Michigan Deals</h3>
                         <div className="selectableStates">
-                            <a href="/colorado-deals/"><h4>Colorado Deals</h4></a>
+                            <a href="/colorado-deals"><h4>Colorado Deals</h4></a>
                         </div>
                     </div>
                 </div>
@@ -137,12 +148,13 @@ function MichiganDeals() {
             <div id="firstRow">
                 <div className="row">
                     <div className="col-12">
+
+                        {/* CAROUSEL SHOP BUTTON AND LOGO (MOBILE)*/}
                         <div className="dealHeroImageContainer">
-            
-                            {/* CAROUSEL SHOP BUTTON AND LOGO (MOBILE)*/}
-                            <div className="col-5">
-                                <div className="michiganHeroButtonContainer">
-                                    <img className="michiganHeroDealsLogo" src='/images/deals/michiganDeals/michiganHero-compressed.png' alt="Cannabay Logo"/>
+                            
+                            <div className="col-5 heroButtonBackground">
+                                <div className="heroButtonContainer">
+                                    <img className="heroDealsLogo" src='/images/deals/michiganDeals/carousel/cannabay-OrangeLogo.png' alt="Cannabay Logo"/>
                                     <a href="/locations" className="newDealButton">
                                     Shop 
                                     </a>
@@ -151,23 +163,27 @@ function MichiganDeals() {
 
                             {/* CAROUSEL COUPONS (MOBILE) */}
                             <div id="mainTopCarousel">
-                                <div id="topCarousel" className="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-wrap="true">
-                                    <div className="carousel-inner">
-
+                                
+                                    {/* <div className="heroButtonBackground"></div> */}
+                                    <Carousel 
+                                    controls={false} 
+                                    interval={false} 
+                                    wrap={false}
+                                    indicators={false}
+                                    >    
+                                        <Carousel.Item>
                                         
-                                        <div className="michiganHeroButtonBackground"></div>
-                                        <div className="carousel-item active" data-interval="3000">
-                                            
-                                                <div className="d-block w-100">
-                                                    <a href="/locations">
-                                                        <img src='/images/deals/michiganDeals/michiganHero-compressed.png' className=" carouselImage" alt="Michigan Cannabis Coupon One"/>
-                                                    </a>
-                                                </div>
-                                                                                        
-                                        </div>
+                                            <a href="/locations">
+                                                <img src="/images/deals/michiganDeals/carousel/michiganHero-compressed.png" 
+                                                className="carouselImage" 
+                                                className=" carouselImage" 
+                                                alt="Cannabay Coupon of the Week"
+                                                />
+                                            </a>
+                                                
+                                        </Carousel.Item>
                                         
-                                    </div>
-                                </div>
+                                    </Carousel>
                             </div>
                             
                         </div> 
@@ -180,7 +196,7 @@ function MichiganDeals() {
             <div key={index} id="secondRow">
                 <div className="row">
                     <div className="col-12">
-                        <div className="topRightCouponContainer" id="upperTopCouponContainer">
+                        <div className="topRightCouponContainer">
                             <a href="/locations">
                                 <img src={coupon.imgUrl} alt=""/>
                             </a>
@@ -194,9 +210,9 @@ function MichiganDeals() {
             <div id="secondRow">
                 <div className="row">
                     <div className="col-12">
-                        <div className="topRightCouponContainer" id="upperTopCouponContainer">
+                        <div className="topRightCouponContainer">
                             <a href="/locations">
-                                <img src="/images/deals/michiganDeals/cannabay-OrangeLogo.png" alt=""/>
+                                <img src="/images/deals/michiganDeals/refer5friends.png" alt=""/>
                             </a>
                         </div>
                     </div>

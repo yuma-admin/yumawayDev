@@ -10,12 +10,12 @@ import {
 
 //AGE GATE
 import AgeGateModal from './pages/AgeGateModal/AgeGateModal'
+import { createPortal } from "react-dom"
 
 // MAIN PAGES 
 import Home from './pages/Home/Home'
 import ColoradoDeals from './pages/DealsPages/ColoradoDeals'
 import MichiganDeals from './pages/DealsPages/MichiganDeals'
-import TestDeals from './pages/DealsPages/testDeals'
 import About from './pages/About/About'
 import TermsOfUse from './pages/TermsOfUse/TermsOfUse'
 
@@ -26,7 +26,10 @@ import Menu from './components/menu/menu'
 // NAV AND FOOTER COMPONENTS
 import NavBar from './components/navbar/navBar'
 import Footer from './components/footer/footer'
-import { createPortal } from "react-dom"
+
+// TESTING PAGE (FOR TRYING NEW PAGES)
+import TestPage from './pages/DealsPages/testDeals'
+
 
 function App() {
   const yumaCookie = Cookies.get('yumawayAgeGateKey')
@@ -105,9 +108,6 @@ const noLegal = () => {
           <Route exact path="/michigan-deals" >
             <MichiganDeals />
           </Route>
-          <Route exact path="/test-deals" >
-            <TestDeals />
-          </Route>
 
           {/* ABOUT PAGE ROUTE */}
           <Route exact path="/about" >
@@ -117,6 +117,11 @@ const noLegal = () => {
           {/* TERMS OF USE */}
           <Route exact path="/terms-of-use">
             <TermsOfUse/>
+          </Route>
+
+          {/* TESTING PAGE */}
+          <Route exact path="/testing-page" >
+            <TestPage />
           </Route>
           
           {/* STORE LOCATOR ROUTES */}

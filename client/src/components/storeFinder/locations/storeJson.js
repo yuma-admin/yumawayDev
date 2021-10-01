@@ -11,7 +11,7 @@ const storeJson = [
         name: 'Lowell Gardens',
         address1: '3615 W 49th Ave',
         address2:'Denver CO, 80221',
-        escapedUrlAddress:'6901+E+Colfax+Ave+Denver%2C+CO+80220',
+        escapedUrlAddress:'3615+W+49th+Avenue+Denver+CO+80221',
         lat: 39.78572,
         lng: -105.031516,
         phone:'(720) 362-7095',
@@ -224,8 +224,6 @@ const storeJson = [
         instagram: "https://www.instagram.com/canna_city_dispensary/",
         twitter: "https://twitter.com/Yuma_Way"
     },
-    
-    
     {
         id: '2600',
         img: '/images/logo/cannabay-svg-logo.svg',

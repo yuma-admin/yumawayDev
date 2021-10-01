@@ -3,12 +3,9 @@ import "./deals.css"
 
 // Deals Data
 import dealsData from "./updateDealsHere/ColoradoDealsData"
-import listReactFiles from "list-react-files"
 
 // Organizing Coupons Into Segments
-const heroCoupons = dealsData.slice(0,3);
-const secondaryDeals = dealsData.slice(3,4)
-const weeklyCouponsUpdated = dealsData.slice(4);
+const weeklyCouponsUpdated = dealsData;
 
 // Organing Coupons Through 'List-React-Files' Function
 
@@ -22,7 +19,7 @@ function ColoradoDeals() {
             <div className="row">
                 <div className="col-12">
                     
-                        <div className="col-3 stateSelector">
+                        <div className="stateSelector">
                             <h3 className="currentState">Colorado Deals</h3>
                             <div className="selectableStates">
                                 <a href="/michigan-deals"><h4>Michigan Deals</h4></a>
@@ -41,23 +38,21 @@ function ColoradoDeals() {
                     <div className="dealHeroImageContainer">
          
                         {/* CAROUSEL SHOP BUTTON AND LOGO (DESKTOP) */}
-                        <div className="col-4">
-                            
-                            <div className="heroButtonContainer">
-                                <img className="heroDealsLogo" 
-                                    src="/images/deals/coloradoDeals/YumaWay_Horizontal_BlackGold_Solid.png" 
-                                    alt="YumaWay Logo" 
-                                />
-                                <a href="/locations" className="newDealButton">
-                                    Shop 
-                                </a>
-                            </div>
-                            
+                        <div className="col-5 heroButtonBackground">
+                                <div className="heroButtonContainer">
+                                    <img className="heroDealsLogo" 
+                                        src="/images/deals/coloradoDeals/carousel/YumaWay_Horizontal_BlackGold_Solid.png" 
+                                        alt="YumaWay Logo" 
+                                    />
+                                    <a href="/locations" className="newDealButton">
+                                        Shop 
+                                    </a>
+                                </div>
                         </div>
 
                         {/* CAROUSEL COUPON IMAGES (DESKTOP) */}
                         <div id="mainTopCarousel">
-                            <div className="heroButtonBackground"></div>
+                            {/* <div className="heroButtonBackground"></div> */}
                             <Carousel 
                                 controls={false} 
                                 interval={4000} 
@@ -68,7 +63,7 @@ function ColoradoDeals() {
                                 <Carousel.Item>
                                 
                                     <a href="/locations">
-                                        <img src="/images/deals/coloradoDeals/heroFlower.png" 
+                                        <img src="/images/deals/coloradoDeals/carousel/heroFlower.png" 
                                         className=" carouselImage" 
                                         alt="Primary Cannabis Coupon One"
                                         />
@@ -78,7 +73,7 @@ function ColoradoDeals() {
                                 <Carousel.Item>
                                 
                                     <a href="/locations">
-                                        <img src="/images/deals/coloradoDeals/hero420Joints.png" 
+                                        <img src="/images/deals/coloradoDeals/carousel/hero420Joints.png" 
                                         className=" carouselImage" 
                                         alt="Primary Cannabis Coupon Two"
                                         />
@@ -88,7 +83,7 @@ function ColoradoDeals() {
                                 <Carousel.Item>
                                 
                                     <a href="/locations">
-                                        <img src="/images/deals/coloradoDeals/heroConcentrates.png" 
+                                        <img src="/images/deals/coloradoDeals/carousel/heroConcentrates.png" 
                                         className=" carouselImage" 
                                         alt="Primary Cannabis Coupon Three"
                                         />
@@ -110,7 +105,7 @@ function ColoradoDeals() {
                         
                             <div className="topRightCouponContainer" id="upperTopCouponContainer">
                                 <a href="/locations">
-                                    <img src="/images/deals/coloradoDeals/bogo-50-off.png" alt="Cannabis Coupon One"/>
+                                    <img src="/images/deals/coloradoDeals/constant-coupon.png" alt="Cannabis Coupon One"/>
                                 </a>
                             </div>    
 
@@ -120,12 +115,12 @@ function ColoradoDeals() {
             </div>
 
             {/* ALL WEEKLY UPDATED COUPONS (DESKTOP) */}
-            <div className="row" id="fourthRow">
+            <div className="row" id="weeklyCouponRows">
 
                 {weeklyCouponsUpdated.map((coupon, index) => (
                     <div key={index} className="col-4">
 
-                        <div className="fourthRowCoupon">
+                        <div className="weeklyCoupon">
                             <a href="/locations">
                                 <img src={coupon.imgUrl} alt="Cannabis Coupon Three"/>
                             </a>
@@ -163,20 +158,18 @@ function ColoradoDeals() {
                         {/* CAROUSEL SHOP BUTTON AND LOGO (MOBILE)*/}
                         <div className="dealHeroImageContainer">
             
-                            <div className="col-5">
-                                
-                                <div className="heroButtonContainer">
-                                    <img className="heroDealsLogo" src="/images/deals/coloradoDeals/YumaWay_Horizontal_BlackGold_Solid.png" alt="YumaWay Logo"/>
-                                    <a href="/locations" className="newDealButton">
-                                    Shop 
-                                    </a>
-                                </div>
-                                
+                            <div className="col-5 heroButtonBackground">
+                                    <div className="heroButtonContainer">
+                                        <img className="heroDealsLogo" src="/images/deals/coloradoDeals/carousel/YumaWay_Horizontal_BlackGold_Solid.png" alt="YumaWay Logo"/>
+                                        <a href="/locations" className="newDealButton">
+                                        Shop 
+                                        </a>
+                                    </div>
                             </div>
 
-                        {/* CAROUSEL IMAGE(S) */}
+                        {/* CAROUSEL COUPONS (MOBILE) */}
                         <div id="mainTopCarousel">
-                        <div className="heroButtonBackground"></div>
+                        {/* <div className="heroButtonBackground"></div> */}
                             <Carousel 
                                 controls={false} 
                                 interval={4000} 
@@ -186,7 +179,7 @@ function ColoradoDeals() {
                                 <Carousel.Item>
                                 
                                     <a href="/locations">
-                                        <img src="/images/deals/coloradoDeals/heroFlower.png" 
+                                        <img src="/images/deals/coloradoDeals/carousel/heroFlower.png" 
                                         className=" carouselImage" 
                                         alt="Primary Cannabis Coupon One"
                                         />
@@ -196,7 +189,7 @@ function ColoradoDeals() {
                                 <Carousel.Item>
                                 
                                     <a href="/locations">
-                                        <img src="/images/deals/coloradoDeals/hero420Joints.png" 
+                                        <img src="/images/deals/coloradoDeals/carousel/hero420Joints.png" 
                                         className=" carouselImage" 
                                         alt="Primary Cannabis Coupon Two"
                                         />
@@ -206,7 +199,7 @@ function ColoradoDeals() {
                                 <Carousel.Item>
                                 
                                     <a href="/locations">
-                                        <img src="/images/deals/coloradoDeals/heroConcentrates.png" 
+                                        <img src="/images/deals/coloradoDeals/carousel/heroConcentrates.png" 
                                         className=" carouselImage" 
                                         alt="Primary Cannabis Coupon Three"
                                         />
@@ -227,7 +220,7 @@ function ColoradoDeals() {
                 <div key={index} id="secondRow">
                     <div className="row">
                         <div className="col-12">
-                            <div className="topRightCouponContainer" id="upperTopCouponContainer">
+                            <div className="topRightCouponContainer" >
                                 <a href="/locations">
                                     <img src={coupon.imgUrl} alt="Cannabis Coupon Mobile Two"/>
                                 </a>
@@ -241,9 +234,9 @@ function ColoradoDeals() {
             <div id="secondRow">
                     <div className="row">
                         <div className="col-12">
-                            <div className="topRightCouponContainer" id="upperTopCouponContainer">
+                            <div className="topRightCouponContainer" >
                                 <a href="/locations">
-                                    <img src="/images/deals/coloradoDeals/bogo-50-off.png" alt="Cannabis Coupon Mobile Two"/>
+                                    <img src="/images/deals/coloradoDeals/constant-coupon.png" alt="Cannabis Coupon Mobile Two"/>
                                 </a>
                             </div>
                         </div>
