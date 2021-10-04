@@ -18,6 +18,7 @@ import ColoradoDeals from './pages/DealsPages/ColoradoDeals'
 import MichiganDeals from './pages/DealsPages/MichiganDeals'
 import About from './pages/About/About'
 import TermsOfUse from './pages/TermsOfUse/TermsOfUse'
+import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy'
 
 // STORE FINDER COMPONENTS
 import StoreFinder from './components/storeFinder/StoreFinder'
@@ -52,7 +53,7 @@ function App() {
     const currentHref = str[(str.length - 1)]
     console.log("Current HREF: " + currentHref)
 
-    if (currentHref==="terms-of-use"){
+    if (currentHref==="privacy-policy"){
       document.getElementById("ageGateBackground").style.display = "none"
       setAgeGate(false)
     }
@@ -114,6 +115,11 @@ const noLegal = () => {
             <About />
           </Route>
 
+          {/* PRIVACY POLICY */}
+          <Route exact path="/privacy-policy">
+            <PrivacyPolicy/>
+          </Route>
+          
           {/* TERMS OF USE */}
           <Route exact path="/terms-of-use">
             <TermsOfUse/>

@@ -49,15 +49,15 @@ function AgeGateModal(props) {
           </div>
 
 
-          {/* <div className="termsAndConditions">
+          <div className="termsAndConditions">
             <div className="row">
               <div className="col-12">      
                 <div className="">
-                  I agree to the <a href="terms-of-use">terms and conditons</a> by entering this website.
+                  I agree with Yuma Way's <a href="/privacy-policy">Privacy Policy</a> by entering this website.
                 </div>
               </div>
             </div>
-          </div> */}
+          </div>
 
         </div>
       </div>

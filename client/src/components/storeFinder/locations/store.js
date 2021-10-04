@@ -101,7 +101,7 @@ function Store(props){
                                         className="storeButtonReact"
                                         href={data.href}
                                     >
-                                        Shop
+                                        {data.shop}
                                     </button>
                                 </div>
                             

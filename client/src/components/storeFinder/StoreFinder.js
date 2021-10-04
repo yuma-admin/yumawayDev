@@ -139,7 +139,7 @@ function StoreFinder(props) {
                             <Search callBack = {setStoreDistance}></Search>
                         </div>
                         <div className='stickyMap desktopMap'> 
-                            <Maps center={mapParams.center} zoom={mapParams.zoom} windowSize={'100vh'}></Maps> 
+                            <Maps center={mapParams.center} zoom={mapParams.zoom} windowSize={'calc(100vh-70px)'}></Maps> 
                         </div>
                          <div className='stickyMap mobileMap'> 
                             <Maps center={mapParams.center} zoom={mapParams.zoom -2} windowSize={'70vh'}></Maps> 

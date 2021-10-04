@@ -37,7 +37,7 @@ function About() {
                     <div class="row">
                         <div class="aboutPeople aboutYumaBorder">
                             <div class="textContainer">
-                                <h1>Friendly Staff, Phenominal Product</h1>
+                                <h1>Find a Dispensary Near You</h1>
 
                                 <div class="offerCopy">
                                     <p>
@@ -55,7 +55,7 @@ function About() {
                     <div class="row">
                         <div class="aboutPeople aboutYumaBorder">
                             <div class="textContainer">
-                                <h1>Friendly Staff, Phenominal Product</h1>
+                                <h1>Interested in Starting a Cannabis Business?</h1>
 
                                 <div class="offerCopy">
                                     <p>

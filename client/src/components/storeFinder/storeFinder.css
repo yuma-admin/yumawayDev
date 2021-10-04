@@ -1,13 +1,27 @@
-.search {
-  color: #d9ab73;
-  position: sticky;
-  text-align: center;
-  margin-bottom: 5vh;
-  z-index: 20;
-  top: 0vh;
-  padding-top: 1px;
-  padding-bottom: 5vh;
+@media (min-width: 991px) {
+  .search {
+    color: #d9ab73;
+    position: sticky;
+    text-align: center;
+    margin-bottom: 5vh;
+    z-index: 20;
+    top: 0vh;
+    padding-top: 1px;
+    /* padding-bottom: 5vh; */
+  }
+
+  .storeFinderInfo {
+    height: calc(100vh - 70px);
+    overflow-y:auto;
+  }
+
+  .container-fluid {
+    height: calc(100vh - 70px);
+    overflow:hidden;
+  }
+
 }
+
 
 /* .search {
   color: #d9ab73;
@@ -19,16 +33,16 @@
 
 @media (max-width: 991px) {
 
-  .storeFinderInfo  {
+  /* .storeFinderInfo  {
     height: calc(100vh - 70px);
     overflow-y: scroll;
   }
 
   .stickyMap {
     position: relative !important;
-  }
+  } */
   .mapCol {
-    position: relative;
+    /* position: fixed; */
     right:0;
   }
   .search {
@@ -86,9 +100,9 @@
   padding: 0px !important;
 }
 
-/* .stickyMap > div > div {
+.stickyMap > div > div {
   height: calc(100vh - 65px);
   position: relative;
   overflow: hidden;
   pointer-events: none;
-} */
+}
