@@ -3,20 +3,25 @@
     color: #d9ab73;
     position: sticky;
     text-align: center;
-    margin-bottom: 5vh;
+    /* margin-bottom: 5vh; */
     z-index: 20;
     top: 0vh;
     padding-top: 1px;
-    /* padding-bottom: 5vh; */
+    margin-bottom: 5vh;
+
+    background-color: rgb(24,24,24, 0.9);
+    box-shadow: 0px -12px 30px 20px rgb(24,24,24);
+    
   }
 
   .storeFinderInfo {
-    height: calc(100vh - 70px);
+    height: calc(100vh - 70px - 55px);
     overflow-y:auto;
+    overflow-x:hidden;
   }
 
-  .container-fluid {
-    height: calc(100vh - 70px);
+  .storePageHeight {
+    height: calc(100vh - 70px - 55px);
     overflow:hidden;
   }
 
@@ -34,7 +39,7 @@
 @media (max-width: 991px) {
 
   /* .storeFinderInfo  {
-    height: calc(100vh - 70px);
+    height: calc(100vh - 70px - 55px);
     overflow-y: scroll;
   }
 
@@ -54,7 +59,7 @@
   }
   .mobileSearch {
     display: block !important;
-    z-index: 5;
+    z-index: 1;
   }
   .desktopMap {
     display: none;
@@ -65,8 +70,6 @@
 
   
 }
-
-
 
 .mobileMap {
   display: none;
@@ -94,8 +97,8 @@
 }
 
 .stickyMap {
-  position: -webkit-sticky;
-  position: sticky;
+  /* position: -webkit-sticky;
+  position: sticky; */
   top: 0px;
   padding: 0px !important;
 }
@@ -104,5 +107,5 @@
   height: calc(100vh - 65px);
   position: relative;
   overflow: hidden;
-  pointer-events: none;
+  /* pointer-events: none; */
 }

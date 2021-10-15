@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {GoogleMap, withGoogleMap, Marker, InfoWindow } from "react-google-maps"
+import {GoogleMap, withScriptjs, withGoogleMap, Marker, InfoWindow } from "react-google-maps"
 import mapStyles from "./mapStyles"
 import storeJson from "../locations/storeJson"
 import './MapStyle.css'
@@ -12,7 +12,8 @@ export default function Maps(props) {
   const options = {
     styles: mapStyles,
     disableDefaultUI: true,
-    zoomControl: true
+    zoomControl: true,
+    clickableIcons: true
   }
 
   function Map() {
@@ -20,9 +21,8 @@ export default function Maps(props) {
     
     return(
       // Calls the react-google-maps library
-        <GoogleMap 
+        <GoogleMap
         defaultZoom={zoom} 
-        
         defaultCenter={{lat: center.lat, lng: center.lng}}
         options={options}
         >
@@ -41,11 +41,13 @@ export default function Maps(props) {
            <InfoWindow onCloseClick={() => setSelectedStore(null)}
            >
              <div className='infoWindow'>
-               <img className='storeImage' src={`${process.env.PUBLIC_URL}${selectedStore.exteriorStore}`} alt=''></img>
-               <img className='storeLogo' src={`${process.env.PUBLIC_URL}${selectedStore.logoPinch}`} alt=''></img>
-               <h4 id='address'>{selectedStore.address1}</h4>
-               <h4 id='address'>{selectedStore.address2}</h4>
-               <h3 className='phone'>{selectedStore.phone}</h3>
+               <a class="mapStoreLink" href={selectedStore.href}>
+                <img className='storeImage' src={`${process.env.PUBLIC_URL}${selectedStore.exteriorStore}`} alt=''></img>
+                <img className='storeLogo' src={`${process.env.PUBLIC_URL}${selectedStore.logoPinch}`} alt=''></img>
+                <h4 id='address'>{selectedStore.address1}</h4>
+                <h4 id='address'>{selectedStore.address2}</h4>
+                <h3 className='phone'>{selectedStore.phone}</h3>
+               </a>
                {/* <h3 className='phone'><a className='phoneLink' href={selectedStore.phone}>{selectedStore.phone}</a></h3> */}
              </div>
            </InfoWindow>

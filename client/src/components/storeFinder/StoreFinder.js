@@ -1,12 +1,12 @@
 import React, {useState, useEffect} from "react";
 import './storeFinder.css'
-import Store from '../../components/storeFinder/locations/store'
+import Store from './locations/store'
 import { Container, Row, Col} from 'react-bootstrap';
 // import 'bootstrap/dist/css/bootstrap.min.css'
-import Search from '../../components/storeFinder/search/search'
-import Maps from '../../components/storeFinder/map/Maps'
-import  TargetLocation from '../../components/storeFinder/targetLocation/targetLocation'
-import storeJson from '../../components/storeFinder/locations/storeJson'
+import Search from './search/search'
+import Maps from './map/Maps'
+import  TargetLocation from './targetLocation/targetLocation'
+import storeJson from './locations/storeJson'
 import {useParams} from 'react-router-dom'
 
 
@@ -124,6 +124,7 @@ function StoreFinder(props) {
     // If there is no id return the search component, the store component in locations, and a map component
     if(!id.id){
         return(
+            <div className="storePageHeight">
             <Container fluid>
                 <Row>
                     <Col xs={{span:12,order:2}} sm={{span:12,order:2}} lg={{span:4,order:1}} className='storeFinderInfo'> 
@@ -139,7 +140,7 @@ function StoreFinder(props) {
                             <Search callBack = {setStoreDistance}></Search>
                         </div>
                         <div className='stickyMap desktopMap'> 
-                            <Maps center={mapParams.center} zoom={mapParams.zoom} windowSize={'calc(100vh-70px)'}></Maps> 
+                            <Maps center={mapParams.center} zoom={mapParams.zoom} windowSize={'calc(100vh  - 70px - 55px)'}></Maps> 
                         </div>
                          <div className='stickyMap mobileMap'> 
                             <Maps center={mapParams.center} zoom={mapParams.zoom -2} windowSize={'70vh'}></Maps> 
@@ -148,6 +149,7 @@ function StoreFinder(props) {
                     
                 </Row>
             </Container>
+            </div>
         )
     }
     // If there is an Id return the Target Location component and a map component
@@ -166,7 +168,7 @@ function StoreFinder(props) {
                             <Search callBack = {setStoreDistance} ></Search>
                         </div>
                     <div className='stickyMap desktopMap'> 
-                        <Maps center={mapParams.center} zoom={mapParams.zoom} windowSize={'100vh'}></Maps> 
+                        <Maps center={mapParams.center} zoom={mapParams.zoom} windowSize={'calc(100vh  - 70px - 55px)'}></Maps> 
                     </div>
                     <div className='stickyMap mobileMap'> 
                         <Maps center={mapParams.center} zoom={mapParams.zoom} windowSize={'70vh'}></Maps> 

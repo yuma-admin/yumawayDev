@@ -79,7 +79,7 @@ function Home() {
             <div className="row">
         
                 <div className="col-6 non-mobile-only">
-                <img src="/images/homeImages/MassiveSelectionSection.png" alt="Marijuana Grow House" />
+                <img src="/images/homeImages/MassiveSelectionSection.jpg" alt="Marijuana Grow House" />
                 </div>
         
                 <div className="col-sm-6">
@@ -130,7 +130,7 @@ function Home() {
                             <img id="flowerImage" className="threeProductCategoryImages" src="/images/homeImages/flower-pattern.png" alt="Cannabis Flowers" />
                                 <a href="/locations/">
                                     <div className="overlay">
-                                        <img id="flowerImageHover" className="threeProductCategoryImages" src="/images/homeImages/flower-flip.png" alt="Marijuana Flower" />
+                                        <img id="flowerImageHover" className="threeProductCategoryImages" src="/images/homeImages/flower-flip.jpg" alt="Marijuana Flower" />
                                     </div>
                                 </a>
                             
@@ -147,7 +147,7 @@ function Home() {
                             <img id="edibleImage" className="threeProductCategoryImages" src="/images/homeImages/edible-pattern.png" alt="Cannabis Edibles" />
                             <a href="/locations/">
                                 <div className="overlay">
-                                    <img id="edibleImageHover" className="threeProductCategoryImages" src="/images/homeImages/edible-flip.png" alt="Marijuana Edibles" />
+                                    <img id="edibleImageHover" className="threeProductCategoryImages" src="/images/homeImages/edible-flip.jpg" alt="Marijuana Edibles" />
                                 </div>
                             </a>
                             <a href="/locations/">
@@ -163,7 +163,7 @@ function Home() {
                             <img id="concentrateImage" className="threeProductCategoryImages" src="/images/homeImages/concentrate-pattern.png" alt="Cannabis Concentrates" />
                                 <a href="/locations/">
                                     <div className="overlay">
-                                        <img id="concentrateImageHover" className="threeProductCategoryImages" src="/images/homeImages/concentrate-flip.png" alt="Marijuana Concentrates" />
+                                        <img id="concentrateImageHover" className="threeProductCategoryImages" src="/images/homeImages/concentrate-flip.jpg" alt="Marijuana Concentrates" />
                                     </div>
                                 </a>
                             <a href="/locations/">
@@ -212,18 +212,19 @@ function Home() {
                         <a aria-label="Discount." href="/locations">
                             Locol Love
                         </a>
-                        </li>
+                        </li>   
                     </ul>
             
                 </article>
+                    {/* <div className="verticalLineSeperator"></div> */}
                 <div id="svgCategorySeparator">
-                <svg id="lineBox" viewBox="0 0 100 100" preserveAspectRatio="none">
-                        <polyline strokewidth="0.05" stroke="#d9ab73" fill="none" points="40,30 40,70"></polyline>
-                        <polyline strokewidth="0.05" stroke="#d9ab73" fill="none" points="60,30, 60,70 "></polyline>
-                        <polyline stroke="#d9ab73" fill="none" points="40,30, 60,30 "></polyline>
-                        <polyline stroke="#d9ab73" fill="none" points="40,70, 60,70 "></polyline>
-                        <line stroke="#d9ab73" fill="none" x1="50" y1="10" x2="50" y2="90"></line>
-                </svg>
+                    <svg id="lineBox" viewBox="0 0 100 100" preserveAspectRatio="none">
+                            <polyline strokewidth="0.05" stroke="#d9ab73" fill="none" points="40,30 40,70"></polyline>
+                            <polyline strokewidth="0.05" stroke="#d9ab73" fill="none" points="60,30, 60,70 "></polyline>
+                            <polyline stroke="#d9ab73" fill="none" points="40,30, 60,30 "></polyline>
+                            <polyline stroke="#d9ab73" fill="none" points="40,70, 60,70 "></polyline>
+                            <line stroke="#d9ab73" fill="none" x1="50" y1="10" x2="50" y2="90"></line>
+                    </svg>
                 </div>
                 <article id="list-items"> 
                 <input aria-label="expand category menu" className="mobile-only" type="checkbox"/>
@@ -260,14 +261,15 @@ function Home() {
                     </ul>
         
                 </article>
+                {/* <div className="verticalLineSeperator"></div> */}
                 <div id="svgCategorySeparator">
-                <svg id="lineBox" viewBox="0 0 100 100" preserveAspectRatio="none">
-                    <polyline strokewidth="0.05" stroke="#d9ab73" fill="none" points="40,30 40,70"></polyline>
-                    <polyline strokewidth="0.05" stroke="#d9ab73" fill="none" points="60,30, 60,70 "></polyline>
-                    <polyline stroke="#d9ab73" fill="none" points="40,30, 60,30 "></polyline>
-                    <polyline stroke="#d9ab73" fill="none" points="40,70, 60,70 "></polyline>
-                    <line stroke="#d9ab73" fill="none" x1="50" y1="10" x2="50" y2="90"></line>
-                </svg>
+                    <svg id="lineBox" viewBox="0 0 100 100" preserveAspectRatio="none">
+                        <polyline strokewidth="0.05" stroke="#d9ab73" fill="none" points="40,30 40,70"></polyline>
+                        <polyline strokewidth="0.05" stroke="#d9ab73" fill="none" points="60,30, 60,70 "></polyline>
+                        <polyline stroke="#d9ab73" fill="none" points="40,30, 60,30 "></polyline>
+                        <polyline stroke="#d9ab73" fill="none" points="40,70, 60,70 "></polyline>
+                        <line stroke="#d9ab73" fill="none" x1="50" y1="10" x2="50" y2="90"></line>
+                    </svg>
                 </div>
                 <article id="list-items">
                 <input aria-label="expand category menu" className="mobile-only" type="checkbox"/>
@@ -305,6 +307,7 @@ function Home() {
                     </ul>
         
                 </article>
+                {/* <div className="verticalLineSeperator"></div> */}
                 <div id="svgCategorySeparator">
                 <svg id="lineBox" viewBox="0 0 100 100" preserveAspectRatio="none">
                     <polyline strokewidth="0.05" stroke="#d9ab73" fill="none" points="40,30 40,70"></polyline>

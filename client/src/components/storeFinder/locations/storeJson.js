@@ -243,7 +243,7 @@ const storeJson = [
         phoneLink:'tel:+1-989-402-9011',
         type:{
             Rec:'3031',
-            Med:'2600'
+            Med:''
         },
         hours:{
             monday:'8am - 8:45pm',
@@ -258,7 +258,7 @@ const storeJson = [
         shop: "Shop",
         href: "cannabay",
         facebook: "https://www.facebook.com/CannabayDispensary",
-        instagram: "https://www.instagram.com/canna_bay_dispensary",
+        instagram: "https://www.instagram.com/cannabay_dispensary",
         twitter: "https://twitter.com/Yuma_Way"
     },
     {

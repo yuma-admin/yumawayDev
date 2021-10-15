@@ -29,12 +29,12 @@ import NavBar from './components/navbar/navBar'
 import Footer from './components/footer/footer'
 
 // TESTING PAGE (FOR TRYING NEW PAGES)
-import TestPage from './pages/DealsPages/testDeals'
-
+import TestPage from './pages/DealsPages/CSSGrid'
 
 function App() {
   const yumaCookie = Cookies.get('yumawayAgeGateKey')
-  const [showAgeGate,setAgeGate] = useState([true])
+
+  const [showAgeGate,setAgeGate] = useState([false])
   console.log(yumaCookie)
 
   useEffect(() => {
@@ -43,7 +43,9 @@ function App() {
       console.log(yumaCookie)
       document.getElementById("ageGateBackground").style.display = "none"
       setAgeGate(false)
-
+    } else if (yumaCookie===!"yesLegalAge"){
+      setAgeGate(true)
+      
     } else {
       setAgeGate(true)
     }
@@ -66,10 +68,11 @@ const yesLegal = () => {
 }
 
 const noLegal = () => {
-  setAgeGate(false)
+  setAgeGate(true)
 }
   // Builds Age Gate Modal
   const Modal = ({showAgeGate, setAgeGate}) => {
+    
       const content = showAgeGate && (
         <AgeGateModal
           className="ageGateBox"
@@ -78,6 +81,7 @@ const noLegal = () => {
 
         />
         )
+      
         return createPortal(content, document.body)
   }
 
@@ -91,10 +95,11 @@ const noLegal = () => {
   return (
     
     <Router basename="/">
+      <NavBar></NavBar>
       <div className='holder'>
       <div id="ageGateBackground"></div>
 
-        <NavBar></NavBar>
+        
         <Switch>
           
           {/* HOME ROUTE */}
@@ -150,6 +155,7 @@ const noLegal = () => {
       </div>
       <Modal
           showAgeGate={showAgeGate}
+          className="ageGateCSSKey"
           // data-keyboard="false" data-backdrop="static"
         >
       </Modal>

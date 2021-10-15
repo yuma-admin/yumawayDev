@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.828c8505.chunk.css",
-    "main.js": "/static/js/main.f03bf11c.chunk.js",
-    "main.js.map": "/static/js/main.f03bf11c.chunk.js.map",
+    "main.css": "/static/css/main.1c1856a4.chunk.css",
+    "main.js": "/static/js/main.7638ad80.chunk.js",
+    "main.js.map": "/static/js/main.7638ad80.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.fb177a97.js",
     "runtime-main.js.map": "/static/js/runtime-main.fb177a97.js.map",
-    "static/js/2.1136b933.chunk.js": "/static/js/2.1136b933.chunk.js",
-    "static/js/2.1136b933.chunk.js.map": "/static/js/2.1136b933.chunk.js.map",
+    "static/js/2.99d9605f.chunk.js": "/static/js/2.99d9605f.chunk.js",
+    "static/js/2.99d9605f.chunk.js.map": "/static/js/2.99d9605f.chunk.js.map",
     "static/js/3.41c4583a.chunk.js": "/static/js/3.41c4583a.chunk.js",
     "static/js/3.41c4583a.chunk.js.map": "/static/js/3.41c4583a.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.828c8505.chunk.css.map": "/static/css/main.828c8505.chunk.css.map",
-    "static/js/2.1136b933.chunk.js.LICENSE.txt": "/static/js/2.1136b933.chunk.js.LICENSE.txt",
+    "static/css/main.1c1856a4.chunk.css.map": "/static/css/main.1c1856a4.chunk.css.map",
+    "static/js/2.99d9605f.chunk.js.LICENSE.txt": "/static/js/2.99d9605f.chunk.js.LICENSE.txt",
     "static/media/index.css": "/static/media/LinLibertine_aDRS.2b16434b.ttf",
     "static/media/homeStyle.css": "/static/media/phoneApp-Background2.9c22cf09.png"
   },
   "entrypoints": [
     "static/js/runtime-main.fb177a97.js",
-    "static/js/2.1136b933.chunk.js",
-    "static/css/main.828c8505.chunk.css",
-    "static/js/main.f03bf11c.chunk.js"
+    "static/js/2.99d9605f.chunk.js",
+    "static/css/main.1c1856a4.chunk.css",
+    "static/js/main.7638ad80.chunk.js"
   ]
 }

@@ -7,7 +7,7 @@
 .stickyContainer {
   position: -webkit-sticky;
   position: sticky;
-  top: 45px !important;
+  top: 0px !important;
   padding-top: 20px;
   background-color: rgb(23, 23, 23) !important;
   z-index:  90;

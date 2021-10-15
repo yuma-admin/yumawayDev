@@ -6,8 +6,6 @@ import storeJson from './storeJson.js'
 
 function Store(props){
 
-
-    
     // Passes the id up a state level
     function chooseStore(id) {
     

@@ -1,0 +1,295 @@
+
+.dealContainer {
+    background-color: #181818 !important;
+    max-width: 100% !important;
+  }
+
+/* State Selector at Top of Page */
+
+.stateSelector {
+
+    position:relative;
+    justify-self: center;
+    text-align: center;
+    align-content: center;
+    
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+    z-index: 99;
+
+    /* To Reduce the Hover Effect */
+    margin-left: auto;
+    margin-right: auto;
+
+    width: max-content;
+}
+  
+.stateSelector .currentState {
+  font-family: "Crimson Text",serif;
+
+  cursor: pointer;
+  width: max-content;
+  margin: auto;
+  position: relative;
+  text-align: center;
+
+  font-size: 30px;
+  
+}
+
+.currentState {
+  position: absolute;
+  color: #d9ab73;
+}
+
+.currentState::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -16px;
+  border: 5px solid transparent;
+  border-top: 5px solid #d9ab73;
+  text-align: center;
+}
+
+.stateSelector:hover .selectableStates {
+  cursor: pointer;
+  position:absolute;
+
+  display:block;
+  
+  z-index:99;
+}
+
+.selectableStates {
+  display: none;
+  position:absolute;
+
+  font-family: "Crimson Text",serif;
+  color: #d9ab73;
+  background-color: rgb(24,24,24);
+  
+  left: 50%;
+  -ms-transform: translate(-50%);
+  transform: translate(-50%);
+  
+  border-radius: 12px;
+  width: max-content;
+
+  padding-top: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 3px;
+
+  z-index:99;
+}
+
+.selectableStates h4 {
+  cursor: pointer;
+
+  font-size: 29px;
+  color: #d9ab73 !important;
+  text-decoration: none !important;
+  padding: 5px;
+
+  z-index:99;
+}
+
+.selectableStates:hover {
+  background-color:#d9ab73 !important;
+  
+  
+}
+
+.selectableStates:hover h4 {  
+  color: #181818 !important;
+}
+
+.selectableStates a {
+  text-decoration: none !important;
+  border-radius: 12px;
+}
+
+
+/* ------------------------------------ */
+/* ---------- HERO CONTENT ------------ */
+/* ------------------------------------ */
+
+/* Carousel */
+
+.carousel-indicators {
+    padding-bottom: 5vw;
+}
+
+.cssGrid-hero-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+
+    margin-left: 15px;
+    margin-right: 15px;
+ 
+    
+}
+
+.cssGrid-hero-item {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.cssGrid-hero-item img {
+    object-fit: cover;
+
+}
+
+#gridId1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+#gridId2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+#gridId3 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+#gridId4 {
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+
+#gridId5 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+#gridId6 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+
+
+
+.cssGrid-topRight-item {
+    display: grid;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    
+}
+
+.carouselImage {
+    width: 100%;
+    object-fit: contain;
+}
+
+/* Logo/Button Overlay */
+
+.heroButtonBackground {
+    /* pointer-events: none !important; */
+    object-fit: contain;
+    position: absolute; 
+    background-color: rgb(0,0,0);
+    opacity: 0.8;
+    z-index: 1;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2) !important;
+  
+    width: 100%;
+    height: 100%;
+  
+}
+
+.heroButtonContainer {
+    display: flex;
+    position:relative;
+    text-align: center;
+    /* left: 10%; */
+    z-index: 50;
+  
+    
+    height: 100%;
+    width: 100%;
+}
+
+.heroDealsLogo {
+    cursor: pointer;
+    width: 100%;
+    position: absolute;
+    top: 5vw;
+    padding-bottom: 20px !important;
+    left: 50%;
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
+    z-index: 90;
+}
+  
+.heroDealsLogo img {
+    max-width: none !important;
+}
+  
+.newDealButton {
+    cursor: pointer;
+    position: absolute;
+    
+    top: 18vw;
+    left: 50%;
+  
+    background-color: rgba(201, 76, 76, 0);
+    
+    color: #d9ab73;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2vw;
+    font-weight:900;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+  
+    padding: 20px 50px 20px 50px;
+    line-height: 3.2vw;
+  
+    border: 2px solid #d9ab73;
+    border-radius: 12px;
+    
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
+  
+    z-index:10;
+}
+  
+.newDealButton:hover {
+    cursor: pointer;
+    background-color: #d9ab73;
+    text-decoration: none;
+    color: #232323;
+    transition: all 0.2s ease-in-out;
+}
+
+
+/* Right Column */
+
+.rightTopColumn {
+    position: relative;
+    width: 100%;
+    margin: none !important;
+    padding: none !important; 
+}
+
+.topRightCouponContainer {
+    position: relative;
+    margin-top: 0;
+    width: 100%;
+    
+}
+  
+.topRightCouponContainer img {
+    object-fit: cover;
+    width: 100%;
+    
+}

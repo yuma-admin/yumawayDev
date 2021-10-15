@@ -7,29 +7,84 @@ const fs = require('fs')
 // Deals Data
 import dealsData from "./updateDealsHere/TestingDealsData"
 
+// Deal Grids
+import CouponGrid from "./page-setup/couponGrid"
+// import coupon4Grid from "./page-setup/coupon4Grid"
+
 function DealsPage() {
 
-const [pageGrid, setPageGrid] = useState("");
+    let [bootstrapCol,setBootStrapCol] = useState("")
 
-// Organize Coupons
-// 1) If no coupons: return no rows under carousel
-// 2) If 1 coupon: return 2 boxes in sidebar
-// 3) If 2 coupons: return 2 boxes in Row 1 below carousel
-// 4) If 3 coupons: return 3 boxes in Row 1
-// 5) If 4 coupons: return 4 boxes in Row 1
-// 6) If 5 coupons: return 3 boxes in Row 1, 2 boxes in Row 2
-// 7) If 6 coupons: return 3 coupons in Row 1, 3 coupons in Row 2
-// 8) If 7 coupons: return 4 coupons in Row 1, 3 coupons in Row 2
-// 9) If 8 coupons: return 4 coupons in Row 1, 4 coupons in Row 2
-// 10) If 9 coupons: return 3 coupons in all three rows
-// 11) If 10 coupons: return 4 coupons in the fi
+    useEffect(() => {
 
-const weeklyCouponsUpdated = dealsData
+        if(dealsData){
+            let bsColumn = "col-3"
 
-if (dealsData > 3) {
-    console.log(dealsData)
-    
-}
+            switch(dealsData.length) {
+                case 0:
+                    bsColumn = ""
+                break;
+                case 1:
+                    bsColumn = "col-12"
+                break;
+                case 2:
+                    bsColumn = "col-6"
+                break;
+                case 3:
+                    bsColumn = "col-4"
+                break;
+                case 4:
+                    bsColumn = "col-3"
+                break;
+                case 5:
+                    bsColumn = "col-4"
+                break;
+                case 6:
+                    bsColumn = "col-3"
+                break;
+                case 7:
+                    bsColumn = "col-3"
+                break;
+                case 8:
+                    bsColumn = "col-3"
+                    break;
+                case 9:
+                    bsColumn = "col-3"
+                break;
+                case 10:
+                    bsColumn = "col-3"
+                break;
+                case 11:
+                    bsColumn = "col-3"
+                break;
+                case 12:
+                    bsColumn = "col-3"
+                break
+                default: 
+                    bsColumn = ""
+
+                return bsColumn
+            }
+
+            setBootStrapCol(bsColumn)
+            console.log(bsColumn)
+
+        }
+    })
+    // Organize Coupons
+    // 1) If no coupons: return no rows under carousel
+    // 2) If 1 coupon: return 2 boxes in sidebar
+    // 3) If 2 coupons: return 2 boxes in Row 1 below carousel
+    // 4) If 3 coupons: return 3 boxes in Row 1
+    // 5) If 4 coupons: return 4 boxes in Row 1
+    // 6) If 5 coupons: return 3 boxes in Row 1, 2 boxes in Row 2
+    // 7) If 6 coupons: return 3 coupons in Row 1, 3 coupons in Row 2
+    // 8) If 7 coupons: return 4 coupons in Row 1, 3 coupons in Row 2
+    // 9) If 8 coupons: return 4 coupons in Row 1, 4 coupons in Row 2
+    // 10) If 9 coupons: return 3 coupons in all three rows
+    // 11) If 10 coupons: return 4 coupons in the fi
+
+
     return (
         <>
         <div className="container dealContainer" id="desktopAndTabletView">
@@ -49,16 +104,16 @@ if (dealsData > 3) {
             </div>
             
             
-            <div className="row" id="carouselRow"> 
+            <div className="row" id="firstRow"> 
                  
-                {/* CAROUSEL */}       
+                {/* CAROUSEL */}
+                <div className="topPageHeaderContent">         
                 <div className="col-9">
                     
                     <div className="dealHeroImageContainer">
          
                         {/* CAROUSEL SHOP BUTTON AND LOGO (DESKTOP) */}
-                        <div className="col-4">
-                            
+                        <div className="col-5 heroButtonBackground">
                             <div className="heroButtonContainer">
                                 <img className="heroDealsLogo" 
                                     src="/images/deals/coloradoDeals/carousel/YumaWay_Horizontal_BlackGold_Solid.png" 
@@ -73,7 +128,7 @@ if (dealsData > 3) {
 
                         {/* CAROUSEL COUPON IMAGES (DESKTOP) */}
                         <div id="mainTopCarousel">
-                            <div className="heroButtonBackground"></div>
+                            {/* <div className="heroButtonBackground"></div> */}
                             <Carousel 
                                 controls={false} 
                                 interval={4000} 
@@ -84,7 +139,7 @@ if (dealsData > 3) {
                                 <Carousel.Item>
                                 
                                     <a href="/locations">
-                                        <img src="/images/deals/coloradoDeals/carousel/heroFlower.png" 
+                                        <img src="/images/deals/coloradoDeals/carousel/heroFlower.jpg" 
                                         className=" carouselImage" 
                                         alt="Primary Cannabis Coupon One"
                                         />
@@ -94,7 +149,7 @@ if (dealsData > 3) {
                                 <Carousel.Item>
                                 
                                     <a href="/locations">
-                                        <img src="/images/deals/coloradoDeals/carousel/hero420Joints.png" 
+                                        <img src="/images/deals/coloradoDeals/carousel/hero420Joints.jpg" 
                                         className=" carouselImage" 
                                         alt="Primary Cannabis Coupon Two"
                                         />
@@ -104,7 +159,7 @@ if (dealsData > 3) {
                                 <Carousel.Item>
                                 
                                     <a href="/locations">
-                                        <img src="/images/deals/coloradoDeals/carousel/heroConcentrates.png" 
+                                        <img src="/images/deals/coloradoDeals/carousel/heroConcentrates.jpg" 
                                         className=" carouselImage" 
                                         alt="Primary Cannabis Coupon Three"
                                         />
@@ -118,7 +173,8 @@ if (dealsData > 3) {
                         
                         
                     </div> 
-                </div>  
+                </div>
+              
                         
                 {/* RIGHT COLUMN */}
                 <div className="col-3 ">
@@ -126,30 +182,24 @@ if (dealsData > 3) {
                         
                             <div className="topRightCouponContainer" id="upperTopCouponContainer">
                                 <a href="/locations">
-                                    <img src="/images/deals/coloradoDeals/constant-coupon.png" alt="Cannabis Coupon One"/>
+                                    <img src="/images/deals/coloradoDeals/constant-coupon.jpg" alt="Cannabis Coupon One"/>
                                 </a>
                             </div>    
 
                     </div>
                 </div>
-        
+                </div>
             </div>
 
             {/* ALL WEEKLY UPDATED COUPONS (DESKTOP) */}
             <div id="weeklyCouponRows">
                 <div className="row">
-                    {weeklyCouponsUpdated.map((coupon, index) => 
-                    (
-                        <div key={index} className="col-4">
 
-                            <div className="fourthRowCoupon">
-                                <a href="/locations">
-                                    <img src={coupon.imgUrl} alt="Cannabis Coupon Three"/>
-                                </a>
-                            </div>
+                {dealsData.map((e, index) => (
+                    <CouponGrid key={index} couponImage={e.imgUrl} bootstrapData={bootstrapCol}/>
+                ))
+                }        
 
-                        </div>
-                    ))} 
                 </div>
             </div>
         </div>
@@ -202,7 +252,7 @@ if (dealsData > 3) {
                                 <Carousel.Item>
                                 
                                     <a href="/locations">
-                                        <img src="/images/deals/coloradoDeals/carousel/heroFlower.png" 
+                                        <img src="/images/deals/coloradoDeals/carousel/heroFlower.jpg" 
                                         className=" carouselImage" 
                                         alt="Primary Cannabis Coupon One"
                                         />
@@ -212,7 +262,7 @@ if (dealsData > 3) {
                                 <Carousel.Item>
                                 
                                     <a href="/locations">
-                                        <img src="/images/deals/coloradoDeals/carousel/hero420Joints.png" 
+                                        <img src="/images/deals/coloradoDeals/carousel/hero420Joints.jpg" 
                                         className=" carouselImage" 
                                         alt="Primary Cannabis Coupon Two"
                                         />
@@ -222,7 +272,7 @@ if (dealsData > 3) {
                                 <Carousel.Item>
                                 
                                     <a href="/locations">
-                                        <img src="/images/deals/coloradoDeals/carousel/heroConcentrates.png" 
+                                        <img src="/images/deals/coloradoDeals/carousel/heroConcentrates.jpg" 
                                         className=" carouselImage" 
                                         alt="Primary Cannabis Coupon Three"
                                         />
@@ -239,7 +289,7 @@ if (dealsData > 3) {
             </div>
 
             {/* ALL MOBILE COUPONS NOT IN CAROUSEL */}
-            {weeklyCouponsUpdated.map((coupon, index) => (
+            {dealsData.map((coupon, index) => (
                 <div key={index} id="weeklyCouponRowsMobile">
                     <div className="row">
                         <div className="col-12">
@@ -259,7 +309,7 @@ if (dealsData > 3) {
                         <div className="col-12">
                             <div className="topRightCouponContainer" id="upperTopCouponContainer">
                                 <a href="/locations">
-                                    <img src="/images/deals/coloradoDeals/constant-coupon.png" alt="Cannabis Coupon Mobile Two"/>
+                                    <img src="/images/deals/coloradoDeals/constant-coupon.jpg" alt="Cannabis Coupon Mobile Two"/>
                                 </a>
                             </div>
                         </div>

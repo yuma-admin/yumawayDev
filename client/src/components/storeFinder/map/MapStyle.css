@@ -14,6 +14,17 @@
   color: #f2e6d5;
 }
 
+.mapStoreLink {
+  font-family: "Crimson Pro,serif";
+  color: #f2e6d5;
+}
+
+.mapStoreLink:hover {
+  font-family: "Crimson Pro,serif";
+  color: #f2e6d5;
+  text-decoration: none;
+}
+
 #address {
   font-size: 1.4em;
   line-height: 1.5;

@@ -1,5 +1,12 @@
 /* DEALS PAGE */
 
+/* Deals Container */
+
+.dealContainer {
+  background-color: #181818 !important;
+  max-width: 100% !important;
+}
+
 /* State Selector at Top of Page */
 
 .stateSelector {
@@ -107,53 +114,35 @@
   border-radius: 12px;
 }
 
-/* DEALS CONTAINER */
-
-.dealContainer {
-  background-color: #181818 !important;
-  max-width: 100% !important;
-}
-
 /* CAROUSEL */
-#carouselRow {
-  padding-top: 20px;
-  margin-top: none;
-  /* margin-left: 15px; */
-  /* padding-right: 3px; */
-  width: 100%;
-  padding-bottom:15px;
+
+.heroContentRow {
+
 }
 
-.dealHeroImageContainer {
+.carouselContainer {
   position: relative;
-  display: relative;
+  /* display: relative; */
+  border: 1px solid #d9ab73;
+  /* max-height: 600vh; */
   
-  height: 100%;
-  width: 100%;
-  
+  margin-bottom: 5vh;
 }
 
-.carousel-item img {
-  position: relative;
-  align-content: center;
-  width: 100%;
-}
 
 /* Carousel Button and Logo */
 
-.heroButtonContainer {
+.buttonLogoContainer {
   display: flex;
   position:relative;
   text-align: center;
-  /* left: 10%; */
   z-index: 50;
-
   
   height: 100%;
   width: 100%;
 }
 
-.heroDealsLogo {
+.buttonLogoContainer img {
   cursor: pointer;
   width: 100%;
   position: absolute;
@@ -163,9 +152,7 @@
   -ms-transform: translate(-50%);
   transform: translate(-50%);
   z-index: 90;
-}
 
-.heroDealsLogo img {
   max-width: none !important;
 }
 
@@ -221,46 +208,101 @@
 
 /* Main Carousel Content */
 
-#mainTopCarousel {
+#mainCarouselContent {
   position: relative;
   width: 100%;
+  /* margin-bottom: 2vw; */
   /* z-index: 1; */
-}
-
-.rightTopColumn {
-  position: relative;
-  width: 100%;
-  margin: none !important;
-  padding: none !important; 
 }
 
 .carouselImage {
   width: 100%;
-  object-fit: contain;
+  object-fit:cover;
+}
+
+
+/* Right Column */
+
+.rightTopColumn {
+  position: relative;
+  /* width: 100%; */
+  margin: none !important;
+  padding: none !important; 
 }
 
 .topRightCouponContainer {
   position: relative;
   margin-top: 0;
-  width: 100%;
-  margin-bottom: 2vw;
+  max-height: 600vh;
+  overflow-y: hidden;
+  /* width: 100%; */
+  /* margin-bottom: 2vw; */
   border: 1px solid #d9ab73;
 }
 
 .topRightCouponContainer img {
-  object-fit: cover;
+  object-fit:contain;
   width: 100%;
   
 }
 
-/* WEEKLY COUPONS */
+/* //////////////////////////// */
+/* /////// CSS GRID /////////// */
+/* //// Weekly Coupon Grid //// */
+/* //////////////////////////// */
 
-/* Centers Grid: Turned Off for Now */
-.col-center {
-  float: none;
-  margin: 0 auto;
+#grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0px 25px;
+
+  /* margin-left: 15px; */
+  margin-right: 15px;
+  
   width: 100%;
 }
+
+.grid-item {
+  display: grid;
+  
+}
+
+#gridId1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+#gridId2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+#gridId3 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+#gridId4 {
+  grid-column-start: 4;
+  grid-column-end: 5;
+}
+
+#gridId5 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+#gridId6 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+.grid-item img {
+  max-width: 100%;
+}
+
+
+/* OLD WEEKLY COUPONS CSS (dont delete yet) */
 /* --------------------------------- */
 
 #weeklyCouponRows{   

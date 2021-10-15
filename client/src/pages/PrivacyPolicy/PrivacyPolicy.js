@@ -22,7 +22,7 @@ function PrivacyPolicy() {
                         </p>
 
                         <p>
-                        This policy is effective as of 26 March 2021 and was last updated on 26 March 2021.                        
+                        This policy is effective as of 26 March 2021 and was last updated on 26 March 2021.                       
                         </p>
 
                         <h3>Information We Collect</h3>
@@ -68,6 +68,7 @@ function PrivacyPolicy() {
                         <p>
                         You are responsible for selecting any password and its overall security strength, ensuring the security of your own information within the bounds of our services.
                         </p>
+
                         <h3>How Long We Keep Your Personal Information</h3>
                         <p>
                         We keep your personal information only for as long as we need to. This time period may depend on what we are using your information for, in accordance with this privacy policy. If your personal information is no longer required, we will delete it or make it anonymous by removing all details that identify you.
@@ -93,6 +94,7 @@ function PrivacyPolicy() {
                           <li>courts, tribunals, regulatory authorities, and law enforcement officers, as required by law, in connection with any actual or prospective legal proceedings, or in order to establish, exercise, or defend our legal rights</li>
                           <li>third parties, including agents or sub-contractors, who assist us in providing information, products, services, or direct marketing to you third parties to collect and process data</li>
                         </ul>
+
                         <h3>International Transfers of Personal Information</h3>
                         <p>
                         The personal information we collect is stored and/or processed where we or our partners, affiliates, and third-party providers maintain facilities. Please be aware that the locations to which we store, process, or transfer your personal information may not have the same data protection laws as the country in which you initially provided the information. If we transfer your personal information to third parties in other countries: (i) we will perform those transfers in accordance with the requirements of applicable law; and (ii) we will protect the transferred personal information in accordance with this privacy policy.
@@ -113,11 +115,6 @@ function PrivacyPolicy() {
                         <p>
                         If you believe that we have breached a relevant data protection law and wish to make a complaint, please contact us using the details below and provide us with full details of the alleged breach. We will promptly investigate your complaint and respond to you, in writing, setting out the outcome of our investigation and the steps we will take to deal with your complaint. You also have the right to contact a regulatory body or data protection authority in relation to your complaint.
                         </p>
-
-
-
-
-
 
                         <h3>Limits of Our Policy</h3>
                         <p>

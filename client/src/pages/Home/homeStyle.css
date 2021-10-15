@@ -83,6 +83,7 @@
     justify-content: center;
     align-items: center;
     z-index: 2;
+    min-height: 40vh;
   
   }
   
@@ -647,6 +648,30 @@
     margin-top: 1vh;
     margin-bottom: 1vh;
   }
+
+  /* top: calc(10vh - 20px); */
+  /* .verticalLineSeperator {
+    width: 20px;
+    height: 100px;
+    position: relative;
+    top: calc(10% + 10px);
+    left: calc(10% + 10px);
+    border: 1px solid #d9ab73;
+    opacity: .5;
+
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+  } */
+
+  /* .verticalLineSeperator::after {
+    position: absolute;
+    top: -40px;
+    bottom: -40px;
+    left: calc(50% - 1px);
+    background: #d9ab73;
+    width: 2px;
+    content: '';
+  } */
   
   #lineBox {
     position: relative;

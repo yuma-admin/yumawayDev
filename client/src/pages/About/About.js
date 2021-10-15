@@ -12,7 +12,7 @@ function About() {
                     <div class="row">
                         <div class="aboutHeader">
                             <div class="centeredImageContainer">
-                                <img src="/images/about/marijuana-about-top-2500-compressed.png" alt="YumaWay Logo with Cannabis Background"/>
+                                <img src="/images/about/marijuana-about-top-1800-compressed.jpg" alt="YumaWay Logo with Cannabis Background"/>
                             </div>
                         </div>
                     </div>
@@ -31,7 +31,7 @@ function About() {
                     </div>
                     <div class="row">
                         <div class="aboutImageContainer">
-                            <img src="/images/about/aboutPageImageOne.png" alt="Our Budtenders Pick the Highest Quality Cannabis Flower for Our Customers"/>
+                            <img src="/images/about/aboutPageImageOne.jpg" alt="Our Budtenders Pick the Highest Quality Cannabis Flower for Our Customers"/>
                         </div>
                     </div>
                     <div class="row">
@@ -49,7 +49,7 @@ function About() {
                     </div>
                     <div class="row">
                         <div class="aboutImageContainer">
-                            <img src="/images/about/aboutPageImageTwo.png" alt="Cannabis Flower Poured on Table"/>
+                            <img src="/images/about/aboutPageImageTwo.jpg" alt="Cannabis Flower Poured on Table"/>
                         </div>
                     </div>
                     <div class="row">
@@ -67,7 +67,7 @@ function About() {
                     </div>
                     <div class="row">
                         <div class="aboutImageContainer">
-                            <img src="/images/about/aboutPageImageThree.png" alt="Cannabis Joint on a Chessboard" />
+                            <img src="/images/about/aboutPageImageThree.jpg" alt="Cannabis Joint on a Chessboard" />
                         </div>
                     </div>
 

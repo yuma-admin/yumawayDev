@@ -46,6 +46,7 @@ col-6 {
 
 button {
   cursor: pointer !important;
+  z-index: 1;
 }
 
 #store {

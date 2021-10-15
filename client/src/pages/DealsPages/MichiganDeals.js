@@ -1,4 +1,4 @@
-import "./deals.css"
+// import "./deals.css"
 import Carousel from 'react-bootstrap/Carousel'
 
 // Deals Data
@@ -45,13 +45,13 @@ function MichiganDeals() {
                 <div className="row"> 
                     
                     <div className="col-9">
-                        <div className="dealHeroImageContainer">
+                        <div className="carouselContainer">
                             
                             {/* CAROUSEL SHOP BUTTON AND LOGO (DESKTOP)*/}
                             <div className="col-5 heroButtonBackground">
                                 
-                                    <div className="heroButtonContainer">
-                                        <img className="heroDealsLogo" src="/images/deals/michiganDeals/carousel/cannabay-OrangeLogo.png" alt="Cannabay Logo"/>
+                                    <div className="buttonLogoContainer">
+                                        <img src="/images/deals/michiganDeals/carousel/cannabay-OrangeLogo.png" alt="Cannabay Logo"/>
                                         <a href="/locations" className="newDealButton">
                                         Shop 
                                         </a>
@@ -61,7 +61,7 @@ function MichiganDeals() {
                             </div>
 
                             {/* CAROUSEL IMAGE(S) (DESKTOP) */}
-                            <div id="mainTopCarousel">
+                            <div id="mainCarouselContent">
                                 <div className="carousel" data-bs-ride="carousel" data-bs-wrap="true">
                                         
                                         {/* <div className="heroButtonBackground"></div> */}
@@ -75,7 +75,7 @@ function MichiganDeals() {
                                             <Carousel.Item>
                                             
                                                 <a href="/locations">
-                                                    <img src="/images/deals/michiganDeals/carousel/michiganHero-compressed.png" 
+                                                    <img src="/images/deals/michiganDeals/carousel/michiganHero-compressed.jpg" 
                                                     className="carouselImage" 
                                                     className=" carouselImage" 
                                                     alt="Cannabay Coupon of the Week"
@@ -97,7 +97,7 @@ function MichiganDeals() {
                             
                                 <div className="topRightCouponContainer" id="upperTopCouponContainer">
                                     <a href="/locations">
-                                        <img src='/images/deals/michiganDeals/refer5Friends.png' alt="Refer 5 Friends, Receive $50 Store Credit"/>
+                                        <img src='/images/deals/michiganDeals/refer5Friends.jpg' alt="Refer 5 Friends, Receive $50 Store Credit"/>
                                     </a>
                                 </div>    
                             
@@ -110,7 +110,7 @@ function MichiganDeals() {
                 
                     {/* ALL WEEKLY UPDATED COUPONS (DESKTOP) */}
                     {weeklyCouponsUpdated.map((coupon, index) => (
-                        <div key={index} className="col-4">
+                        <div key={index} className="col-6">
 
                             <div className="weeklyCoupon">
                                 <a href="/locations">
@@ -150,7 +150,7 @@ function MichiganDeals() {
                     <div className="col-12">
 
                         {/* CAROUSEL SHOP BUTTON AND LOGO (MOBILE)*/}
-                        <div className="dealHeroImageContainer">
+                        <div className="carouselContainer">
                             
                             <div className="col-5 heroButtonBackground">
                                 <div className="heroButtonContainer">
@@ -162,7 +162,7 @@ function MichiganDeals() {
                             </div>
 
                             {/* CAROUSEL COUPONS (MOBILE) */}
-                            <div id="mainTopCarousel">
+                            <div id="mainCarouselContent">
                                 
                                     {/* <div className="heroButtonBackground"></div> */}
                                     <Carousel 
@@ -174,9 +174,8 @@ function MichiganDeals() {
                                         <Carousel.Item>
                                         
                                             <a href="/locations">
-                                                <img src="/images/deals/michiganDeals/carousel/michiganHero-compressed.png" 
+                                                <img src="/images/deals/michiganDeals/carousel/michiganHero-compressed.jpg" 
                                                 className="carouselImage" 
-                                                className=" carouselImage" 
                                                 alt="Cannabay Coupon of the Week"
                                                 />
                                             </a>
@@ -212,7 +211,7 @@ function MichiganDeals() {
                     <div className="col-12">
                         <div className="topRightCouponContainer">
                             <a href="/locations">
-                                <img src="/images/deals/michiganDeals/refer5friends.png" alt=""/>
+                                <img src="/images/deals/michiganDeals/refer5friends.jpg" alt=""/>
                             </a>
                         </div>
                     </div>
