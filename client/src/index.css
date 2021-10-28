@@ -1,8 +1,8 @@
-@font-face {
+/* @font-face {
   font-family: "Linux Libertine";
   src: local("Linux Libertine"),
     url(./assets/fonts/LinLibertine_aDRS.ttf) format("truetype");
-}
+} */
 
 body {
   height: 100%;

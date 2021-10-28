@@ -1,0 +1,483 @@
+
+.dealContainer {
+    background-color: #181818 !important;
+    max-width: 100vw !important;
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+
+/* State Selector at Top of Page */
+
+.stateSelector {
+
+    position:relative;
+    justify-self: center;
+    text-align: center;
+    align-content: center;
+    
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+    z-index: 99;
+
+    /* To Reduce the Hover Effect */
+    margin-left: auto;
+    margin-right: auto;
+
+    width: max-content;
+}
+  
+.stateSelector .currentState {
+  font-family: "Crimson Text",serif;
+
+  cursor: pointer;
+  width: max-content;
+  margin: auto;
+  position: relative;
+  text-align: center;
+
+  font-size: 30px;
+  
+}
+
+.currentState {
+  position: absolute;
+  color: #d9ab73;
+}
+
+.currentState::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -16px;
+  border: 5px solid transparent;
+  border-top: 5px solid #d9ab73;
+  text-align: center;
+}
+
+.stateSelector:hover .selectableStates {
+  cursor: pointer;
+  position:absolute;
+
+  display:block;
+  
+  z-index:99;
+}
+
+.selectableStates {
+  display: none;
+  position:absolute;
+
+  font-family: "Crimson Text",serif;
+  color: #d9ab73;
+  background-color: rgb(24,24,24);
+  
+  left: 50%;
+  -ms-transform: translate(-50%);
+  transform: translate(-50%);
+  
+  border-radius: 12px;
+  width: max-content;
+
+  padding-top: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 3px;
+
+  z-index:99;
+}
+
+.selectableStates h4 {
+  cursor: pointer;
+
+  font-size: 29px;
+  color: #d9ab73 !important;
+  text-decoration: none !important;
+  padding: 5px;
+
+  z-index:99;
+}
+
+.selectableStates:hover {
+  background-color:#d9ab73 !important;
+}
+
+.selectableStates:hover h4 {  
+  color: #181818 !important;
+}
+
+.selectableStates a {
+  text-decoration: none !important;
+  border-radius: 12px;
+}
+
+
+/* ------------------------------------ */
+/* ---------- HERO CONTENT ------------ */
+/* ------------------------------------ */
+
+/* Carousel */
+
+#dealsTopPageSection {
+  /* max-height: 0vh; */
+  padding-bottom: 10px;
+}
+
+/* @media only screen and (min-width: 426px) {
+  #dealsTopPageSection .col-9 {
+    padding-right: 10px !important;
+  }
+
+  #dealsTopPageSection .col-3 {
+    padding-left: 10px !important;
+  }
+} */
+
+.carouselContainer {
+  position: relative;
+  border: 1px solid #d9ab73;
+  margin-bottom: 10px;
+  max-width: 100vw;
+}
+
+.carouselImage {
+  width: 100%;
+  object-fit: contain;
+}
+
+
+.carousel-indicators {
+    padding-bottom: 5vw;
+}
+
+/* Logo/Button Overlay */
+
+.heroButtonBackground {
+    /* pointer-events: none !important; */
+    object-fit: contain;
+    position: absolute; 
+    background-color: rgb(0,0,0);
+    opacity: 0.8;
+    z-index: 1;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2) !important;
+  
+    width: 100%;
+    height: 100%;
+  
+}
+
+.buttonLogoContainer {
+    display: flex;
+    position:relative;
+    text-align: center;
+    /* left: 10%; */
+    z-index: 50;
+  
+    
+    height: 100%;
+    width: 100%;
+}
+
+.buttonLogoContainer img {
+  cursor: pointer;
+  width: 100%;
+  position: absolute;
+  top: 5vw;
+  padding-bottom: 20px !important;
+  left: 50%;
+  -ms-transform: translate(-50%);
+  transform: translate(-50%);
+  z-index: 90;
+
+  max-width: none !important;
+}
+
+.heroDealsLogo {
+    cursor: pointer;
+    width: 100%;
+    position: absolute;
+    top: 5vw;
+    padding-bottom: 20px !important;
+    left: 50%;
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
+    z-index: 90;
+}
+  
+.heroDealsLogo img {
+    max-width: none !important;
+}
+
+/* USE THIS */
+
+.newDealButton {
+    cursor: pointer;
+    position: relative;
+    top: 50%;
+    margin: 0 auto;
+    height: fit-content;
+    background-color: rgba(201, 76, 76, 0);
+    color: #d9ab73;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    padding: 5% 10%;
+    border: 2px
+    solid #d9ab73;
+    border-radius: 12px;
+    z-index: 10;
+}
+
+  
+/* .newDealButton {
+    cursor: pointer;
+    position: absolute;
+    
+    top: 18vw;
+    left: 50%;
+  
+    background-color: rgba(201, 76, 76, 0);
+    
+    color: #d9ab73;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2vw;
+    font-weight:900;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+  
+    padding: 20px 50px 20px 50px;
+    line-height: 3.2vw;
+  
+    border: 2px solid #d9ab73;
+    border-radius: 12px;
+    
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
+  
+    z-index:10;
+} */
+  
+.newDealButton:hover {
+    cursor: pointer;
+    background-color: #d9ab73;
+    text-decoration: none;
+    color: #232323;
+    transition: all 0.2s ease-in-out;
+}
+
+
+/* Right Column */
+
+.rightTopColumn {
+    position: relative;
+    width: 100%;
+    margin: none !important;
+    padding: none !important; 
+}
+
+.topRightCouponContainer {
+  position: relative;
+  margin-top: 0;
+  max-height: 100vh;
+  overflow-y: hidden;
+  /* width: 100%; */
+  /* margin-bottom: 2vw; */
+  border: 1px solid #d9ab73;
+}
+  
+.topRightCouponContainer img {
+  object-fit:contain;
+  width: 100%;
+}
+
+/* --------------------------- */
+/* //////// CSS GRID ////////// */
+/* --------------------------- */
+
+.cssGridTemplate1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, calc(100%/2));
+}
+
+.cssGridTemplate2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, calc(100%/3));
+}
+
+.cssGridTemplate3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, calc(100%/4));
+}
+
+.gridItem {
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    margin-left: 10px;
+    margin-right: 10px;
+
+    left:0;
+    /* justify-content: center; */
+    /* max-width: 100%; */
+
+    position: relative;
+    border: 1px solid #d9ab73;
+}
+
+.gridItem img {
+  object-fit: cover;
+  width: 100%;
+}
+
+
+@media only screen and (min-width: 426px) {
+
+
+    #gridI1 {
+      grid-column: span 1;
+    }
+    
+    #gridId2 {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+    
+    #gridId3 {
+      grid-column: span 1;
+      grid-row: span 2;
+    }
+
+}
+
+@media only screen and (max-width: 425px) {
+
+    #grid-container {
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 100vw;
+        margin-left: 5px;
+        /* padding-right: 5px; */
+    }
+
+    .cssGridTemplate1 {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, calc(100%));
+    }
+    
+    .cssGridTemplate2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, calc(100%));
+    }
+    
+    .cssGridTemplate3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, calc(100%));
+    }
+
+    #gridId1 {
+      grid-column: span 1;
+      grid-row: span 1;
+    }
+    
+    #gridId2 {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+    
+    #gridId3 {
+      grid-column: span 1;
+      grid-row: span 2;
+    }
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+    /* .newDealButton {
+      font-size: 2vw;
+      padding: 20px 50px 20px 50px;
+      font-weight: 900;
+    } */
+  }
+  
+@media only screen and (max-width: 425px) {
+  
+    .newDealButton {
+      
+      padding: 5% 10%;
+      font-size: 15px;
+    }
+  
+  }
+  
+  @media only screen and (min-width: 425px) {
+    #desktopAndTabletView {
+      display: block;
+    }
+    #mobileView {
+      display: none;
+    }
+
+    #dealsTopPageSection {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+  }
+  
+  @media only screen and (max-width: 425px) {
+  
+    #dealsTopPageSection {
+      
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  
+    #desktopAndTabletView {
+      display: none;
+    }
+    #mobileView {
+      display: block;
+      /* padding: 0px; */
+    }
+  
+    .heroDealsLogo {
+      width: 140%;
+      top: 2vw;
+    }
+  
+    /* .newDealButton {
+      top: 22vw;
+      left: 50%;
+  
+      line-height: 3.2vw;
+      
+      font-family: "Montserrat", sans-serif;
+      font-size: 4vw;
+      font-weight: 900;
+      
+      max-width: none;
+      max-height: none;
+  
+      padding: 10px 15px 10px 15px;
+  
+      border-radius: 8px;
+      border: 2px solid #d9ab73;
+    } */
+  
+    #secondRow {
+      padding-top: 10px !important;
+      padding-bottom: 10px !important;
+  
+      margin-top: 0;
+      margin-bottom: -10px;
+    }
+
+    
+  
+  }
+  

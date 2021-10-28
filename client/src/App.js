@@ -8,69 +8,47 @@ import {
   Route,
 } from "react-router-dom";
 
-//AGE GATE
-import AgeGateModal from './pages/AgeGateModal/AgeGateModal'
-import { createPortal } from "react-dom"
-
-// MAIN PAGES 
+// PRIMARY PAGES 
 import Home from './pages/Home/Home'
-import ColoradoDeals from './pages/DealsPages/ColoradoDeals'
-import MichiganDeals from './pages/DealsPages/MichiganDeals'
+import DealsPage from './pages/DealsPage/DealsPage'
 import About from './pages/About/About'
 import TermsOfUse from './pages/TermsOfUse/TermsOfUse'
 import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy'
 
-// STORE FINDER COMPONENTS
-import StoreFinder from './components/storeFinder/StoreFinder'
-import Menu from './components/menu/menu'
+// STORE FINDER PAGE AND COMPONENTS
+import StoreFinder from './pages/storeFinder/StoreFinder'
+import Menu from './pages/storeFinder/menu/menu'
 
 // NAV AND FOOTER COMPONENTS
 import NavBar from './components/navbar/navBar'
 import Footer from './components/footer/footer'
 
-// TESTING PAGE (FOR TRYING NEW PAGES)
-import TestPage from './pages/DealsPages/CSSGrid'
+//AGE GATE
+import AgeGateModal from './components/AgeGateModal/AgeGateModal'
+import ageGateLogic from './components/AgeGateModal/ageGateLogic'
+import { createPortal } from "react-dom"
 
 function App() {
-  const yumaCookie = Cookies.get('yumawayAgeGateKey')
 
-  const [showAgeGate,setAgeGate] = useState([false])
-  console.log(yumaCookie)
-
+  //  AGE GATE MODAL
+  const [showAgeGate,setAgeGate] = useState([""])
   useEffect(() => {
-    // If User Has LegalAge Cookie, Remove Modal
-    if (yumaCookie==="yesLegalAge"){
-      console.log(yumaCookie)
-      document.getElementById("ageGateBackground").style.display = "none"
-      setAgeGate(false)
-    } else if (yumaCookie===!"yesLegalAge"){
-      setAgeGate(true)
-      
-    } else {
-      setAgeGate(true)
-    }
-
-    const url = window.location.href;
-    const str = url.split("/")
-    const currentHref = str[(str.length - 1)]
-    console.log("Current HREF: " + currentHref)
-
-    if (currentHref==="privacy-policy"){
-      document.getElementById("ageGateBackground").style.display = "none"
-      setAgeGate(false)
-    }
+    // Confirms Whether to Show AgeGate
+    const confirmation = ageGateLogic()
+    setAgeGate(confirmation)
   })
 
-// Sets State and Cookie with Legal Age
-const yesLegal = () => {
-  Cookies.set('yumawayAgeGateKey', "yesLegalAge")
-  setAgeGate(false)
-}
+  // If Yes Clicked: Sets AgeGateCookie
+  const yesLegal = () => {
+    Cookies.set('yumawayAgeGateKey', "yesLegalAge")
+    setAgeGate(false)
+  }
+  // If No: HREF in the Modal code redirects them to Google Search
+  const noLegal = () => {
+    setAgeGate(true)
+  }
 
-const noLegal = () => {
-  setAgeGate(true)
-}
-  // Builds Age Gate Modal
+  // Age Gate Modal
   const Modal = ({showAgeGate, setAgeGate}) => {
     
       const content = showAgeGate && (
@@ -81,20 +59,22 @@ const noLegal = () => {
 
         />
         )
-      
         return createPortal(content, document.body)
   }
 
-  
-
-  // Creates an overarching empty state that looks for store (-Tyler)
+  // Store Finder Router: Creates an overarching empty state that looks for store
   const [storeSelected, setStoreSelected] = useState({
     storeId: '',
   });
+  // (From Old Developer)
 
   return (
-    
+    /////////////////
+    // PAGE STARTS //
+    /////////////////
+
     <Router basename="/">
+      {/* NAVBAR found in Components */}
       <NavBar></NavBar>
       <div className='holder'>
       <div id="ageGateBackground"></div>
@@ -108,11 +88,8 @@ const noLegal = () => {
           </Route>
 
           {/* DEALS PAGE ROUTES */}
-          <Route exact path="/colorado-deals" >
-            <ColoradoDeals />
-          </Route>
-          <Route exact path="/michigan-deals" >
-            <MichiganDeals />
+          <Route path={["/colorado-deals", "/michigan-deals"]}>
+            <DealsPage />
           </Route>
 
           {/* ABOUT PAGE ROUTE */}
@@ -128,14 +105,10 @@ const noLegal = () => {
           {/* TERMS OF USE */}
           <Route exact path="/terms-of-use">
             <TermsOfUse/>
-          </Route>
+          </Route>    
 
-          {/* TESTING PAGE */}
-          <Route exact path="/testing-page" >
-            <TestPage />
-          </Route>
-          
           {/* STORE LOCATOR ROUTES */}
+          {/* KEEP THIS ROUTER AT THE BOTTOM OR ANY PAGE BELOW WILL REDIRECT TO THIS */}
           <Router basename="/locations">
             <Route exact path="/menu/:id" >
               <Menu Id={storeSelected.storeId} callBack={() => setStoreSelected}></Menu>
@@ -147,12 +120,12 @@ const noLegal = () => {
               <StoreFinder callBack={setStoreSelected}></StoreFinder>
             </Route>
           </Router>
-
-          
-          
+ 
         </Switch>
         <Footer></Footer>
       </div>
+
+      {/* HIDDEN MODAL */}
       <Modal
           showAgeGate={showAgeGate}
           className="ageGateCSSKey"
