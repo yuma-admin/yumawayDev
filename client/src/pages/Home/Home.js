@@ -1,24 +1,8 @@
 import "./homeStyle.css"
-// import API from '../../utils/API'
 
 function Home() {
 
-    // TEST CODE: WORKING ON API WITH IHEARTJANE
-    // function submitSearch() {
-    //     const queryURL = 'https://staging-api.iheartjane.com/partner/v1/stores/17/menu_products?visible=true&count=10&pagination_id=0'
-
-    //     API.getJaneAPI(queryURL)
-    //     .then(res =>
-    //         console.log(res.data)
-    //     )
-    //     .catch(err => console.log(err))
-    
-    // }
-
     return (
-
-    // HTML START: EVERYTHING IN THESE RETURN PARENTGESIS IS HTML-ISH
-    // A FEW EXCEPTIONS; FOR EXAMPLE: 'className' SHOULD BE 'className'
     <div className="container-fluid">
         <section className="hero" id="desktopHeroView">
         

@@ -1,8 +1,8 @@
 // IMPORT IMAGE DATA
 import carouselDealsData from '../../updateDealsHere/carouselDealsData'
 import weeklyDealsData from '../../updateDealsHere/weeklyDealsData.js'
-const coloradoTopRight = "/images/deals/coloradoDeals/constant-coupon.jpg"
-const michiganTopRight = "/images/deals/michiganDeals/refer5Friends.jpg"
+const coloradoTopRight = "/images/deals/coloradoDeals/colorado-happy-hour.jpg"
+const michiganTopRight = "/images/deals/michiganDeals/michigan-happy-hour.jpg"
 
 // THIS FUNCTION DETERMINES STATE SELECTED AND SETS PAGE DATA AND IMAGE URLS
 // HOW IT WORKS

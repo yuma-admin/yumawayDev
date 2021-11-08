@@ -12,7 +12,6 @@ import {
 import Home from './pages/Home/Home'
 import DealsPage from './pages/DealsPage/DealsPage'
 import About from './pages/About/About'
-import TermsOfUse from './pages/TermsOfUse/TermsOfUse'
 import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy'
 
 // STORE FINDER PAGE AND COMPONENTS
@@ -101,11 +100,6 @@ function App() {
           <Route exact path="/privacy-policy">
             <PrivacyPolicy/>
           </Route>
-          
-          {/* TERMS OF USE */}
-          <Route exact path="/terms-of-use">
-            <TermsOfUse/>
-          </Route>    
 
           {/* STORE LOCATOR ROUTES */}
           {/* KEEP THIS ROUTER AT THE BOTTOM OR ANY PAGE BELOW WILL REDIRECT TO THIS */}
