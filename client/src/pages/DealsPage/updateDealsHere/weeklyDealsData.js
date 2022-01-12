@@ -27,7 +27,11 @@ const weeklyDealsData =
             },
             // {
             //     imgUrl: '/images/deals/coloradoDeals/weekly-update/coupon-8.jpg'
+            // },
+            // {
+            //     imgUrl: '/images/deals/coloradoDeals/weekly-update/coupon-9.jpg'
             // }
+
         ],
 
         michigan: [
