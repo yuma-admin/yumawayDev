@@ -8,6 +8,9 @@ import {FaPhoneAlt, FaMapMarkerAlt} from 'react-icons/fa'
 import DayCard from './dayCard/dayCard'
 import {Link, useHistory} from 'react-router-dom'
 
+// Meta Data
+import { Helmet } from 'react-helmet';
+
 // Selects the target store's information from the json file
 function TargetLocation(props){
     const filteredStore = storeJson.filter(store => store.id === props.id)

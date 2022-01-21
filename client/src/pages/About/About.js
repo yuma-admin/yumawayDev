@@ -1,9 +1,16 @@
 import "./about.css"
 
+// Meta Data
+import { Helmet } from 'react-helmet';
+
 function About() {
 
     return (
         <>
+        <Helmet>
+            <title>Yuma Way | About Us</title>
+            <meta name="description" content="Our Mission Is To Provide High-Quality Cannabis Products At Affordable Prices. Click To Find Out More."/>
+        </Helmet>
         <section class="about">
             <div class="row">
                 <div class="col">

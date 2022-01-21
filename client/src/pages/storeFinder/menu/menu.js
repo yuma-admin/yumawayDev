@@ -3,6 +3,8 @@ import {useParams} from 'react-router-dom'
 import {useHistory} from 'react-router-dom'
 import './menu.css'
 
+//Meta Data
+import { Helmet } from 'react-helmet';
 
 function Menu(props){
 
@@ -28,6 +30,9 @@ function Menu(props){
 
   return(
     <>
+    <Helmet>
+      <title>Yuma Way | Browse Our Current Products</title>
+    </Helmet>
     <div className="container-fluid">
       <div onClick={backClick} className="menuBackButtonBar">Back</div>
 

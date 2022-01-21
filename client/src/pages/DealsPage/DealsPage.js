@@ -1,6 +1,9 @@
 import React, {useState, useEffect} from "react";
 import "./newDealsCSS.css"
 
+// Meta Data
+import { Helmet } from 'react-helmet';
+
 // IMPORT PAGE SECTIONS
 import StateSelector from './page-setup/StateSelector'
 import TopPageDeals from './page-setup/TopPageDeals'
@@ -38,7 +41,12 @@ function CSSGrid() {
 
     return (
         <>
-
+        <Helmet>
+            <title>Yuma Way 
+            | Browse Our Current Deals</title>
+            <meta charset="utf-8" />
+            <meta name="description" content="Browse Our Current Deals for Both Colorado & Michigan Locations"></meta>
+        </Helmet>
         <div className="dealContainer">
         
             {/* STATE SELECTOR  (Dropdown Menu) */}

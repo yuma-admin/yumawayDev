@@ -38,9 +38,9 @@ const weeklyDealsData =
             {
                 imgUrl: '/images/deals/michiganDeals/weekly-update/coupon-1.jpg'
             },
-            {
-                imgUrl: '/images/deals/michiganDeals/weekly-update/coupon-2.jpg'
-            },
+            // {
+            //     imgUrl: '/images/deals/michiganDeals/weekly-update/coupon-2.jpg'
+            // },
             // {
             //     imgUrl: '/images/deals/michiganDeals/weekly-update/coupon-3.jpg'
             // },

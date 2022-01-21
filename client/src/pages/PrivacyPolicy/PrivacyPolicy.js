@@ -1,9 +1,16 @@
 import './PrivacyPolicy.css'
 
+// Meta Data
+import { Helmet } from 'react-helmet';
+
 function PrivacyPolicy() {
 
     return (
+
 <div className="container-fluid">
+<Helmet>
+    <title>Yuma Way | Privacy Policy</title>
+</Helmet>
         <div className="termsOfUseContainer">
             <div className="termsOfUseLogoContainer">
                 <img className="termsLogo" src="/images/homeImages/yumawayLogoHome.png">

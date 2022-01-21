@@ -8,6 +8,9 @@ import {BiCurrentLocation} from 'react-icons/bi'
 import './search.css'
 import triangulate from './triangulate.js'
 
+//Meta Data
+import { Helmet } from 'react-helmet';
+
 
 // This function creates the automated search bar that allows for users to find their address 
 export default function Search(props) {
@@ -57,6 +60,11 @@ export default function Search(props) {
   // JSX for search bar. Extensively uses the react-places-autocomplete library 
   return (
     <div className='search-bar-container'>
+      <Helmet>
+          <title>Yuma Way Locations | Find A Location Nearest You</title>
+          <meta charset="utf-8" />
+          <meta name="description" content="Find the nearest Colorado or Michigan Yuma Way location! Shop in-store or order online."></meta>
+      </Helmet>
       {/* PlacesAutoComplete library  */}
       <PlacesAutocomplete
         value={address}

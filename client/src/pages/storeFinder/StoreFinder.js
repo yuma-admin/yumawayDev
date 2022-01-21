@@ -9,6 +9,9 @@ import  TargetLocation from './targetLocation/targetLocation'
 import storeJson from './locations/storeJson'
 import {useParams} from 'react-router-dom'
 
+// import Meta Data
+import { Helmet } from 'react-helmet';
+
 
 function StoreFinder(props) {
 
@@ -125,6 +128,11 @@ function StoreFinder(props) {
     if(!id.id){
         return(
             <div className="storePageHeight">
+            <Helmet>
+                <title>Yuma Way Locations | Find A Location Nearest You</title>
+                <meta charset="utf-8" />
+                <meta name="description" content="Find the nearest Colorado or Michigan Yuma Way location! Shop in-store or order online."></meta>
+            </Helmet>
             <Container fluid>
                 <Row>
                     <Col xs={{span:12,order:2}} sm={{span:12,order:2}} lg={{span:4,order:1}} className='storeFinderInfo'> 

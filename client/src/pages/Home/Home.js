@@ -1,9 +1,16 @@
 import "./homeStyle.css"
 
+// Meta Data
+import { Helmet } from 'react-helmet';
+
 function Home() {
 
     return (
     <div className="container-fluid">
+    <Helmet>
+        <title>Yuma Way || Denver & Michigan's Premier Dispensary</title>
+        <meta name="description" content="Colorado & Michigan Cannabis Dispensary. Find the nearest cannabis dispensary offering affordable THC edibles, THC concentrates, topicals and THC flower."></meta>
+    </Helmet>
         <section className="hero" id="desktopHeroView">
         
         
