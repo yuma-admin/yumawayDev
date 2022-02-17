@@ -14,8 +14,6 @@ function About() {
         <section class="about">
             <div class="row">
                 <div class="col">
-
-                
                     <div class="row">
                         <div class="aboutHeader">
                             <div class="centeredImageContainer">

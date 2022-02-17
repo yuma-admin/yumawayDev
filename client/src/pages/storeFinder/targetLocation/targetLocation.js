@@ -100,6 +100,11 @@ const shopCBD = ()=>{
 // Returns standardized jsx for the selected store
     return(
         <div>
+            <Helmet>
+                <title>Yuma Way Locations | Find A Location Nearest You</title>
+                <meta charset="utf-8" />
+                <meta name="description" content="Find the nearest Colorado or Michigan Yuma Way location! Shop in-store or order online."></meta>
+            </Helmet>
             <Container className='containerPadding stickyContainer'>
                 <Row>
                     <div className='backDiv'>

@@ -54,7 +54,7 @@ export default function dealsStateOrganizer(){
                 stateHref: "/colorado-deals",
                 unSelectedState: "Colorado Deals",
             },
-            chosenCarousel: carouselDealsData.colorado,
+            chosenCarousel: carouselDealsData.michigan,
             chosenTopRightCoupon: michiganTopRight,
             chosenWeeklyDeals: weeklyDealsData.michigan,
         }
