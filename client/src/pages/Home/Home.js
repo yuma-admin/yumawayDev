@@ -10,6 +10,7 @@ function Home() {
     <Helmet>
         <title>Yuma Way || Denver & Michigan's Premier Dispensary</title>
         <meta name="description" content="Colorado & Michigan Cannabis Dispensary. Find the nearest cannabis dispensary offering affordable THC edibles, THC concentrates, topicals and THC flower."></meta>
+        <meta name="keywords" content="Yuma, Yuma Way, Yuma Way Dispensary, Dispensaries, Medical, Recreational, CBD, THC, Terpenes, Cannabis, Edibles, Flower, Prerolls, Concentrates"></meta>
     </Helmet>
         <section className="hero" id="desktopHeroView">
         

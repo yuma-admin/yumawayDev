@@ -5,6 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#000000">
     <meta name="google-site-verification" content="S_7RaDc0nF_cXxNBgq7u__WnACyvYKSlNjPpxHRFnQk" />
+    <script type="text/javascript">
+      document.addEventListener("click", function(e) {
+            var linkNode = e.srcElement.href ? e.srcElement : e.srcElement.parentNode;
+        if(linkNode.localName !== "a" || linkNode.href.endsWith("#")) return;
+        
+        e.preventDefault();
+        var currentQuery = location.search.substr(1);
+        var url = new URL(linkNode.href);
+        url.search += (url.search.indexOf('?') > -1 ? '&' : '?') + currentQuery;
+        var dst = e.target;
+        if (dst.target) {
+      window.open(url.toString(), dst);
+        } else {
+      location.assign(url.toString());
+        }
+      });
+      </script>
     <!--
       manifest.json provides metadata used when your web app is added to the
       homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
