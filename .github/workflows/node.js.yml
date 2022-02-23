@@ -34,8 +34,7 @@ jobs:
         key: ${{ secrets.SSH_YUMA_SECRET }}
         known_hosts: 
         name: Adding Known Hosts
-        run: ssh-keyscan -H {{ secrets.REMOTE_HOST}} >>
-        ~/,ssh/known_hosts
+        run: ssh-keyscan -H {{ secrets.REMOTE_HOST}} 
         name: Deploy with rsync
         run: rsync -avP build/ ${{ secrets.REMOTE_USER}}@${{ secrets.REMOTE_HOST}}:/var/www/yumaway.com/
 
