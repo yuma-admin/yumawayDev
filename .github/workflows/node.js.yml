@@ -33,6 +33,6 @@ jobs:
         key: ${{ secrets.SSH_YUMA_SECRET }}
         known_hosts: ${{ secrets.KNOWN_HOSTS }}
     - name: Deploy With Build
-      run: rsync -e "ssh bastion ssh" build/ ${{ secrets.REMOTE_USER}}@${{ secrets.REMOTE_HOST}}:/var/www/yumaway.com/
+      run: rsync -avz ./build/ ${{ secrets.REMOTE_USER}}@${{ secrets.REMOTE_HOST}}:/var/www/yumaway.com/
 
     
