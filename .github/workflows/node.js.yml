@@ -31,9 +31,8 @@ jobs:
       uses: shimataro/ssh-key-action@v2
       with: 
         key: ${{ secrets.SSH_YUMA_SECRET }}
-      - known_hosts: 
-        run: ssh-keyscan -H {{ secrets.REMOTE_HOST}} 
-      - name: Adding Known Hosts & Deploy
+        known_hosts: ${{ secrets.KNOWN_HOSTS }}
+        name: Adding Known Hosts & Deploy
         run: rsync -avP build/ ${{ secrets.REMOTE_USER}}@${{ secrets.REMOTE_HOST}}:/var/www/yumaway.com/
 
     

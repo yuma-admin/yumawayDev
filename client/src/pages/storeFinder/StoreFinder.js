@@ -132,6 +132,7 @@ function StoreFinder(props) {
                 <title>Yuma Way Locations | Find A Location Nearest You</title>
                 <meta charset="utf-8" />
                 <meta name="description" content="Find the nearest Colorado or Michigan Yuma Way location! Shop in-store or order online."></meta>
+                <link rel="canonical" href="https://www.yumaway.com/locations"></link>
             </Helmet>
             <Container fluid>
                 <Row>
