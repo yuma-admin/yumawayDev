@@ -32,7 +32,7 @@ jobs:
       with: 
         key: ${{ secrets.SSH_YUMA_SECRET }}
         known_hosts: ${{ secrets.KNOWN_HOSTS }}
-        name: Adding Known Hosts & Deploy
-        run: rsync -avP build/ ${{ secrets.REMOTE_USER}}@${{ secrets.REMOTE_HOST}}:/var/www/yumaway.com/
+    - name: Adding Known Hosts & Deploy
+      run: rsync -avP build/ ${{ secrets.REMOTE_USER}}@${{ secrets.REMOTE_HOST}}:/var/www/yumaway.com/
 
     
