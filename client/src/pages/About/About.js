@@ -4,6 +4,7 @@ import "./about.css"
 import { Helmet } from 'react-helmet';
 
 function About() {
+    
     //Jane's Tracking Script
     const janescript = document.createElement("script");
     janescript.async = true;
