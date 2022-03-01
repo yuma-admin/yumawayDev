@@ -114,7 +114,6 @@ function App() {
               <StoreFinder callBack={setStoreSelected}></StoreFinder>
             </Route>
           </Router>
- 
         </Switch>
         <Footer></Footer>
       </div>
