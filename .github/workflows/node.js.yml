@@ -3,7 +3,9 @@
 
 name: YumaWay CI/CD
 
-on: [push]
+on: 
+  schedule:
+    - cron: '0 0 * * 2'
   
 
 jobs:
