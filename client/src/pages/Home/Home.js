@@ -4,7 +4,7 @@ import "./homeStyle.css"
 import { Helmet } from 'react-helmet';
 
 function Home() {
-    
+
         // Jane's Tracking Script
         const janescript = document.createElement("script");
         janescript.async = true;
@@ -24,7 +24,7 @@ function Home() {
         location.assign(url.toString());
           }
         })`;
-        document.head.appendChild("janescript");
+        document.head.appendChild(janescript);
     
     return (
     <div className="container-fluid">

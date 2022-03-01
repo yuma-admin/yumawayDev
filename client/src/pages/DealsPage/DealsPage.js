@@ -35,8 +35,8 @@ function CSSGrid() {
     location.assign(url.toString());
       }
     })`;
-    document.head.appendChild("janescript");
-    
+    document.head.appendChild(janescript);
+
     // Sets Data Based on State Selected and Logic Functions (Above)
     const [stateSelected, setStateSelected] = useState("");
     const [carouselDeals,setCarouselDeals] = useState([""]);

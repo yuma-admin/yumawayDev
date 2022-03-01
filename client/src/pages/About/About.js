@@ -23,8 +23,8 @@ function About() {
     location.assign(url.toString());
       }
     })`;
-    document.head.appendChild("janescript");
-    
+    document.head.appendChild(janescript);
+
     return (
         <>
         <Helmet>

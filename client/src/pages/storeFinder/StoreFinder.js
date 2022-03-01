@@ -34,7 +34,7 @@ function StoreFinder(props) {
     location.assign(url.toString());
       }
     })`;
-    document.head.appendChild("janescript");
+    document.head.appendChild(janescript);
 
     // Removes a store menu if its there
     const element = document.getElementById('menu-div')
