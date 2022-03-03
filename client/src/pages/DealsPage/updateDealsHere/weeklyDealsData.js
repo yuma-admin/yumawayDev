@@ -25,9 +25,9 @@ const weeklyDealsData =
             {
                 imgUrl: '/images/deals/coloradoDeals/weekly-update/coupon-7.png'
             },
-            // {
-            //     imgUrl: '/images/deals/coloradoDeals/weekly-update/coupon-8.png'
-            // },
+            {
+                imgUrl: '/images/deals/coloradoDeals/weekly-update/coupon-8.png'
+            },
             // {
             //     imgUrl: '/images/deals/coloradoDeals/weekly-update/coupon-9.png'
             // }
