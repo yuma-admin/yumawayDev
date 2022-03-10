@@ -153,6 +153,7 @@ function StoreFinder(props) {
                 <title>Yuma Way Locations | Find A Location Nearest You</title>
                 <meta charset="utf-8" />
                 <meta name="description" content="Find the nearest Colorado or Michigan Yuma Way location! Shop in-store or order online."></meta>
+                <meta name="keywords" content="Yuma, Yuma Way, Dispensaries, Denver Dispensaries, Michigan Dispensaries, Cherry Peak, Lowell Gardens, Cannabay, Cannacity, Twin Peaks, Berkley, The Cofee Joint"></meta>
                 <link rel="canonical" href="https://www.yumaway.com/locations"></link>
             </Helmet>
             <Container fluid>
@@ -191,6 +192,7 @@ function StoreFinder(props) {
                 <title>Yuma Way Locations | Find A Location Nearest You</title>
                 <meta charset="utf-8" />
                 <meta name="description" content="Find the nearest Colorado or Michigan Yuma Way location! Shop in-store or order online."></meta>
+                <link rel="canonical" href="https://www.yumaway.com/locations"></link>
             </Helmet>
             <Row>
                 <Col xs={{span:12,order:2}} sm={{span:12,order:2}} lg={{span:4,order:1}} className='storeFinderInfo selectedStoreInfo'> 

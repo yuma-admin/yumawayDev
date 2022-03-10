@@ -67,6 +67,7 @@ function CSSGrid() {
             | Browse Our Current Deals</title>
             <meta charset="utf-8" />
             <meta name="description" content="Browse Our Current Deals for Both Colorado & Michigan Locations"></meta>
+            <link rel="canonical" href="http://yumaway.com/colorado-deals"></link>
         </Helmet>
         <div className="dealContainer">
         
@@ -92,12 +93,8 @@ function CSSGrid() {
             </div>
         
         </div>
-    
-
     </>
-    
     )
-    
 }
     
     

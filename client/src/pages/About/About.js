@@ -31,6 +31,7 @@ function About() {
         <Helmet>
             <title>Yuma Way | About Us</title>
             <meta name="description" content="Our Mission Is To Provide High-Quality Cannabis Products At Affordable Prices. Click To Find Out More."/>
+            <link rel="canonical" href="https://yumaway.com/about"></link>
         </Helmet>
         <section class="about">
             <div class="row">
