@@ -37,16 +37,16 @@ const weeklyDealsData =
             {
                 imgUrl: '/images/deals/coloradoDeals/weekly-update/coupon-11.png'
             },
-            {
-                imgUrl: '/images/deals/coloradoDeals/weekly-update/coupon-12.png'
-            }
+            // {
+            //     imgUrl: '/images/deals/coloradoDeals/weekly-update/coupon-12.png'
+            // }
 
         ],
 
         michigan: [
-            // {
-            //     imgUrl: '/images/deals/michiganDeals/weekly-update/coupon-1.png'
-            // },
+            {
+                imgUrl: '/images/deals/michiganDeals/weekly-update/coupon-1.png'
+            },
             // {
             //     imgUrl: '/images/deals/michiganDeals/weekly-update/coupon-2.png'
             // },
