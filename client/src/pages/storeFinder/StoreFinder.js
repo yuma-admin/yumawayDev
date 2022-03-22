@@ -79,7 +79,6 @@ function StoreFinder(props) {
                 case 'twinpeaks':
                     storeNumber = '1691'
                 break;
-
                 case 'cannacity':
                     storeNumber = '1525'
                 break;
@@ -97,6 +96,9 @@ function StoreFinder(props) {
                 break;
                 case 'lowellgardens':
                     storeNumber = '9999'
+                break;    
+                case 'courtsidegardens':
+                    storeNumber = '2'    
                 break;
                 default:
                     storeNumber = ''
