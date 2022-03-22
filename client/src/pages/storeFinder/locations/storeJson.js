@@ -299,6 +299,43 @@ const storeJson = [
         instagram: "https://www.instagram.com/canna_bay_dispensary/",
         twitter: "https://twitter.com/Yuma_Way"
     },
+    {
+        id: '2',
+        img: '/images/logo/Courtsidegardens-temp-logo.png',
+        alt: 'Court Side Gardens Logo',
+        logoPinch: '',
+        exteriorStore:'/images/storeExterior/WoodbridgeOutdoor.jpg',
+        interiorStore: '',
+        exAlt: 'Courtside Gardens Store Exterior',
+        inAlt: 'Courtside Gardens Store Interior',
+        name: 'Courtside Gardens',
+        address1:'1321 Court St',
+        address2: 'Saginaw, MI 48602',
+        escapedUrlAddress: '1321+Court+St%2C+Saginaw%2C+MI+48602',
+        lat: 43.422459,
+        lng: -83.971098,
+        phone: '',
+        phoneLink: '',
+        type: {
+            Rec: '',
+            Med: '',
+        },
+        hours: {
+            monday: '',
+            tuesday: '',
+            wednesday: '',
+            thursday: '',
+            friday: '',
+            saturday: '',
+            sunday: ''
+        },
+        storeDescription: '',
+        shop: 'Shop',
+        href: 'CourtsideGardens',
+        facebook:'',
+        instagram:'',
+        twitter: ''
+    },
     
  
 ]
