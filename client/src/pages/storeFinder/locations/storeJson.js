@@ -321,13 +321,13 @@ const storeJson = [
             Med: '',
         },
         hours: {
-            monday: '',
-            tuesday: '',
-            wednesday: '',
-            thursday: '',
-            friday: '',
-            saturday: '',
-            sunday: ''
+            monday: '10am - 6:00pm',
+            tuesday: '10am - 6:00pm',
+            wednesday: '10am - 6:00pm',
+            thursday: '10am - 6:00pm',
+            friday: '10am - 6:00pm',
+            saturday: '10am - 6:00pm',
+            sunday: '10am - 6:00pm'
         },
         storeDescription: '',
         shop: 'Shop',
@@ -336,7 +336,6 @@ const storeJson = [
         instagram:'',
         twitter: ''
     },
-    
  
 ]
 

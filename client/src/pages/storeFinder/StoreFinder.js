@@ -155,7 +155,7 @@ function StoreFinder(props) {
                 <title>Yuma Way Locations | Find A Location Nearest You</title>
                 <meta charset="utf-8" />
                 <meta name="description" content="Find the nearest Colorado or Michigan Yuma Way location! Shop in-store or order online."></meta>
-                <meta name="keywords" content="Yuma, Yuma Way, Dispensaries, Denver Dispensaries, Michigan Dispensaries, Cherry Peak, Lowell Gardens, Cannabay, Cannacity, Twin Peaks, Berkley, The Cofee Joint"></meta>
+                <meta name="keywords" content="Yuma, Yuma Way, Dispensaries, Denver Dispensaries, Michigan Dispensaries, Saginaw Dispensaries, Bay City Dispensaries, Cherry Peak, Lowell Gardens, Cannabay, Cannacity, Twin Peaks, Berkley, The Cofee Joint, Courtside Gardens"></meta>
                 <link rel="canonical" href="https://www.yumaway.com/locations"></link>
             </Helmet>
             <Container fluid>
