@@ -13,7 +13,29 @@ import { Helmet } from 'react-helmet';
 
 // Selects the target store's information from the json file
 function TargetLocation(props){
-    const filteredStore = storeJson.filter(store => store.id === props.id)
+
+//Jane's Tracking Script
+const janescript = document.createElement("script");
+  janescript.async = true;
+  janescript.src =     
+  `document.addEventListener("click", function(e) {
+        var linkNode = e.srcElement.href ? e.srcElement : e.srcElement.parentNode;
+    if(linkNode.localName !== "a" || linkNode.href.endsWith("#")) return;
+    
+    e.preventDefault();
+    var currentQuery = location.search.substr(1);
+    var url = new URL(linkNode.href);
+    url.search += (url.search.indexOf('?') > -1 ? '&' : '?') + currentQuery;
+    var dst = e.target;
+    if (dst.target) {
+  window.open(url.toString(), dst);
+    } else {
+  location.assign(url.toString());
+    }
+  })`;
+  document.head.appendChild(janescript);  
+
+const filteredStore = storeJson.filter(store => store.id === props.id)
 
 // function to return google map directions to the store
 function getDirections(){
