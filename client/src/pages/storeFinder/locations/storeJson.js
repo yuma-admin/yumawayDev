@@ -329,7 +329,7 @@ const storeJson = [
             saturday: '10am - 6:00pm',
             sunday: '10am - 6:00pm'
         },
-        storeDescription: '',
+        storeDescription:'Welcome to Courtside Gardens, Saginaw’s first deli style marijuana retailer! Operated by Yuma Way Cannabis Company, our Colorado headquartered company has been operating since 2016, and is proud to offer a vast selection of quality flower, concentrates, edibles, and more. Do you have questions? Visit our store and our knowledgeable and friendly staff is there to help you select the product to fit your needs. Traveling up to Bay City? We’ve got you covered at CannaBay. From the River to Bay - Yuma Way.',
         shop: 'Shop',
         href: 'courtsidegardens',
         facebook:'',
