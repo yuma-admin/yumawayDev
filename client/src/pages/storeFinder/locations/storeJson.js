@@ -307,7 +307,7 @@ const storeJson = [
     twitter: "https://twitter.com/Yuma_Way",
   },
   {
-    id: "2",
+    id: "4371",
     img: "/images/logo/Courtsidegardens-temp-logo.png",
     alt: "Court Side Gardens Logo",
     logoPinch: "/images/logo/Courtsidegardens-temp-logo.png",
@@ -324,7 +324,7 @@ const storeJson = [
     phone: "(989) 702-2027",
     phoneLink: "tel:+1-989-702-2027",
     type: {
-      Rec: "2",
+      Rec: "4371",
       Med: "",
     },
     hours: {
