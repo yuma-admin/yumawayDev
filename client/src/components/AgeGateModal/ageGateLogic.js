@@ -23,6 +23,4 @@ export default function ageGateLogic(){
     } else {
         return true
     }
-
-    
 }
