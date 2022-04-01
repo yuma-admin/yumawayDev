@@ -72,38 +72,41 @@ function StoreFinder(props) {
             let storeNumber;
             console.log(store)
                 
-            switch(store) {
-                case 'cherrypeak':
-                    storeNumber = '1671'
+            switch (store) {
+              case "cherrypeak":
+                storeNumber = "1671";
                 break;
-                case 'twinpeaks':
-                    storeNumber = '1691'
+              case "twinpeaks":
+                storeNumber = "1691";
                 break;
-                case 'cannacity':
-                    storeNumber = '1525'
+              case "cannacity":
+                storeNumber = "1525";
                 break;
-                case 'berkeleydispensary':
-                    storeNumber = '1693'
+              case "berkeleydispensary":
+                storeNumber = "1693";
                 break;
-                case '1136yuma':
-                    storeNumber = '17'
+              case "1136yuma":
+                storeNumber = "17";
                 break;
-                case 'cannabay':
-                    storeNumber = '2600'
+              case "cannabay":
+                storeNumber = "2600";
                 break;
-                case 'coffeejoint':
-                    storeNumber = '1'
+              case "coffeejoint":
+                storeNumber = "1";
                 break;
-                case 'lowellgardens':
-                    storeNumber = '9999'
-                break;    
-                case 'courtsidegardens':
-                    storeNumber = '4371'    
+              case "lowellgardens":
+                storeNumber = "9999";
                 break;
-                default:
-                    storeNumber = ''
+              case "courtsidegardens":
+                storeNumber = "4371";
+                break;
+              case "urbangardens":
+                storeNumber = "4404";
+                break;
+              default:
+                storeNumber = "";
 
-                return storeNumber
+                return storeNumber;
             }
             
             const found = storeJson.find( ({ id }) => id === storeNumber)

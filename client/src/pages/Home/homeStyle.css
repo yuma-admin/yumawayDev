@@ -203,6 +203,7 @@
   
   .QuoteBanner img {
     width: 125%;
+    background-attachment: fixed;
   }
   
   .QuoteBanner article {
