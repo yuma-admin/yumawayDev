@@ -13,6 +13,7 @@ import Home from './pages/Home/Home'
 import DealsPage from './pages/DealsPage/DealsPage'
 import About from './pages/About/About'
 import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy'
+import DonatePage from "./pages/DonatePage/DonatePage";
 
 // STORE FINDER PAGE AND COMPONENTS
 import StoreFinder from './pages/storeFinder/StoreFinder'
@@ -94,6 +95,11 @@ function App() {
           {/* ABOUT PAGE ROUTE */}
           <Route exact path="/about" >
             <About />
+          </Route>
+
+          {/* DONATE PAGE ROUTE */}
+          <Route exact path="/donate" >
+            <DonatePage />
           </Route>
 
           {/* PRIVACY POLICY */}

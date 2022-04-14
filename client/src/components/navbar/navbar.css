@@ -41,6 +41,12 @@
     
   }
 
+  .donateImg{
+    width: 70px !important;
+    transition: all ease-out 0.2s;
+  }
+
+
 @media screen and (max-width: 768px){
   #navbar img {
     width: 10em;
@@ -61,6 +67,7 @@
     font-size: 18px;
     padding: 10px;
   }
+  
 }
 
 @media screen and (max-width: 375px){
@@ -70,4 +77,6 @@
   .mainNavItem {
     font-size: 16px;
   }
+
+  
 }
