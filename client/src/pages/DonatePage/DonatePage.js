@@ -13,6 +13,7 @@ import CouponGrid from "../DealsPage/page-setup/WeeklyDeals";
 import dealsDataController from "../DealsPage/page-setup/logic/dealsDataController";
 import dealsGridController from "../DealsPage/page-setup/logic/dealsGridBuilder";
 import { BiCurrentLocation } from "react-icons/bi";
+import ageGateLogic from "../../components/AgeGateModal/ageGateLogic";
 
 // PAGE START
 function CSSGrid() {
@@ -87,31 +88,55 @@ function CSSGrid() {
             <div class="row">
               <div class="aboutPeople aboutYumaBorder">
                 <div class="textContainer">
-                  <h1>Weed And War</h1>
-
                   <div className="offerCopy">
+                    <h1>420 – 2022 Celebration – FLOWER POWER</h1>
+
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      Duis aute irure dolor in reprehenderit in voluptate velit
-                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                      sint occaecat cupidatat non proident, sunt in culpa qui
-                      officia deserunt mollit anim id est laborum.
-                    </p>
-                    <div>
-                      <a
-                        href="https://www.chabad.org/special/campaigns/ukraine/donate.htm"
-                        target="_blank"
-                        className="mainNavItem"
-                      >
-                        <img
-                          className="donateImg"
-                          src="/images/donate/donateButton.png"
-                        />
+                      Russia launched a full-scale military invasion into
+                      Ukraine on February 24, 2022, fighting has caused many
+                      civilian deaths and pushed millions of Ukrainians to flee
+                      to neighboring countries—the majority of whom have arrived
+                      in Poland, a NATO country where U.S. troops are preparing
+                      to offer assistance to refugees. Some refugees made it to
+                      the US. Yuma Way is a cannabis company that is owned and
+                      managed by the American Citizens that are Ukrainian
+                      immigrants. Our thoughts and prayers are with Ukraine and
+                      Ukrainian people.
+                      <br />
+                      <a href="https://www.westword.com/marijuana/ukraine-fundraiser-cannabis-keef-yuma-way-colorado-13878468">
+                        We would like to raise awareness and help the people of
+                        Ukraine.
                       </a>
-                    </div>
+                      <br />
+                      <br />
+                      STOP THE WAR $1 from every purchase Blue Razz Cola will be
+                      donated to United for Ukraine Fund by Keef Cola, and Yuma
+                      Way will match that donation for Blue Razz Cola sales in
+                      all Yuma Way stores. Here are some ways to help:
+                      <br />
+                      <br />
+                      1) Come to the Denver Capitol building every Saturday at
+                      noon to show your support.
+                      <br />
+                      2) Donate to Ukrainian causes at sites such as:
+                      <br />
+                      <a href="www.ukraniansofcolorado.com">
+                        www.ukraniansofcolorado.com
+                      </a>
+                      .
+                      <br />
+                      3) Through churches such as
+                      <br />
+                      <a href="www.bethel.community">www.bethel.community</a>
+                      <br />
+                      4)Jewish Chabad organization
+                      <br />
+                      <a href="https://www.chabad.org/special/campaigns/ukraine/donate.htm">
+                        https://www.chabad.org/special/campaigns/ukraine/donate.htm
+                      </a>
+                      <br />
+                    </p>
+                    
                     <a
                       href="https://www.chabad.org/special/campaigns/ukraine/donate.htm"
                       target="_blank"

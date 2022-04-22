@@ -38,15 +38,15 @@ const weeklyDealsData =
       {
         imgUrl: "/images/deals/coloradoDeals/weekly-update/coupon-12.png",
       },
-      {
-        imgUrl: "/images/deals/coloradoDeals/weekly-update/coupon-13.png",
-      },
-      {
-        imgUrl: "/images/deals/coloradoDeals/weekly-update/coupon-14.png",
-      },
-      {
-        imgUrl: "/images/deals/coloradoDeals/weekly-update/coupon-15.png",
-      },
+      // {
+      //   imgUrl: "/images/deals/coloradoDeals/weekly-update/coupon-13.png",
+      // },
+      // {
+      //   imgUrl: "/images/deals/coloradoDeals/weekly-update/coupon-14.png",
+      // },
+      // {
+      //   imgUrl: "/images/deals/coloradoDeals/weekly-update/coupon-15.png",
+      // },
     ],
 
     michigan: [

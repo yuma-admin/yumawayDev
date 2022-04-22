@@ -23,12 +23,12 @@ const Navbar=() => {
               <a href="/locations" className="mainNavItem">
                 Shop
               </a>
-              {/* <a href="/donate" className="mainNavItem">
+              <a href="/donate" className="mainNavItem">
                 <img
                   className="donateImg"
                   src="/images/donate/donateButton.png"
                 />
-              </a> */}
+              </a>
             </div>
           </div>
         </div>
