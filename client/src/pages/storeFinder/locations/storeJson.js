@@ -260,7 +260,7 @@ const storeJson = [
       sunday: "8am - 8:45pm",
     },
     storeDescription:
-      "CannaBay is Bay City, Michigan’s first licensed provisioning center. With a relaxed customer-based environment, CannaBay’s cannabis shopping experience is specifically tailored to help treat every customer to the best of our abilities. We pride ourselves on providing 1-on-1 service to each customer that walks through our doors. Each product on our shelves is carefully chosen to make sure we have only top quality state tested products.  At CannaBay, our passionate budtenders strive to provide you with a satisfied experience and a welcoming atmosphere every single time — by the bay.",
+      "CannaBay is Bay City, the first Yuma shop in Michigan. With a relaxed customer-based environment, CannaBay’s cannabis shopping experience is specifically tailored to help treat every customer to the best of our abilities. We pride ourselves on providing 1-on-1 service to each customer that walks through our doors. Each product on our shelves is carefully chosen to make sure we have only top quality state tested products.  At CannaBay, our passionate budtenders strive to provide you with a satisfied experience and a welcoming atmosphere every single time — by the bay.",
     shop: "Shop",
     href: "cannabay",
     facebook: "https://www.facebook.com/CannabayDispensary",
