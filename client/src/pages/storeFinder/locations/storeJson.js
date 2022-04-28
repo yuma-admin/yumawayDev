@@ -347,9 +347,9 @@ const storeJson = [
   },
   {
     id: "4404",
-    img: "/images/logo/tempLogo.png",
+    img: "/images/logo/urban-garden-logo.png",
     alt: "Urban Gardens Logo",
-    logoPinch: "/images/logo/tempLogo.png",
+    logoPinch: "/images/logo/urban-garden-logo.png",
     exteriorStore: "/images/storeExterior/urbanGardensOutdoor.jpg",
     interiorStore: "/images/storeInterior/urbanGardensIndoor.jpg",
     exAlt: "Urban Gardens Store Exterior",

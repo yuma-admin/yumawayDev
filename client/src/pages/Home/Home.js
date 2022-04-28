@@ -27,7 +27,9 @@ function Home() {
   return (
     <div className="container-fluid">
       <Helmet>
-        <title>Yuma Way || Denver & Michigan's Premier Dispensary</title>
+        <title>
+          Yuma Way || Colorado & Michigan's Premier Cannabis Company
+        </title>
         <meta
           name="description"
           content="Colorado & Michigan Cannabis Dispensary. Find the nearest cannabis dispensary offering affordable THC edibles, THC concentrates, topicals and THC flower."
