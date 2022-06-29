@@ -40,7 +40,7 @@ function Menu(props){
 
     document.body.appendChild(script);
 
-  });
+  },0);
 
   // This function sends the user back to the Store Finder page
   let history = useHistory();

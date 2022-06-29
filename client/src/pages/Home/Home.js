@@ -32,7 +32,7 @@ function Home() {
         </title>
         <meta
           name="description"
-          content="Colorado & Michigan Cannabis Dispensary. Find the nearest cannabis dispensary offering affordable THC edibles, THC concentrates, topicals and THC flower."
+          content="Colorado & Michigan Retail Shops. Find the nearest retail shops offering affordable THC edibles, THC concentrates, topicals and THC flower."
         ></meta>
         <meta
           name="keywords"
