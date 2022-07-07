@@ -103,7 +103,10 @@ function CSSGrid() {
                       immigrants. Our thoughts and prayers are with Ukraine and
                       Ukrainian people.
                       <br />
-                      <a href="https://www.westword.com/marijuana/ukraine-fundraiser-cannabis-keef-yuma-way-colorado-13878468">
+                      <a
+                        target="_blank"
+                        href="https://www.westword.com/marijuana/ukraine-fundraiser-cannabis-keef-yuma-way-colorado-13878468"
+                      >
                         We would like to raise awareness and help the people of
                         Ukraine.
                       </a>
@@ -120,26 +123,37 @@ function CSSGrid() {
                       <br />
                       2) Donate to Ukrainian causes at sites such as:
                       <br />
-                      <a href="www.ukraniansofcolorado.com">
+                      <a
+                        target="_blank"
+                        href="https://www.ukrainiansofcolorado.org/#:~:text=We%20are%20Ukrainians%20of%20Colorado,through%20social%20functions%20and%20events."
+                      >
                         www.ukraniansofcolorado.com
                       </a>
                       .
                       <br />
                       3) Through churches such as
                       <br />
-                      <a href="www.bethel.community">www.bethel.community</a>
+                      <a
+                        target="_blank"
+                        href="https://bethelrussianchurch.org/"
+                      >
+                        www.bethel.community
+                      </a>
                       <br />
                       4)Jewish Chabad organization
                       <br />
-                      <a href="https://www.chabad.org/special/campaigns/ukraine/donate.htm">
+                      <a
+                        target="_blank"
+                        href="https://www.chabad.org/special/campaigns/ukraine/donate.htm"
+                      >
                         https://www.chabad.org/special/campaigns/ukraine/donate.htm
                       </a>
                       <br />
                     </p>
-                    
+
                     <a
-                      href="https://www.chabad.org/special/campaigns/ukraine/donate.htm"
                       target="_blank"
+                      href="https://www.chabad.org/special/campaigns/ukraine/donate.htm"
                       className="mainNavItem"
                     >
                       <img
