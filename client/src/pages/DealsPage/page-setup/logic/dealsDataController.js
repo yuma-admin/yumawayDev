@@ -64,7 +64,8 @@ export default function dealsStateOrganizer(){
         const stateDealsDataObj = {
             stateData: {
                 stateHeadline: "Colorado Deals",
-                stateHref: "/cannabis-deals/michigan-deals",
+                stateHref: "/michigan-deals",
+                // stateHref: "/cannabis-deals/michigan-deals",
                 unSelectedState: "Michigan Deals",
             },
             chosenCarousel: carouselDealsData.colorado,
