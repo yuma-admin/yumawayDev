@@ -1,8 +1,8 @@
 // IMPORT IMAGE DATA
-import carouselDealsData from '../../updateDealsHere/carouselDealsData'
-import weeklyDealsData from '../../updateDealsHere/weeklyDealsData.js'
-const coloradoTopRight = "/images/deals/coloradoDeals/colorado-happy-hour.jpg"
-const michiganTopRight = "/images/deals/michiganDeals/michigan-happy-hour.jpg"
+import carouselDealsData from "../../updateDealsHere/carouselDealsData";
+import weeklyDealsData from "../../updateDealsHere/weeklyDealsData.js";
+const coloradoTopRight = "/images/deals/coloradoDeals/colorado-happy-hour.jpg";
+const michiganTopRight = "/images/deals/michiganDeals/michigan-happy-hour.jpg";
 
 // THIS FUNCTION DETERMINES STATE SELECTED AND SETS PAGE DATA AND IMAGE URLS
 // HOW IT WORKS
@@ -23,55 +23,54 @@ const michiganTopRight = "/images/deals/michiganDeals/michigan-happy-hour.jpg"
 //  --- After replacing above, make sure they match URLS in weeklyDealsData
 //  - I recommend maintaining the name structure "coupon-1, coupon-2, etc." for easy changing, but you can do as you like
 
-export default function dealsStateOrganizer(){
+export default function dealsStateOrganizer() {
+  // Reads URL HREF to Determine State Selected
+  const url = window.location.href;
+  const str = url.split("/");
+  const currentHref = str[str.length - 1];
+  console.log(currentHref);
 
-    // Reads URL HREF to Determine State Selected
-    const url = window.location.href;
-    const str = url.split("/")
-    const currentHref = str[(str.length - 1)]
-    console.log(currentHref)
-
-    // Sets Page Data Based on URL Above
-    // IF Colorado...
-    if(currentHref==="colorado-deals") {
-        // Builds Each Data Set as Objects for Deals Page
-        const stateDealsDataObj = {
-            stateData: {
-                stateHeadline: "Colorado Deals",
-                stateHref: "/michigan-deals",
-                unSelectedState: "Michigan Deals",
-            },
-            chosenCarousel: carouselDealsData.colorado,
-            chosenTopRightCoupon: coloradoTopRight,
-            chosenWeeklyDeals: weeklyDealsData.colorado,
-        }
-        return stateDealsDataObj
+  // Sets Page Data Based on URL Above
+  // IF Colorado...
+  if (currentHref === "colorado-deals") {
+    // Builds Each Data Set as Objects for Deals Page
+    const stateDealsDataObj = {
+      stateData: {
+        stateHeadline: "Colorado Deals",
+        stateHref: "/michigan-deals",
+        unSelectedState: "Michigan Deals",
+      },
+      chosenCarousel: carouselDealsData.colorado,
+      chosenTopRightCoupon: coloradoTopRight,
+      chosenWeeklyDeals: weeklyDealsData.colorado,
+    };
+    return stateDealsDataObj;
     // If Michigan...
-    } else if (currentHref==="michigan-deals") {
-        const stateDealsDataObj = {
-            stateData: {
-                stateHeadline: "Michigan Deals",
-                stateHref: "/colorado-deals",
-                unSelectedState: "Colorado Deals",
-            },
-            chosenCarousel: carouselDealsData.michigan,
-            chosenTopRightCoupon: michiganTopRight,
-            chosenWeeklyDeals: weeklyDealsData.michigan,
-        }
-        return stateDealsDataObj
+  } else if (currentHref === "michigan-deals") {
+    const stateDealsDataObj = {
+      stateData: {
+        stateHeadline: "Michigan Deals",
+        stateHref: "/colorado-deals",
+        unSelectedState: "Colorado Deals",
+      },
+      chosenCarousel: carouselDealsData.michigan,
+      chosenTopRightCoupon: michiganTopRight,
+      chosenWeeklyDeals: weeklyDealsData.michigan,
+    };
+    return stateDealsDataObj;
     // Anything else, return Colorado Data.
-    } else {
-        const stateDealsDataObj = {
-            stateData: {
-                stateHeadline: "Colorado Deals",
-                stateHref: "/michigan-deals",
-                // stateHref: "/cannabis-deals/michigan-deals",
-                unSelectedState: "Michigan Deals",
-            },
-            chosenCarousel: carouselDealsData.colorado,
-            chosenTopRightCoupon: coloradoTopRight,
-            chosenWeeklyDeals: weeklyDealsData.colorado,
-        }
-        return stateDealsDataObj
-    }
+  } else {
+    const stateDealsDataObj = {
+      stateData: {
+        stateHeadline: "Colorado Deals",
+        stateHref: "/michigan-deals",
+        // stateHref: "/cannabis-deals/michigan-deals",
+        unSelectedState: "Michigan Deals",
+      },
+      chosenCarousel: carouselDealsData.colorado,
+      chosenTopRightCoupon: coloradoTopRight,
+      chosenWeeklyDeals: weeklyDealsData.colorado,
+    };
+    return stateDealsDataObj;
+  }
 }
