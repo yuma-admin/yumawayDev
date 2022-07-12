@@ -401,7 +401,7 @@ const storeJson = [
     phone: "",
     phoneLink: "",
     type: {
-      Rec: "",
+      Rec: "0000",
       Med: "",
     },
     hours: {
@@ -415,7 +415,7 @@ const storeJson = [
     },
     storeDescription: "coming soon",
     shop: "Coming Soon!",
-    href: "",
+    href: "yumaquebec",
     facebook: "",
     instagram: "",
     twitter: "",
