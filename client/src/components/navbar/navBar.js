@@ -1,8 +1,8 @@
-import React from 'react';
-import './navbar.css';
+import React from "react";
+import "./navbar.css";
 // import Logo from './../images/cropped-TOPNAVLOGO.png';
 
-const Navbar=() => {
+const Navbar = () => {
   return (
     <>
       <div id="navbar">
@@ -17,9 +17,25 @@ const Navbar=() => {
               <a href="/" className="mainNavItem">
                 Home
               </a>
-              <a href="/colorado-deals" className="mainNavItem">
+              {/* <a href="/colorado-deals" className="mainNavItem">
                 Deals
-              </a>
+              </a> */}
+              <nav className="dropdown">
+                <ul>
+                  <li>
+                    <a href="#">Deals</a>
+                    <ul>
+                      <li className="dropdown-item">
+                        <a href="/colorado-deals">Colorado</a>
+                      </li>
+                      <li className="dropdown-item">
+                        <a href="/michigan-deals">Michigan</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+
               <a href="/locations" className="mainNavItem">
                 Shop
               </a>

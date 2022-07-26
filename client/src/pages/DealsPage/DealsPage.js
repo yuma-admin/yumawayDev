@@ -1,10 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./newDealsCSS.css";
 
-// State Select Modal
-import StateSelectModal from "../../components/StateSelectModal/StateSelectModal";
-import { createPortal } from "react-dom";
-
 // Meta Data
 import { Helmet } from "react-helmet";
 
@@ -109,11 +105,7 @@ function CSSGrid() {
         </div>
       </div>
 
-      {/* HIDDEN MODAL */}
-      {/* <Modal
-        showStateModal={showStateModal}
-        // data-keyboard="false" data-backdrop="static"
-      ></Modal> */}
+
 
     </>
   );
