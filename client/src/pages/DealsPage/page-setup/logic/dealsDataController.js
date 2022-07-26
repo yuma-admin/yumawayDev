@@ -32,7 +32,7 @@ export default function dealsStateOrganizer() {
 
   // Sets Page Data Based on URL Above
   // IF Colorado...
-  if (currentHref == "colorado-deals") {
+  if (currentHref === "colorado-deals") {
     // Builds Each Data Set as Objects for Deals Page
     const stateDealsDataObj = {
       stateData: {
@@ -46,7 +46,7 @@ export default function dealsStateOrganizer() {
     };
     return stateDealsDataObj;
     // If Michigan...
-  } else if (currentHref == "michigan-deals") {
+  } else if (currentHref === "michigan-deals") {
     const stateDealsDataObj = {
       stateData: {
         stateHeadline: "Michigan Deals",

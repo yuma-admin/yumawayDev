@@ -14,7 +14,7 @@
         e.preventDefault();
         var currentQuery = location.search.substr(1);
         var url = new URL(linkNode.href);
-        url.search += (url.search.indexOf('?') > -1 ? '&' : '?') + currentQuery;
+        // url.search += (url.search.indexOf('?') > -1 ? '&' : '?') + currentQuery;
         var dst = e.target;
         if (dst.target) {
       window.open(url.toString(), dst);
