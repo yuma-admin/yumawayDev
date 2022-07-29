@@ -282,8 +282,8 @@ const storeJson = [
     address1: "5441 Quebec St",
     address2: "Commerce City, CO, 80022",
     escapedUrlAddress: "5441+Quebec+St,+Commerce+City,+CO+80022",
-    lat: 39.7783628,
-    lng: -104.9439573,
+    lat: 39.7904683,
+    lng: -104.9056131,
     phone: "",
     phoneLink: "",
     type: {
