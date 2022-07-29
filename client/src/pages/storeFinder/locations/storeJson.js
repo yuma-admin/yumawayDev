@@ -70,7 +70,7 @@ const storeJson = [
       sunday: "8am - 11:45pm",
     },
     storeDescription:
-      "As Yuma Way's first Glendale location, Cherry Peak Dispensary has developed into a cozy shop offering a varied selection of flower, concentrates, edibles, and more that will impress even the most connoisseur of customers! Our staff excelsl in providing all patrons with a welcoming experience allowing them to explore and learn about all of the various products we carry. Not only does Cherry Peak have one of the largest selections in Glendale, Colorado but we also run deals regularly on the products you all have come to love, so never feel hesitant to check out what's new every week! We pride ourselves on quality products at competitive prices to ensure the best experiences every single time you. Come see how we do things the Yuma Way at Cherry Peak Dispensary!",
+      "As Yuma Way's first Glendale location, Cherry Peak Dispensary has developed into a cozy shop offering a varied selection of flower, concentrates, edibles, and more that will impress even the most connoisseur of customers! Our staff excelsl in providing all patrons with a welcoming experience allowing them to explore and learn about all of the various products we carry. Not only does Cherry Peak have one of the largest selections in Glendale, Colorado but we also run deals regularly on the products you all have come to love, so never feel hesitant to check out what's new every week! We pride ourselves on quality products at competitive prices to ensure the best experiences every single time you visit. Come see how we do things the Yuma Way at Cherry Peak Dispensary!",
     shop: "Shop",
     href: "cherrypeak",
     facebook: "https://www.facebook.com/YumaWayCherryPeakDispensary",
@@ -301,7 +301,7 @@ const storeJson = [
     },
     storeDescription: "coming soon",
     shop: "Coming Soon!",
-    href: "yumaquebec",
+    href: "stadiumgardens",
     facebook: "",
     instagram: "",
     twitter: "",
