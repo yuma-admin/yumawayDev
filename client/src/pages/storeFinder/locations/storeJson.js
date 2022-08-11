@@ -32,6 +32,7 @@ const storeJson = [
     },
     storeDescription:
       "Located in the Berkley Neighborhood near Regis University, Lowell Gardens’ staff is here to help you find the right thc product. We have a vast selection of flower, concentrates, and edibles. Our flower is carefully picked and packaged deli style.",
+    vip: "https://enrollnow.vip/login/2966?location=lowell-gardens",
     shop: "Now Open",
     href: "lowellgardens",
     facebook:
@@ -71,6 +72,7 @@ const storeJson = [
     },
     storeDescription:
       "As Yuma Way's first Glendale location, Cherry Peak Dispensary has developed into a cozy shop offering a varied selection of flower, concentrates, edibles, and more that will impress even the most connoisseur of customers! Our staff excelsl in providing all patrons with a welcoming experience allowing them to explore and learn about all of the various products we carry. Not only does Cherry Peak have one of the largest selections in Glendale, Colorado but we also run deals regularly on the products you all have come to love, so never feel hesitant to check out what's new every week! We pride ourselves on quality products at competitive prices to ensure the best experiences every single time you visit. Come see how we do things the Yuma Way at Cherry Peak Dispensary!",
+    vip: "https://enrollnow.vip/login/2966?location=cherry-peak",
     shop: "Shop",
     href: "cherrypeak",
     facebook: "https://www.facebook.com/YumaWayCherryPeakDispensary",
@@ -109,6 +111,7 @@ const storeJson = [
     },
     storeDescription:
       "Located in Longmont, Colorado- a gateway to the Rocky Mountains, Twin Peaks Dispensary offers a wide range of cannabis products suitable for both locals and tourists. With a view of the mountains right from our door, we pride ourselves on helping our adventurous community each and every day. Our Twin Peaks location is managed by a multi-background team with decades of combined cannabis knowledge, come on by today!",
+    vip: "https://enrollnow.vip/login/2966?location=twin-peaks",
     shop: "Shop",
     href: "twinpeaks",
     facebook: "https://www.facebook.com/TwinPeaksDispensary",
@@ -147,6 +150,7 @@ const storeJson = [
     },
     storeDescription:
       "Located in Old Town Arvada, our brightly colorful exterior will direct you to cannabis heaven. Our store is stocked with a variety of cannabis products and smoking accessories in every category. All our products are tested and approved by our staff. We carry everything from $18 wax to $70 cannagars; we have something for everyone, from the stoner who just needs a joint to the connoisseur smoker looking for the top of the line brands and everything in between! ",
+    vip: "https://enrollnow.vip/login/2966?location=berkeley",
     shop: "Shop",
     href: "berkeleydispensary",
     facebook: "https://www.facebook.com/YumaWayBerkeleyDispensary",
@@ -185,6 +189,7 @@ const storeJson = [
     },
     storeDescription:
       "1136 Yuma Dispensary is located right off I-25 in Denver, Colorado. Our proximity to one of the most trafficked interstates in Denver, 1136 Yuma makes for a quick stop on your commute to or from home. Our location is convenient to those residing in the Lincoln Park neighborhood and Downtown Denver. 1136 Yuma offers ample parking to accommodate any size car/truck or any size group. Although our dispensary isn’t the largest, we encompass a large variety of all products to ensure that we can meet your every need. As a Yuma Way location, you can ensure to experience a plethora of products and deals on a daily basis. Visit us today! ",
+    vip: "https://enrollnow.vip/login/2966?location=1136-yuma",
     shop: "Shop",
     href: "1136yuma",
     facebook: "https://www.facebook.com/1136YumaDispensary",
@@ -223,6 +228,7 @@ const storeJson = [
     },
     storeDescription:
       "A dispensary managed by locals, Canna City serves the surrounding neighborhoods in Commerce City. Despite the local feel, Canna City is a great stop for commuters as it is located off Highway 85. Similar to Yuma Way’s other locations, Canna City carries a wide selection of THC edibles, concentrates, topicals, and cannabis flower. Anything from high exposure brands like Snaxland, Cookies, GKUA to regional favorite products from N-Fuzed, Incredibles, Koala Bars can be found on the shelves. Visit us today and explore all our options! ",
+    vip: "https://enrollnow.vip/login/2966?location=canna-city",
     shop: "Shop",
     href: "cannacity",
     facebook: "https://www.facebook.com/YumaWayCannaCityDispensary",
@@ -262,6 +268,7 @@ const storeJson = [
     },
     storeDescription:
       "A pioneer in Colorado’s cannabis industry, The Coffee Joint opened in 2018 to acclaim from local and national media. When in operation, the lounge allows e-nail dabbing, edible consumption and vaporizing of flower/concentrates to take place throughout the establishment. From jam sessions, intimate concerts, painting, cannabis vendor showcases, table games, book readings; The Coffee Joint is a hot spot for local wellness, education, and entertainment events. The Coffee Joint’s Consumption Lounge is currently closed to ensure the wellbeing of staff and retail patrons. Smoking accessories and snacks are available for purchase in-store. CBD products can be purchased at our brick-and-mortar and are also available for purchase online! ",
+    vip: "",
     shop: "Visit",
     href: "coffeejoint",
     facebook: "https://www.facebook.com/CannabayDispensary",
@@ -300,6 +307,7 @@ const storeJson = [
       sunday: "11am - 7pm",
     },
     storeDescription: "coming soon",
+    vip: "https://enrollnow.vip/login/2966?location=stadium-gardens",
     shop: "Visit",
     href: "stadiumgardens",
     facebook: "",
@@ -339,6 +347,7 @@ const storeJson = [
     },
     storeDescription:
       "CannaBay is Bay City, the first Yuma shop in Michigan. With a relaxed customer-based environment, CannaBay’s cannabis shopping experience is specifically tailored to help treat every customer to the best of our abilities. We pride ourselves on providing 1-on-1 service to each customer that walks through our doors. Each product on our shelves is carefully chosen to make sure we have only top quality state tested products.  At CannaBay, our passionate budtenders strive to provide you with a satisfied experience and a welcoming atmosphere every single time — by the bay.",
+    vip: "",
     shop: "Shop",
     href: "cannabay",
     facebook: "https://www.facebook.com/CannabayDispensary",
@@ -378,6 +387,7 @@ const storeJson = [
     },
     storeDescription:
       "Welcome to Courtside Gardens, Saginaw’s first deli style marijuana retailer! Operated by Yuma Way Cannabis Company, our Colorado headquartered company has been operating since 2016, and is proud to offer a vast selection of quality flower, concentrates, edibles, and more. Do you have questions? Visit our store and our knowledgeable and friendly staff is there to help you select the product to fit your needs. Traveling up to Bay City? We’ve got you covered at CannaBay. From the River to Bay - Yuma Way.",
+    vip: "",
     shop: "Shop",
     href: "courtsidegardens",
     facebook: "",
@@ -416,6 +426,7 @@ const storeJson = [
     },
     storeDescription:
       "Come again to checkout our newest addition to Yuma Way Cannabis Company.",
+    vip: "",
     shop: "Shop",
     href: "urbangardens",
     facebook: "",

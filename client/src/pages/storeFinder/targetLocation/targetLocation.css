@@ -213,7 +213,7 @@
 }
 .storeDescription p {
   width: 85%;
-  margin: auto;
+  margin-bottom: 20px;
   color: #f2e6d5;
   font-family: "Montserrat", sans-serif;
   /* font-style: italic; */
