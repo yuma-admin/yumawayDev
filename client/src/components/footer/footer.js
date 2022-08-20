@@ -7,6 +7,7 @@ const Footer=() => {
     <div className="footerBackground">
         <div className="row">
             <div className="col-12">
+
                 <div className="footerTMContainer">
                     <a href="/" className="footerTM">
                         ©2021 Yuma Way All Rights Reserved 
@@ -16,7 +17,9 @@ const Footer=() => {
                 <div className="footerNav">
                     <a href="/about" className="footerNavItem">About Us</a>
                     <a href="/privacy-policy" className="footerNavItem">Privacy Policy</a> 
+                    <a href="/social-equity" className="footerNavItem">Social Equity</a> 
                 </div>
+
             </div>
         </div>
     </div>

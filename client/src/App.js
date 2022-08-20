@@ -13,6 +13,7 @@ import Home from './pages/Home/Home'
 import DealsPage from './pages/DealsPage/DealsPage'
 import About from './pages/About/About'
 import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy'
+import SocialEquity from './pages/SocialEquity/SocialEquity'
 import DonatePage from "./pages/DonatePage/DonatePage";
 
 // STORE FINDER PAGE AND COMPONENTS
@@ -105,6 +106,11 @@ function App() {
           {/* PRIVACY POLICY */}
           <Route exact path="/privacy-policy">
             <PrivacyPolicy/>
+          </Route>
+
+          {/* SOCIAL EQUITY */}
+          <Route exact path="/social-equity">
+            <SocialEquity/>
           </Route>
 
           {/* STORE LOCATOR ROUTES */}
