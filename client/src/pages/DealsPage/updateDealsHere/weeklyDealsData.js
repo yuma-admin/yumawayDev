@@ -98,9 +98,9 @@ const weeklyDealsData =
       {
         imgUrl: "/images/deals/michiganDeals/weekly-update/coupon-16.png",
       },
-      {
-        imgUrl: "/images/deals/michiganDeals/weekly-update/coupon-17.png",
-      },
+      // {
+      //   imgUrl: "/images/deals/michiganDeals/weekly-update/coupon-17.png",
+      // },
     ],
   };
 
