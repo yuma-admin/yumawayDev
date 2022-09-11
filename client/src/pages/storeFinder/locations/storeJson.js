@@ -33,7 +33,7 @@ const storeJson = [
     storeDescription:
       "Located in the Berkley Neighborhood near Regis University, Lowell Gardens’ staff is here to help you find the right thc product. We have a vast selection of flower, concentrates, and edibles. Our flower is carefully picked and packaged deli style.",
     vip: "https://enrollnow.vip/login/2966?location=lowell-gardens",
-    shop: "Now Open",
+    shop: "Shop",
     href: "lowellgardens",
     facebook:
       "https://www.facebook.com/Yuma-Way-Lowell-Gardens-Dispensary-106779174963951",
@@ -308,7 +308,7 @@ const storeJson = [
     },
     storeDescription: "coming soon",
     vip: "https://enrollnow.vip/login/2966?location=stadium-gardens",
-    shop: "Visit",
+    shop: "Shop",
     href: "stadiumgardens",
     facebook: "",
     instagram: "",
