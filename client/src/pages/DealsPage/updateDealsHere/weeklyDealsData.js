@@ -17,9 +17,9 @@ const weeklyDealsData =
       {
         imgUrl: "/images/deals/coloradoDeals/weekly-update/coupon-5.png",
       },
-      // {
-      //   imgUrl: "/images/deals/coloradoDeals/weekly-update/coupon-6.png",
-      // },
+      {
+        imgUrl: "/images/deals/coloradoDeals/weekly-update/coupon-6.png",
+      },
       // {
       //   imgUrl: "/images/deals/coloradoDeals/weekly-update/coupon-7.png",
       // },
@@ -86,9 +86,9 @@ const weeklyDealsData =
       {
         imgUrl: "/images/deals/michiganDeals/weekly-update/coupon-12.png",
       },
-      // {
-      //   imgUrl: "/images/deals/michiganDeals/weekly-update/coupon-13.png",
-      // }
+      {
+        imgUrl: "/images/deals/michiganDeals/weekly-update/coupon-13.png",
+      }
       // {
       //   imgUrl: "/images/deals/michiganDeals/weekly-update/coupon-14.png",
       // },
