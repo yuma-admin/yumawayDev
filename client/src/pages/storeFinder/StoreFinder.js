@@ -106,6 +106,9 @@ function StoreFinder(props) {
               case "stadiumgardens":
                 storeNumber = "0000";
                 break;
+              case "releafonvine":
+                storeNumber = "2544";
+                break;
               default:
                 storeNumber = "";
 
