@@ -104,21 +104,21 @@ const weeklyDealsData =
       {
         imgUrl: "/images/deals/michiganDeals/weekly-update/coupon-18.png",
       },
-      // {
-      //   imgUrl: "/images/deals/michiganDeals/weekly-update/coupon-19.png",
-      // },
-      // {
-      //   imgUrl: "/images/deals/michiganDeals/weekly-update/coupon-20.png",
-      // },
-      // {
-      //   imgUrl: "/images/deals/michiganDeals/weekly-update/coupon-21.png",
-      // },
-      // {
-      //   imgUrl: "/images/deals/michiganDeals/weekly-update/coupon-22.png",
-      // },
-      // {
-      //   imgUrl: "/images/deals/michiganDeals/weekly-update/coupon-23.png",
-      // },
+      {
+        imgUrl: "/images/deals/michiganDeals/weekly-update/coupon-19.png",
+      },
+      {
+        imgUrl: "/images/deals/michiganDeals/weekly-update/coupon-20.png",
+      },
+      {
+        imgUrl: "/images/deals/michiganDeals/weekly-update/coupon-21.png",
+      },
+      {
+        imgUrl: "/images/deals/michiganDeals/weekly-update/coupon-22.png",
+      },
+      {
+        imgUrl: "/images/deals/michiganDeals/weekly-update/coupon-23.png",
+      },
     ],
   };
 
