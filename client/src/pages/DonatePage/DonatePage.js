@@ -112,6 +112,13 @@ function CSSGrid() {
                       </a>
                       <br />
                       <br />
+                      <strong style={{ color:"red" }}>
+                        During the month of October for $1 from sale of Wana
+                        gummies will be donated to Ukrainian causes, and Yuma
+                        Way will match that donation.
+                      </strong>
+                      <br />
+                      <br />
                       STOP THE WAR $1 from every purchase Blue Razz Cola will be
                       donated to United for Ukraine Fund by Keef Cola, and Yuma
                       Way will match that donation for Blue Razz Cola sales in
