@@ -76,16 +76,6 @@ function CSSGrid() {
         <div class="row">
           <div class="col">
             <div class="row">
-              <div class="aboutHeader">
-                <div class="centeredImageContainer">
-                  <img
-                    src="/images/donate/supportUkraine.jpg"
-                    alt="Donate for Ukraine"
-                  />
-                </div>
-              </div>
-            </div>
-            <div class="row">
               <div class="aboutPeople aboutYumaBorder">
                 <div class="textContainer">
                   <div className="offerCopy">
@@ -112,7 +102,7 @@ function CSSGrid() {
                       </a>
                       <br />
                       <br />
-                      <strong style={{ color:"red" }}>
+                      <strong style={{ color: "red" }}>
                         During the month of October for $1 from sale of Wana
                         gummies will be donated to Ukrainian causes, and Yuma
                         Way will match that donation.
@@ -175,11 +165,13 @@ function CSSGrid() {
             </div>
 
             <div class="row">
-              <div class="aboutImageContainer">
-                <img
-                  src="/images/about/aboutPageImageThree.jpg"
-                  alt="Cannabis Joint on a Chessboard"
-                />
+              <div class="aboutHeader">
+                <div class="centeredImageContainer">
+                  <img
+                    src="/images/donate/supportUkraine.jpg"
+                    alt="Donate for Ukraine"
+                  />
+                </div>
               </div>
             </div>
           </div>

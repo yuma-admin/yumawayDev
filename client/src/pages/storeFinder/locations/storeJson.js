@@ -306,7 +306,8 @@ const storeJson = [
       saturday: "8am - 9:45pm",
       sunday: "8am - 9:45pm",
     },
-    storeDescription: "Beautiful brand new dispensary in brand new building. Located in Commerce City, Stadium Gardens is easily accessible from I-70 via Quebec St, and convenient to shoppers coming from Denver International Airport as well as those who are near Thornton. As a member of Yuma Way we offer a wide variety of marijuana flower strains, concentrates and extracts, vape pens, and edibles at affordable prices. We also offer the latest products like Wyld Gummies and year long favorites like The Clear, Evolab, and Cheeba Chews. Our friendly and knowledgeable staff will assist you with product selection and answer your questions.",
+    storeDescription:
+      "Beautiful brand new dispensary in brand new building. Located in Commerce City, Stadium Gardens is easily accessible from I-70 via Quebec St, and convenient to shoppers coming from Denver International Airport as well as those who are near Thornton. As a member of Yuma Way we offer a wide variety of marijuana flower strains, concentrates and extracts, vape pens, and edibles at affordable prices. We also offer the latest products like Wyld Gummies and year long favorites like The Clear, Evolab, and Cheeba Chews. Our friendly and knowledgeable staff will assist you with product selection and answer your questions.",
     vip: "https://enrollnow.vip/login/2966?location=stadium-gardens",
     shop: "Shop",
     href: "stadiumgardens",
@@ -425,7 +426,7 @@ const storeJson = [
       sunday: "7:00am - 10:00pm",
     },
     storeDescription:
-      "Come again to checkout our newest addition to Yuma Way Cannabis Company.",
+      "Welcome to Urban Gardens! We are a new, deli-style, marijuana retailer in Kalamazoo! With the array of products we carry, there is something for everyone. Our knowledgeable staff will also be able to help you with whatever you may need! We are conveniently the closest located dispensary to the bar district in downtown Kalamazoo! Travelling to Bay City or Saginaw? Check out our stores out there, CannaBay and Courtside Gardens! From the River to the Bay - We got you at Yuma Way!",
     vip: "",
     shop: "Shop",
     href: "urbangardens",
