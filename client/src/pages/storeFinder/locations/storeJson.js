@@ -426,7 +426,7 @@ const storeJson = [
       sunday: "7:00am - 10:00pm",
     },
     storeDescription:
-      "Welcome to Urban Gardens! We are a new, deli-style, marijuana retailer in Kalamazoo! With the array of products we carry, there is something for everyone. Our knowledgeable staff will also be able to help you with whatever you may need! We are conveniently the closest located dispensary to the bar district in downtown Kalamazoo! Travelling to Bay City or Saginaw? Check out our stores out there, CannaBay and Courtside Gardens! From the River to the Bay - We got you at Yuma Way!",
+      "Welcome to Urban Gardens, downtown Kalamazoo's number #1 deli-style cannabis store! Operated by Yuma Way Cannabis Company. Our Colorado-headquartered company has been operating since 2016, and is proud to offer a vast selection of quality flower, concentrates and extracts, edibles, vape pens, cannabis wellness products, and more at affordable prices! Our knowledgeable and personable staff will help you to navigate our sea of options. We carry Wyld Gummies, Wana, KIVA, Redbud Roots, AirPro, MKX, Jeeter and Breeze!",
     vip: "",
     shop: "Shop",
     href: "urbangardens",
