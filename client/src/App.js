@@ -14,6 +14,7 @@ import DealsPage from './pages/DealsPage/DealsPage'
 import About from './pages/About/About'
 import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy'
 import SocialEquity from './pages/SocialEquity/SocialEquity'
+import Disclaimer from "./pages/Disclaimer/Disclaimer";
 import DonatePage from "./pages/DonatePage/DonatePage";
 
 // STORE FINDER PAGE AND COMPONENTS
@@ -77,14 +78,12 @@ function App() {
     <Router basename="/">
       {/* NAVBAR found in Components */}
       <NavBar></NavBar>
-      <div className='holder'>
-      <div id="ageGateBackground"></div>
+      <div className="holder">
+        <div id="ageGateBackground"></div>
 
-        
         <Switch>
-          
           {/* HOME ROUTE */}
-          <Route exact path="/" >
+          <Route exact path="/">
             <Home />
           </Route>
 
@@ -94,35 +93,43 @@ function App() {
           </Route>
 
           {/* ABOUT PAGE ROUTE */}
-          <Route exact path="/about" >
+          <Route exact path="/about">
             <About />
           </Route>
 
           {/* DONATE PAGE ROUTE */}
-          <Route exact path="/donate" >
+          <Route exact path="/donate">
             <DonatePage />
           </Route>
 
           {/* PRIVACY POLICY */}
           <Route exact path="/privacy-policy">
-            <PrivacyPolicy/>
+            <PrivacyPolicy />
           </Route>
 
           {/* SOCIAL EQUITY */}
           <Route exact path="/social-equity">
-            <SocialEquity/>
+            <SocialEquity />
+          </Route>
+
+          {/* DISCLAIMER */}
+          <Route exact path="/Disclaimer">
+            <Disclaimer />
           </Route>
 
           {/* STORE LOCATOR ROUTES */}
           {/* KEEP THIS ROUTER AT THE BOTTOM OR ANY PAGE BELOW WILL REDIRECT TO THIS */}
           <Router basename="/locations">
-            <Route exact path="/menu/:id" >
-              <Menu Id={storeSelected.storeId} callBack={() => setStoreSelected}></Menu>
+            <Route exact path="/menu/:id">
+              <Menu
+                Id={storeSelected.storeId}
+                callBack={() => setStoreSelected}
+              ></Menu>
             </Route>
-            <Route exact path='/:store'>
+            <Route exact path="/:store">
               <StoreFinder callBack={setStoreSelected}></StoreFinder>
             </Route>
-            <Route exact path='/'>
+            <Route exact path="/">
               <StoreFinder callBack={setStoreSelected}></StoreFinder>
             </Route>
           </Router>
@@ -132,13 +139,11 @@ function App() {
 
       {/* HIDDEN MODAL */}
       <Modal
-          showAgeGate={showAgeGate}
-          className="ageGateCSSKey"
-          // data-keyboard="false" data-backdrop="static"
-        >
-      </Modal>
+        showAgeGate={showAgeGate}
+        className="ageGateCSSKey"
+        // data-keyboard="false" data-backdrop="static"
+      ></Modal>
     </Router>
-    
   );
 
 }
