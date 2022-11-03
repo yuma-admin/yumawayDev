@@ -1,3 +1,4 @@
+
 const weeklyDealsData =
   // FIRST ROW OF COUPONS
   {
@@ -29,26 +30,31 @@ const weeklyDealsData =
       {
         imgUrl: "/images/deals/coloradoDeals/weekly-update/coupon-9.png",
       },
+      // {
+      //   imgUrl: "/images/deals/coloradoDeals/weekly-update/coupon-10.png",
+      // },
+      // {
+      //   imgUrl: "/images/deals/coloradoDeals/weekly-update/coupon-11.png",
+      // },
+      // {
+      //   imgUrl: "/images/deals/coloradoDeals/weekly-update/coupon-12.png",
+      // },
+      // {
+      //   imgUrl: "/images/deals/coloradoDeals/weekly-update/coupon-13.png",
+      // },
+      // {
+      //   imgUrl: "/images/deals/coloradoDeals/weekly-update/coupon-14.png",
+      // },
+      // {
+      //   imgUrl: "/images/deals/coloradoDeals/weekly-update/coupon-15.png",
+      // },
+      // {
+      //   imgUrl: "/images/deals/coloradoDeals/weekly-update/coupon-16.png",
+      // },
+      
+      //DO NOT REMOVE THIS DISCLAIMER
       {
-        imgUrl: "/images/deals/coloradoDeals/weekly-update/coupon-10.png",
-      },
-      {
-        imgUrl: "/images/deals/coloradoDeals/weekly-update/coupon-11.png",
-      },
-      {
-        imgUrl: "/images/deals/coloradoDeals/weekly-update/coupon-12.png",
-      },
-      {
-        imgUrl: "/images/deals/coloradoDeals/weekly-update/coupon-13.png",
-      },
-      {
-        imgUrl: "/images/deals/coloradoDeals/weekly-update/coupon-14.png",
-      },
-      {
-        imgUrl: "/images/deals/coloradoDeals/weekly-update/coupon-15.png",
-      },
-      {
-        imgUrl: "/images/deals/coloradoDeals/weekly-update/coupon-16.png",
+        imgUrl: "/images/deals/coloradoDeals/disclaimer.png",
       },
     ],
 
@@ -139,6 +145,12 @@ const weeklyDealsData =
       },
       {
         imgUrl: "/images/deals/michiganDeals/weekly-update/coupon-29.png",
+      },
+      {
+        imgUrl: "/images/deals/michiganDeals/weekly-update/coupon-30.png",
+      },
+      {
+        imgUrl: "/images/deals/michiganDeals/weekly-update/coupon-31.png",
       },
     ],
   };

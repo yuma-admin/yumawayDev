@@ -23,9 +23,7 @@ const Footer=() => {
               <a href="/social-equity" className="footerNavItem">
                 Social Equity
               </a>
-              <a href="/disclaimer" className="footerNavItem">
-                Disclaimer
-              </a>
+
             </div>
           </div>
         </div>

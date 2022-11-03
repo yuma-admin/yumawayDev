@@ -14,7 +14,6 @@ import DealsPage from './pages/DealsPage/DealsPage'
 import About from './pages/About/About'
 import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy'
 import SocialEquity from './pages/SocialEquity/SocialEquity'
-import Disclaimer from "./pages/Disclaimer/Disclaimer";
 import DonatePage from "./pages/DonatePage/DonatePage";
 
 // STORE FINDER PAGE AND COMPONENTS
@@ -110,11 +109,6 @@ function App() {
           {/* SOCIAL EQUITY */}
           <Route exact path="/social-equity">
             <SocialEquity />
-          </Route>
-
-          {/* DISCLAIMER */}
-          <Route exact path="/Disclaimer">
-            <Disclaimer />
           </Route>
 
           {/* STORE LOCATOR ROUTES */}

@@ -73,7 +73,6 @@ export default function Search(props) {
       >
         {({ getInputProps, suggestions, getSuggestionItemProps, loading }) => (
           <div className='search-input-container'>
-
             <div className='icon'><FaSearch/></div>
             <button className='geoLocationButton' onClick={() => getGeoLocation()}><BiCurrentLocation/></button>
             <input id='menuSearch' className='search-input' {...getInputProps({ placeholder: "Enter your address" })} />
