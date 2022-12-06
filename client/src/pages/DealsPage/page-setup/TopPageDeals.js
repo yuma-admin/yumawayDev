@@ -13,7 +13,7 @@ function TopPageDeals(props) {
             
 
                         {/* CAROUSEL SHOP BUTTON AND LOGO (DESKTOP) */}
-                        <div className="col-5 heroButtonBackground">
+                        {/* <div className="col-5 heroButtonBackground">
                                 <div className="buttonLogoContainer">
                                     <img className="heroDealsLogo" 
                                         src="/images/deals/coloradoDeals/carousel/YumaWay_Horizontal_BlackGold_Solid.png" 
@@ -23,7 +23,7 @@ function TopPageDeals(props) {
                                         Shop 
                                     </a>
                                 </div>
-                        </div>
+                        </div> */}
 
                         {/* CAROUSEL COUPON IMAGES (DESKTOP) */}
                         <div id="mainCarouselContent">

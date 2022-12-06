@@ -140,12 +140,12 @@ const weeklyDealsData =
       {
         imgUrl: "/images/deals/michiganDeals/weekly-update/coupon-30.png",
       },
-      // {
-      //   imgUrl: "/images/deals/michiganDeals/weekly-update/coupon-31.png",
-      // },
-      // {
-      //   imgUrl: "/images/deals/michiganDeals/weekly-update/coupon-32.png",
-      // },
+      {
+        imgUrl: "/images/deals/michiganDeals/weekly-update/coupon-31.png",
+      },
+      {
+        imgUrl: "/images/deals/michiganDeals/weekly-update/coupon-32.png",
+      },
       // {
       //   imgUrl: "/images/deals/michiganDeals/weekly-update/coupon-33.png",
       // },
