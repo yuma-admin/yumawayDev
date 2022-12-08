@@ -78,7 +78,7 @@ function TargetLocation(props) {
             DIRECTIONS{" "}
           </button>
           {filteredStore[0].vip && (
-          <Link to={`{filteredStore[0].vip}`}>
+          <a href={filteredStore[0].vip} target="_blank">
             <button
               onClick={() => {
                 chooseMenu(filteredStore[0].vip);
@@ -87,7 +87,7 @@ function TargetLocation(props) {
             >
               Rewards
             </button>
-          </Link>
+          </a>
           )}
         </div>
       );
@@ -112,8 +112,10 @@ function TargetLocation(props) {
             className="duo button"
           >
             DIRECTIONS
-            {filteredStore[0].vip && (
-          <Link to={`{filteredStore[0].vip}`}>
+
+            </button>
+          {filteredStore[0].vip && (
+          <a href={filteredStore[0].vip} target="_blank">
             <button
               onClick={() => {
                 chooseMenu(filteredStore[0].vip);
@@ -122,9 +124,8 @@ function TargetLocation(props) {
             >
               Rewards
             </button>
-          </Link>
+          </a>
           )}
-          </button>
         </div>
       );
     }
@@ -150,7 +151,7 @@ function TargetLocation(props) {
             DIRECTIONS
           </button>
           {filteredStore[0].vip && (
-          <Link to={`{filteredStore[0].vip}`}>
+          <a href={filteredStore[0].vip} target="_blank">
             <button
               onClick={() => {
                 chooseMenu(filteredStore[0].vip);
@@ -159,7 +160,7 @@ function TargetLocation(props) {
             >
               Rewards
             </button>
-          </Link>
+          </a>
           )}
         </div>
       );
