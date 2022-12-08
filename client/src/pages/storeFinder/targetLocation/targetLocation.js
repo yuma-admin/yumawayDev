@@ -77,6 +77,18 @@ function TargetLocation(props) {
           >
             DIRECTIONS{" "}
           </button>
+          {filteredStore[0].vip && (
+          <Link to={`{filteredStore[0].vip}`}>
+            <button
+              onClick={() => {
+                chooseMenu(filteredStore[0].vip);
+              }}
+              className="tri button"
+            >
+              Rewards
+            </button>
+          </Link>
+          )}
         </div>
       );
     }
@@ -100,6 +112,18 @@ function TargetLocation(props) {
             className="duo button"
           >
             DIRECTIONS
+            {filteredStore[0].vip && (
+          <Link to={`{filteredStore[0].vip}`}>
+            <button
+              onClick={() => {
+                chooseMenu(filteredStore[0].vip);
+              }}
+              className="tri button"
+            >
+              Rewards
+            </button>
+          </Link>
+          )}
           </button>
         </div>
       );
@@ -125,6 +149,18 @@ function TargetLocation(props) {
           >
             DIRECTIONS
           </button>
+          {filteredStore[0].vip && (
+          <Link to={`{filteredStore[0].vip}`}>
+            <button
+              onClick={() => {
+                chooseMenu(filteredStore[0].vip);
+              }}
+              className="tri button"
+            >
+              Rewards
+            </button>
+          </Link>
+          )}
         </div>
       );
     }
