@@ -132,15 +132,15 @@ const carouselDealsData = {
     {
       imgUrl: "/images/deals/michiganDeals/weekly-update/coupon-27.png",
     },
-    {
-      imgUrl: "/images/deals/michiganDeals/weekly-update/coupon-28.png",
-    },
-    {
-      imgUrl: "/images/deals/michiganDeals/weekly-update/coupon-29.png",
-    },
-    {
-      imgUrl: "/images/deals/michiganDeals/weekly-update/coupon-30.png",
-    },
+    // {
+    //   imgUrl: "/images/deals/michiganDeals/weekly-update/coupon-28.png",
+    // },
+    // {
+    //   imgUrl: "/images/deals/michiganDeals/weekly-update/coupon-29.png",
+    // },
+    // {
+    //   imgUrl: "/images/deals/michiganDeals/weekly-update/coupon-30.png",
+    // },
     // {
     //   imgUrl: "/images/deals/michiganDeals/weekly-update/coupon-31.png",
     // },
@@ -155,6 +155,66 @@ const carouselDealsData = {
     // },
     // {
     //   imgUrl: "/images/deals/michiganDeals/weekly-update/coupon-35.png",
+    // },
+        // {
+    //   imgUrl: "/images/deals/michiganDeals/weekly-update/coupon-36.png",
+    // },
+    // {
+    //   imgUrl: "/images/deals/michiganDeals/weekly-update/coupon-37.png",
+    // },
+    // {
+    //   imgUrl: "/images/deals/michiganDeals/weekly-update/coupon-38.png",
+    // },
+    // {
+    //   imgUrl: "/images/deals/michiganDeals/weekly-update/coupon-39.png",
+    // },
+    // {
+    //   imgUrl: "/images/deals/michiganDeals/weekly-update/coupon-40.png",
+    // },
+    // {
+    //   imgUrl: "/images/deals/michiganDeals/weekly-update/coupon-41.png",
+    // },
+    // {
+    //   imgUrl: "/images/deals/michiganDeals/weekly-update/coupon-42.png",
+    // },
+    // {
+    //   imgUrl: "/images/deals/michiganDeals/weekly-update/coupon-43.png",
+    // },
+    // {
+    //   imgUrl: "/images/deals/michiganDeals/weekly-update/coupon-44.png",
+    // },
+    // {
+    //   imgUrl: "/images/deals/michiganDeals/weekly-update/coupon-45.png",
+    // },
+    // {
+    //   imgUrl: "/images/deals/michiganDeals/weekly-update/coupon-46.png",
+    // },
+    // {
+    //   imgUrl: "/images/deals/michiganDeals/weekly-update/coupon-47.png",
+    // },
+    // {
+    //   imgUrl: "/images/deals/michiganDeals/weekly-update/coupon-48.png",
+    // },
+    // {
+    //   imgUrl: "/images/deals/michiganDeals/weekly-update/coupon-49.png",
+    // },
+    // {
+    //   imgUrl: "/images/deals/michiganDeals/weekly-update/coupon-50.png",
+    // },
+    // {
+    //   imgUrl: "/images/deals/michiganDeals/weekly-update/coupon-51.png",
+    // },
+    // {
+    //   imgUrl: "/images/deals/michiganDeals/weekly-update/coupon-52.png",
+    // },
+    // {
+    //   imgUrl: "/images/deals/michiganDeals/weekly-update/coupon-53.png",
+    // },
+    // {
+    //   imgUrl: "/images/deals/michiganDeals/weekly-update/coupon-54.png",
+    // },
+    // {
+    //   imgUrl: "/images/deals/michiganDeals/weekly-update/coupon-55.png",
     // },
   ],
 };
