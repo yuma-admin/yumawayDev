@@ -472,6 +472,46 @@ const storeJson = [
     instagram: "",
     twitter: "https://twitter.com/Yuma_Way",
   },
+  // {
+  //   id: "3333",
+  //   img: "/images/logo/park-hill-gardens-logo.svg",
+  //   alt: "Park Hill Gardens Logo",
+  //   logoPinch: "/images/logo/park-hill-gardens-logo.svg",
+  //   exteriorStore: "/images/storeExterior/parkhillgardensOutdoor.jpg",
+  //   interiorStore: "/images/storeInterior/parkhillgardensOutdoor.jpg",
+  //   exAlt: "Park Hill Gardens Store Exterior",
+  //   inAlt: "Park Hill Gardens Store Interior",
+  //   name: "Park Hill Gardens",
+  //   address1: "6901 E Colfax Ave",
+  //   address2: "Denver, CO 80220",
+  //   escapedUrlAddress: "6901+E+Colfax+Ave+Denver+CO+80221",
+  //   lat: 39.7403009,
+  //   lng: -104.910177,
+  //   phone: "(720) 836-7275",
+  //   phoneLink: "tel:+1-720-836-7275",
+  //   type: {
+  //     Rec: "3456",
+  //     Med: "",
+  //     // Consumption:'1'
+  //   },
+  //   hours: {
+  //     monday: "8am - 11:45pm",
+  //     tuesday: "8am - 11:45pm",
+  //     wednesday: "8am - 11:45pm",
+  //     thursday: "8am - 11:45pm",
+  //     friday: "8am - 11:45pm",
+  //     saturday: "8am - 11:45pm",
+  //     sunday: "8am - 11:45pm",
+  //   },
+  //   storeDescription: "",
+  //   vip: "",
+  //   shop: "Shop",
+  //   href: "parkhillgardens",
+  //   facebook: "",
+  //   instagram: "",
+  //   twitter: "https://twitter.com/Yuma_Way",
+  // },
+
 ];
 
 export default storeJson;
