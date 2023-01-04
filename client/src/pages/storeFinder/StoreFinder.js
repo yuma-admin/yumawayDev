@@ -109,6 +109,9 @@ function StoreFinder(props) {
               case "releafonvine":
                 storeNumber = "2544";
                 break;
+              case "parkhillgardens":
+                storeNumber = "6901";
+                break;
               default:
                 storeNumber = "";
 

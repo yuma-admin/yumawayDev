@@ -20,7 +20,7 @@ const Navbar = () => {
               {/* <a href="/colorado-deals" className="mainNavItem">
                 Deals
               </a> */}
-              <nav className="dropdown">
+              {/* <nav className="dropdown">
                 <ul>
                   <li>
                     <a href="#">Deals</a>
@@ -34,7 +34,7 @@ const Navbar = () => {
                     </ul>
                   </li>
                 </ul>
-              </nav>
+              </nav> */}
 
               <a href="/locations" className="mainNavItem">
                 Shop
