@@ -77,6 +77,18 @@ function TargetLocation(props) {
           >
             DIRECTIONS{" "}
           </button>
+          {filteredStore[0].vip && (
+          
+            <button
+              onClick={() => {
+                window.open(filteredStore[0].vip);
+              }}
+              className="tri button"
+            >
+              REWARDS
+            </button>
+          
+          )}
         </div>
       );
     }
@@ -100,7 +112,20 @@ function TargetLocation(props) {
             className="duo button"
           >
             DIRECTIONS
-          </button>
+
+            </button>
+          {filteredStore[0].vip && (
+          
+            <button
+              onClick={() => {
+                window.open(filteredStore[0].vip);
+              }}
+              className="tri button"
+            >
+              REWARDS
+            </button>
+          
+          )}
         </div>
       );
     }
@@ -125,6 +150,18 @@ function TargetLocation(props) {
           >
             DIRECTIONS
           </button>
+          {filteredStore[0].vip && (
+          
+            <button
+              onClick={() => {
+                window.open(filteredStore[0].vip);
+              }}
+              className="tri button"
+            >
+              REWARDS
+            </button>
+          
+          )}
         </div>
       );
     }
