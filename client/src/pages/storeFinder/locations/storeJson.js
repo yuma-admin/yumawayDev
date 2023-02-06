@@ -529,7 +529,7 @@ const storeJson = [
     phone: "(805) 394-1234",
     phoneLink: "tel:+1-805-394-1234",
     type: {
-      Rec: "",
+      Rec: "5125",
       Med: "",
     },
     hours: {
@@ -587,7 +587,6 @@ const storeJson = [
     instagram: "",
     twitter: "https://twitter.com/Yuma_Way",
   },
-  
 ];
 
 export default storeJson;
