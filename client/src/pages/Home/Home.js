@@ -28,7 +28,7 @@ function Home() {
     <div className="container-fluid">
       <Helmet>
         <title>
-          Yuma Way || Colorado & Michigan's Premier Cannabis Company
+          Yuma Way || Colorado, California, and Michigan's Premier Dispensary Chain
         </title>
         <meta
           name="description"
