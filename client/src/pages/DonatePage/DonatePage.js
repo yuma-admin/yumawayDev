@@ -79,8 +79,6 @@ function CSSGrid() {
               <div class="aboutPeople aboutYumaBorder">
                 <div class="textContainer">
                   <div className="offerCopy">
-                    <h1>420 – 2022 Celebration – FLOWER POWER</h1>
-
                     <p>
                       Russia launched a full-scale military invasion into
                       Ukraine on February 24, 2022, fighting has caused many
@@ -115,8 +113,7 @@ function CSSGrid() {
                       all Yuma Way stores. Here are some ways to help:
                       <br />
                       <br />
-                      1) Come to the Denver Capitol building every Saturday at
-                      noon to show your support.
+                      1) Come to the Union Ave Bridge over I-25 every Saturday at 2 PM to show your support.
                       <br />
                       2) Donate to Ukrainian causes at sites such as:
                       <br />
