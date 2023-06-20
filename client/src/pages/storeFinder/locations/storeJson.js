@@ -551,9 +551,9 @@ const storeJson = [
   },
   {
     id: "0517",
-    img: "/images/logo/tempLogo.png",
+    img: "/images/logo/riverGardensLogoTemp.png",
     alt: "River Gardens Logo",
-    logoPinch: "/images/logo/tempLogo.png",
+    logoPinch: "/images/logo/riverGardensLogoTemp.png",
     exteriorStore: "/images/storeExterior/riverGardensExterior.jpeg",
     interiorStore: "/images/storeInterior/riverGardensInterior.jpeg",
     exAlt: "River Gardens Store Exterior",
