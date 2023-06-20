@@ -345,7 +345,7 @@ const storeJson = [
       saturday: "8am - 11:45pm",
       sunday: "8am - 11:45pm",
     },
-    storeDescription: "Comming Soon",
+    storeDescription: "Coming Soon",
     vip: "",
     shop: "Shop",
     href: "parkhillgardens",
