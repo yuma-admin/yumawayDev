@@ -555,7 +555,7 @@ const storeJson = [
     alt: "River Gardens Logo",
     logoPinch: "/images/logo/riverGardensLogoTemp.png",
     exteriorStore: "/images/storeExterior/riverGardensExterior.jpeg",
-    interiorStore: "/images/storeInterior/riverGardensInterior.jpeg",
+    interiorStore: "/images/storeExterior/riverGardensInterior.jpeg",
     exAlt: "River Gardens Store Exterior",
     inAlt: "River Gardens Store Interior",
     name: "River Gardens",
