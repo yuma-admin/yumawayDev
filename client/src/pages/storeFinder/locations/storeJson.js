@@ -355,9 +355,9 @@ const storeJson = [
   },
   {
     id: "4440",
-    img: "/images/logo/tempLogo.png",
+    img: "/images/logo/tempLogoTransparent.png",
     alt: "Morrison Gardens Logo",
-    logoPinch: "/images/logo/tempLogo.png",
+    logoPinch: "/images/logo/tempLogoTransparent.png",
     exteriorStore: "",
     interiorStore: "",
     exAlt: "Morrison Gardens Store Exterior",
@@ -551,9 +551,9 @@ const storeJson = [
   },
   {
     id: "0517",
-    img: "/images/logo/yumaNJ.png",
+    img: "/images/logo/yumaNJTransparent.png",
     alt: "Yuma Way NJ Logo",
-    logoPinch: "/images/logo/yumaNJ.png",
+    logoPinch: "/images/logo/yumaNJTransparent.png",
     exteriorStore: "/images/storeExterior/riverGardensExterior.jpeg",
     interiorStore: "/images/storeInterior/yumaNJInterior.jpeg",
     exAlt: "Yuma Way NJ Store Exterior",
