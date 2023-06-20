@@ -40,7 +40,7 @@ jobs:
     - name: Install npm dependencies    
       run: npm ci
     - name: Run Build
-      run: npm run build 
+      run: npm run build --legacy-peer-deps
     - name: Deploy Build to Dev Server
       uses: easingthemes/ssh-deploy@main
       env: 
