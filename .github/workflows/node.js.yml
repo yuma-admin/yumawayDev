@@ -6,6 +6,17 @@ name: YumaWay CI/CD
 on:
   schedule:
     - cron: '0 0 * * 4'
+  workflow_dispatch:
+    inputs:
+      logLevel:
+        description: 'Log level'
+        required: true
+        default: 'warning'
+        type: choice
+        options:
+        - info
+        - warning
+        - debug
 
   
 
