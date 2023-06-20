@@ -555,7 +555,7 @@ const storeJson = [
     alt: "Yuma Way NJ Logo",
     logoPinch: "/images/logo/yumaNJ.png",
     exteriorStore: "/images/storeExterior/riverGardensExterior.jpeg",
-    interiorStore: "/images/storeExterior/riverGardensInterior.jpeg",
+    interiorStore: "/images/storeInterior/yumaNJInterior.jpeg",
     exAlt: "Yuma Way NJ Store Exterior",
     inAlt: "Yuma Way NJ Store Interior",
     name: "Yuma Way NJ",
