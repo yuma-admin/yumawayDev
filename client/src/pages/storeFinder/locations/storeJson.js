@@ -1,6 +1,6 @@
 const storeJson = [
   {
-    id: "9999",
+    id: "3456",
     img: "/images/logo/lowell-gardens-logo.svg",
     alt: "Lowell Gardens Logo",
     logoPinch: "/images/logo/lowell-gardens-logo.svg",
@@ -512,7 +512,7 @@ const storeJson = [
     twitter: "https://twitter.com/Yuma_Way",
   },
   {
-    id: "2544",
+    id: "5125",
     img: "/images/logo/releafLogo.png",
     alt: "ReLeaf on Vine Logo",
     logoPinch: "/images/logo/releafLogo.png",
