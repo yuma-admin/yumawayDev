@@ -95,7 +95,7 @@ function StoreFinder(props) {
                 storeNumber = "1";
                 break;
               case "lowellgardens":
-                storeNumber = "9999";
+                storeNumber = "3456";
                 break;
               case "courtsidegardens":
                 storeNumber = "4371";
