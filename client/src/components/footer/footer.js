@@ -9,7 +9,7 @@ const Footer=() => {
           <div className="col-12">
             <div className="footerTMContainer">
               <a href="/" className="footerTM">
-                ©2021 Yuma Way All Rights Reserved
+                ©2023 Yuma Way All Rights Reserved
               </a>
             </div>
 
