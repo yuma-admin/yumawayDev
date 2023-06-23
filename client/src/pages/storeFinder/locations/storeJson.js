@@ -550,7 +550,7 @@ const storeJson = [
     twitter: "https://twitter.com/Yuma_Way",
   },
   {
-    id: "0517",
+    id: "5487",
     img: "/images/logo/yumaNJTransparent.png",
     alt: "Yuma Way NJ Logo",
     logoPinch: "/images/logo/yumaNJTransparent.png",
@@ -568,7 +568,7 @@ const storeJson = [
     phoneLink: "tel:+1-973-755-5420",
     type: {
       Rec: "",
-      Med: "",
+      Med: "5487",
     },
     hours: {
       monday: "9:00am - 7:00pm",
@@ -581,7 +581,7 @@ const storeJson = [
     },
     storeDescription: "New Medical ATC by Yuma Way offering pre-grand opening prices. Welcome to Yuma Way, a Medical Marijuana Dispensary! We are located off River Drive next to the best NJ bar and restaurant - 517 Tavern. We provide the highest quality cannabis flower and highest quality cannabis products to meet every preference and budget. We carry large grades of cannabis flower, extracts and concentrates, edibles, vape pens, and topicals. Our staff is very knowledgeable and can help create a personalized shopping experience and assist with cannabis education and consumption various methods. We carry Ascend, TerrAsend, Verano, Curaleaf, 1906, Justice Grown, Acreage Botanist In & more!",
     vip: "",
-    shop: "About",
+    shop: "Shop",
     href: "yumawaynj",
     facebook: "",
     instagram: "",
