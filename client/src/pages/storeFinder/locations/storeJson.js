@@ -385,7 +385,7 @@ const storeJson = [
     },
     storeDescription: "",
     vip: "",
-    shop: "",
+    shop: "Shop",
     href: "morrisongardens",
     facebook: "",
     instagram: "",
