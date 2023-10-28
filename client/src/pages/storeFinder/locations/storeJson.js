@@ -375,7 +375,7 @@ const storeJson = [
       Med: "",
     },
     hours: {
-      monday: "11am - 6pm",
+      monday: "8am - 12pm",
       tuesday: "11am - 6pm",
       wednesday: "11am - 6pm",
       thursday: "11am - 6pm",
