@@ -568,7 +568,7 @@ const storeJson = [
     phoneLink: "tel:+1-973-755-5420",
     type: {
       Rec: "5487",
-      Med: "",
+      Med: "5486",
     },
     hours: {
       monday: "9:00am - 7:00pm",
