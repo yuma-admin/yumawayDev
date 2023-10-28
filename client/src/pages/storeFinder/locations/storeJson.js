@@ -375,7 +375,7 @@ const storeJson = [
       Med: "",
     },
     hours: {
-      monday: "8am - 12pm",
+      monday: "8am - 12am",
       tuesday: "11am - 6pm",
       wednesday: "11am - 6pm",
       thursday: "11am - 6pm",
@@ -567,8 +567,8 @@ const storeJson = [
     phone: "(973) 755-5420",
     phoneLink: "tel:+1-973-755-5420",
     type: {
-      Rec: "",
-      Med: "5487",
+      Rec: "5487",
+      Med: "",
     },
     hours: {
       monday: "9:00am - 7:00pm",
