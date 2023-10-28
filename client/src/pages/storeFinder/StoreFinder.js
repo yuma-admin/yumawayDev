@@ -118,7 +118,8 @@ function StoreFinder(props) {
               case "yumawaynj":
                 storeNumber = "5487";
                 break;
-
+                case "yumawaywv":
+                    storeNumber = "5720";
                 break;
               default:
                 storeNumber = "";
