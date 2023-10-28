@@ -589,7 +589,7 @@ const storeJson = [
   },
   {
     id: "5720",
-    img: "/images/logo/yumaWVTransparent.png",
+    img: "/images/logo/huntingtonWVTransparent.png",
     alt: "Yuma Way WV Logo",
     logoPinch: "/images/logo/huntingtonWVTransparent.png",
     exteriorStore: "/images/storeExterior/huntingtonOutdoor.jpg",
@@ -617,7 +617,7 @@ const storeJson = [
       saturday: "9:00am - 8:00pm",
       sunday: "Closed",
     },
-    storeDescription: "New Medical ATC by Yuma Way offering pre-grand opening prices. Welcome to Yuma Way, a Medical Marijuana Dispensary! We are located off River Drive next to the best NJ bar and restaurant - 517 Tavern. We provide the highest quality cannabis flower and highest quality cannabis products to meet every preference and budget. We carry large grades of cannabis flower, extracts and concentrates, edibles, vape pens, and topicals. Our staff is very knowledgeable and can help create a personalized shopping experience and assist with cannabis education and consumption various methods. We carry Ascend, TerrAsend, Verano, Curaleaf, 1906, Justice Grown, Acreage Botanist In & more!",
+    storeDescription: "New Medical ATC by Yuma Way offering pre-grand opening prices. Welcome to Yuma Way, a Medical Marijuana Dispensary! We are located off 3rd Ave next to Fazoli's Italian - 1338 3rd Avenue. We provide the highest quality cannabis flower and highest quality cannabis products to meet every preference and budget. We carry large grades of cannabis flower, extracts and concentrates, edibles, vape pens, and topicals. Our staff is very knowledgeable and can help create a personalized shopping experience and assist with cannabis education and consumption various methods. We carry Ascend, TerrAsend, Verano, Curaleaf, 1906, Justice Grown, Acreage Botanist In & more!",
     vip: "",
     shop: "Shop",
     href: "yumawaywv",
