@@ -591,7 +591,7 @@ const storeJson = [
     id: "5720",
     img: "/images/logo/yumaWVTransparent.png",
     alt: "Yuma Way WV Logo",
-    logoPinch: "/images/logo/yumaWVTransparent.png",
+    logoPinch: "/images/logo/huntingtonWVTransparent.png",
     exteriorStore: "/images/storeExterior/huntingtonOutdoor.jpg",
     interiorStore: "/images/storeInterior/yumaWVInterior.jpeg",
     exAlt: "Yuma Way WV Store Exterior",
