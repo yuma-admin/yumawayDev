@@ -10,7 +10,7 @@ import {
 
 // PRIMARY PAGES 
 import Home from './pages/Home/Home'
-import DealsPage from './pages/DealsPage/DealsPage'
+// import DealsPage from './pages/DealsPage/DealsPage'
 import About from './pages/About/About'
 import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy'
 import SocialEquity from './pages/SocialEquity/SocialEquity'
@@ -87,9 +87,9 @@ function App() {
           </Route>
 
           {/* DEALS PAGE ROUTES */}
-          <Route path={["/colorado-deals", "/michigan-deals"]}>
+          {/* <Route path={["/colorado-deals", "/michigan-deals"]}>
             <DealsPage />
-          </Route>
+          </Route> */}
 
           {/* ABOUT PAGE ROUTE */}
           <Route exact path="/about">
