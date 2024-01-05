@@ -603,7 +603,7 @@ const storeJson = [
     lat: 38.42387382041823,
     lng: -82.43626847116379,
     phone: "(681) 378-2848",
-    phoneLink: "tel:+1-681-378-2828",
+    phoneLink: "tel:+1-681-378-2848",
     type: {
       Med: "5720", 
       Rec: "",
