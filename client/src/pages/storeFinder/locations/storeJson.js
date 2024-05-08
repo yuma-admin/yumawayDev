@@ -626,12 +626,12 @@ const storeJson = [
     twitter: "https://twitter.com/Yuma_Way",
   },
    {
-    id: "6060",
+    id: "6018",
     img: "/images/homeImages/cropped-TOPNAVLOGO.png",
     alt: "Yuma Way Sunnyside Gardens Logo",
     logoPinch: "/images/homeImages/cropped-TOPNAVLOGO.png",
-    exteriorStore: "/images/homeImages/cropped-TOPNAVLOGO.png",
-    interiorStore: "/images/homeImages/cropped-TOPNAVLOGO.png",
+    exteriorStore: "/images/storeExterior/SunnysideOutDoor.jpg",
+    interiorStore: "/images/storeExterior/SunnysideIndoor.jpg",
     exAlt: "Yuma Way Sunnyside Gardens Store Exterior",
     inAlt: "Yuma Way Sunnyside Gardens Store Interior",
     name: "Sunnyside Gardens Dispensary",
@@ -643,8 +643,8 @@ const storeJson = [
     phone: "(720) 549-6710",
     phoneLink: "tel:+1-720-549-6710",
     type: {
-      Med: "5720",
-      Rec: "",
+      Med: "",
+      Rec: "6018",
     },
     hours: {
       monday: "8:00am - 9:00pm",
