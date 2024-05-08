@@ -631,7 +631,7 @@ const storeJson = [
     alt: "Yuma Way Sunnyside Gardens Logo",
     logoPinch: "/images/homeImages/cropped-TOPNAVLOGO.png",
     exteriorStore: "/images/storeExterior/SunnysideOutDoor.JPG",
-    interiorStore: "/images/storeExterior/SunnysideIndoor.JPG",
+    interiorStore: "/images/storeInterior/SunnysideIndoor.JPG",
     exAlt: "Yuma Way Sunnyside Gardens Store Exterior",
     inAlt: "Yuma Way Sunnyside Gardens Store Interior",
     name: "Sunnyside Gardens Dispensary",
