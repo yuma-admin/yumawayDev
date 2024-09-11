@@ -1,35 +1,40 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="theme-color" content="#000000">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="theme-color" content="#000000" />
     <meta name="google-site-verification" content="S_7RaDc0nF_cXxNBgq7u__WnACyvYKSlNjPpxHRFnQk" />
     <!-- I Heart Jane's Customer Tracking Script-->
     <script type="text/javascript">
-      document.addEventListener("click", function(e) {
-            var linkNode = e.srcElement.href ? e.srcElement : e.srcElement.parentNode;
-        if(linkNode.localName !== "a" || linkNode.href.endsWith("#")) return;
-        
+      document.addEventListener("click", function (e) {
+        var linkNode = e.srcElement.href ? e.srcElement : e.srcElement.parentNode;
+        if (linkNode.localName !== "a" || linkNode.href.endsWith("#")) return;
+
         e.preventDefault();
         var currentQuery = location.search.substr(1);
         var url = new URL(linkNode.href);
         // url.search += (url.search.indexOf('?') > -1 ? '&' : '?') + currentQuery;
         var dst = e.target;
         if (dst.target) {
-      window.open(url.toString(), dst);
+          window.open(url.toString(), dst);
         } else {
-      location.assign(url.toString());
+          location.assign(url.toString());
         }
       });
-      </script>
+    </script>
     <!--
       manifest.json provides metadata used when your web app is added to the
       homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
-    <link rel="shortcut icon" href="%PUBLIC_URL%/images/homeImages/yumaway-icon.png">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/images/homeImages/yumaway-icon.png" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -40,27 +45,63 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>Yuma Way || Denver & Michigan's Retail Shops</title>
-    <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyAZQ2xhC1IeXGx6n3vn7wJIea5drrwcoxo'></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyAZQ2xhC1IeXGx6n3vn7wJIea5drrwcoxo"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178473337-1"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    gtag('config', 'UA-178473337-1');
+      gtag("config", "UA-178473337-1");
     </script>
-
-
 
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <script type="text/babel" src="./FontChooser.js"></script>
   </head>
   <body>
-    <noscript>
-    </noscript>
+    <noscript> </noscript>
     <div id="root"></div>
+    <script>
+      (function () {
+        var s = document.createElement("script");
+        var h = document.querySelector("head") || document.body;
+        s.src = "https://acsbapp.com/apps/app/dist/js/app.js";
+        s.async = true;
+        s.onload = function () {
+          acsbJS.init({
+            statementLink: "",
+            footerHtml: "",
+            hideMobile: false,
+            hideTrigger: false,
+            disableBgProcess: false,
+            language: "en",
+            position: "right",
+            leadColor: "#146FF8",
+            triggerColor: "#146FF8",
+            triggerRadius: "50%",
+            triggerPositionX: "right",
+            triggerPositionY: "bottom",
+            triggerIcon: "people",
+            triggerSize: "bottom",
+            triggerOffsetX: 20,
+            triggerOffsetY: 20,
+            mobile: {
+              triggerSize: "small",
+              triggerPositionX: "right",
+              triggerPositionY: "bottom",
+              triggerOffsetX: 10,
+              triggerOffsetY: 10,
+              triggerRadius: "20",
+            },
+          });
+        };
+        h.appendChild(s);
+      })();
+    </script>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
