@@ -61,6 +61,25 @@
 
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <script type="text/babel" src="./FontChooser.js"></script>
+
+    <!-- SurfSide Media -->
+    <script>
+      (function () {
+        var surf = document.createElement("script");
+        surf.setAttribute("src", "//cdn.surfside.io/sdk/1.0.0/wave.js");
+        surf.setAttribute("type", "text/javascript");
+        surf.setAttribute("id", "surfside");
+        surf.setAttribute("accountId", "39ed7");
+        surf.setAttribute("sourceId", "511b5");
+        surf.setAttribute("platform", "iheartjane");
+        var sync = document.createElement("img");
+        sync.setAttribute("src", "//edge.surfside.io/id/uid?");
+        sync.setAttribute("height", "1");
+        sync.setAttribute("width", "1");
+        sync.setAttribute("display", "none");
+        document.head.appendChild(surf, sync);
+      })();
+    </script>
   </head>
   <body>
     <noscript> </noscript>
