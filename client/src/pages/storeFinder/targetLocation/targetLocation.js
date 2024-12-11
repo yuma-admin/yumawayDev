@@ -37,18 +37,40 @@ function TargetLocation(props) {
 
   // function to return google map directions to the store
   function getDirections() {
-    window.open(
-      `https://www.google.com/maps/dir/?api=1&destination=${filteredStore[0].escapedUrlAddress}`,
-      "_blank"
-    );
+    window.open(`https://www.google.com/maps/dir/?api=1&destination=${filteredStore[0].escapedUrlAddress}`, "_blank");
   }
 
+  // ! Temporary variable to test integration with IHeartJane Boost Menu
+  const isCherryPeak = filteredStore[0].name === "Cherry Peak";
   // function to determine how many buttons to draw on the top of the page
   // Based on store type and always includes directions
   function determineButtonNumber() {
     if (filteredStore[0].type.Rec && filteredStore[0].type.Med) {
       return (
         <div>
+          {isCherryPeak ? (
+            <a href="https://shop.yumaway.com/cherry-peak-rec">
+              <button
+                onClick={() => {
+                  chooseMenu(filteredStore[0].type.Rec);
+                }}
+                className="tri button"
+              >
+                SHOP REC
+              </button>
+            </a>
+          ) : (
+            <Link to={`/menu/${filteredStore[0].type.Rec}`}>
+              <button
+                onClick={() => {
+                  chooseMenu(filteredStore[0].type.Rec);
+                }}
+                className="tri button"
+              >
+                SHOP REC
+              </button>
+            </Link>
+          )}
           <Link to={`/menu/${filteredStore[0].type.Rec}`}>
             <button
               onClick={() => {
@@ -78,7 +100,6 @@ function TargetLocation(props) {
             DIRECTIONS{" "}
           </button>
           {filteredStore[0].vip && (
-          
             <button
               onClick={() => {
                 window.open(filteredStore[0].vip);
@@ -87,7 +108,6 @@ function TargetLocation(props) {
             >
               REWARDS
             </button>
-          
           )}
         </div>
       );
@@ -112,10 +132,8 @@ function TargetLocation(props) {
             className="duo button"
           >
             DIRECTIONS
-
-            </button>
+          </button>
           {filteredStore[0].vip && (
-          
             <button
               onClick={() => {
                 window.open(filteredStore[0].vip);
@@ -124,7 +142,6 @@ function TargetLocation(props) {
             >
               REWARDS
             </button>
-          
           )}
         </div>
       );
@@ -151,7 +168,6 @@ function TargetLocation(props) {
             DIRECTIONS
           </button>
           {filteredStore[0].vip && (
-          
             <button
               onClick={() => {
                 window.open(filteredStore[0].vip);
@@ -160,16 +176,11 @@ function TargetLocation(props) {
             >
               REWARDS
             </button>
-          
           )}
         </div>
       );
     }
-    if (
-      !filteredStore[0].type.Rec &&
-      !filteredStore[0].type.Med &&
-      filteredStore[0].type.Consumption
-    ) {
+    if (!filteredStore[0].type.Rec && !filteredStore[0].type.Med && filteredStore[0].type.Consumption) {
       return (
         <div>
           <button
@@ -231,32 +242,16 @@ function TargetLocation(props) {
       <Helmet>
         <title>Yuma Way Locations | Find A Location Nearest You</title>
         <meta charset="utf-8" />
-        <meta
-          name="description"
-          content="Find the nearest Colorado or Michigan Yuma Way location! Shop in-store or order online."
-        ></meta>
+        <meta name="description" content="Find the nearest Colorado or Michigan Yuma Way location! Shop in-store or order online."></meta>
       </Helmet>
       <Container className="containerPadding stickyContainer">
         <Row>
           <div className="backDiv">
-            <button
-              strokeWidth={0}
-              onClick={() => goBack()}
-              className="backButton"
-            >
-              <BiLeftArrow
-                className="backArrow"
-                size={28}
-                outline="0"
-                strokeWidth="0"
-              />
+            <button strokeWidth={0} onClick={() => goBack()} className="backButton">
+              <BiLeftArrow className="backArrow" size={28} outline="0" strokeWidth="0" />
             </button>
           </div>
-          <img
-            className="logo"
-            src={`${process.env.PUBLIC_URL}${filteredStore[0].logoPinch}`}
-            alt={filteredStore[0].alt}
-          ></img>
+          <img className="logo" src={`${process.env.PUBLIC_URL}${filteredStore[0].logoPinch}`} alt={filteredStore[0].alt}></img>
         </Row>
         <Row>
           {/* THIS IS WHERE BUTTONS APPEAR */}
@@ -265,11 +260,7 @@ function TargetLocation(props) {
       </Container>
       <Container className="containerPadding">
         <div className="storeLocation">
-          <img
-            className="storeImage"
-            src={`${process.env.PUBLIC_URL}${filteredStore[0].exteriorStore}`}
-            alt={filteredStore[0].exAlt}
-          ></img>
+          <img className="storeImage" src={`${process.env.PUBLIC_URL}${filteredStore[0].exteriorStore}`} alt={filteredStore[0].exAlt}></img>
         </div>
         <div className="phoneAndAddress">
           <div className="innerPhoneAndAddress">
@@ -302,22 +293,13 @@ function TargetLocation(props) {
             </h4>
             <div className="socialMediaContainer">
               <a href={filteredStore[0].facebook} target="_blank">
-                <img
-                  className="socialIcon"
-                  src="/images/icons/facebook-icon-50px.png"
-                />
+                <img className="socialIcon" src="/images/icons/facebook-icon-50px.png" />
               </a>
               <a href={filteredStore[0].instagram} target="_blank">
-                <img
-                  className="socialIcon"
-                  src="/images/icons/instagram-icon-50px.png"
-                />
+                <img className="socialIcon" src="/images/icons/instagram-icon-50px.png" />
               </a>
               <a href={filteredStore[0].twitter} target="_blank">
-                <img
-                  className="socialIcon"
-                  src="/images/icons/twitter-icon-50px.png"
-                />
+                <img className="socialIcon" src="/images/icons/twitter-icon-50px.png" />
               </a>
             </div>
           </div>
@@ -329,11 +311,7 @@ function TargetLocation(props) {
           </div>
         </div>
         <div>
-          <img
-            className="storeImage"
-            src={`${process.env.PUBLIC_URL}${filteredStore[0].interiorStore}`}
-            alt={filteredStore[0].inAlt}
-          ></img>
+          <img className="storeImage" src={`${process.env.PUBLIC_URL}${filteredStore[0].interiorStore}`} alt={filteredStore[0].inAlt}></img>
         </div>
         <div className="storeDescription">
           <h4> About Us</h4>
@@ -345,7 +323,6 @@ function TargetLocation(props) {
               <button>VIP Program Login/Join</button>
             </a>
           )}
-          
         </div>
       </Container>
     </div>

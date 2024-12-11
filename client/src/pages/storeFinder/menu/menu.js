@@ -29,7 +29,6 @@ function Menu(props) {
 
   // This function will return an embedded i heart jane menu with the matching store ID
   const { id } = useParams();
-  console.log("useParams - line 32 - id", id);
 
   useEffect(() => {
     const loadScript = (src) => {
@@ -99,9 +98,9 @@ function Menu(props) {
         <title>Yuma Way | Browse Our Current Products</title>
       </Helmet>
       <div className="container-fluid">
-        <div onClick={backClick} className="menuBackButtonBar">
+        {/* <div onClick={backClick} className="menuBackButtonBar">
           Back
-        </div>
+        </div> */}
         <div class="test" id="jane-frame-script"></div>
       </div>
     </>
