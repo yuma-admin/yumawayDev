@@ -71,7 +71,7 @@ function TargetLocation(props) {
               </button>
             </Link>
           )}
-          <Link to={`/menu/${filteredStore[0].type.Rec}`}>
+          {/* <Link to={`/menu/${filteredStore[0].type.Rec}`}>
             <button
               onClick={() => {
                 chooseMenu(filteredStore[0].type.Rec);
@@ -80,7 +80,7 @@ function TargetLocation(props) {
             >
               SHOP REC
             </button>
-          </Link>
+          </Link> */}
           <Link to={`/menu/${filteredStore[0].type.Med}`}>
             <button
               onClick={() => {
