@@ -579,7 +579,7 @@ const storeJson = [
       sunday: "12:00am - 5:00PM",
     },
     storeDescription:
-      "New Recreational and Medical Marijuana Dispensary offers its pre-grand opening prices! Welcome to Yuma Way NJ cannabis Dispensary! We are located off River Drive next to the best NJ bar and restaurant - Tavern 517. We provide the highest quality cannabis flower and products to meet every preference and budget. We carry large grades of flower, extracts and concentrates, edibles, vape pens, and topicals. Our staff is very knowledgeable and can help create a personalized shopping experience and assist with cannabis education and consumption of various methods. We carry Kind Tree, Cookies, Gage, Valhalla, Legend, Tyson, Verano, Avexia, Simply Herb, Airo, Miss Grass, Fernway, Justice Grown & more! Medical hours 7:00AM-10:00PM Monday-Saturday and 12:00PM-5:00PM on Sunday.",
+      "New Recreational and Medical Marijuana Dispensary offers its pre-grand opening prices! Welcome to Yuma Way NJ cannabis Dispensary! We are located off River Drive next to the best NJ bar and restaurant - Tavern 517. We provide the highest quality cannabis flower and products to meet every preference and budget. We carry large grades of flower, extracts and concentrates, edibles, vape pens, and topicals. Our staff is very knowledgeable and can help create a personalized shopping experience and assist with cannabis education and consumption of various methods. We carry Kind Tree, Cookies, Gage, Valhalla, Legend, Tyson, Verano, Avexia, Simply Herb, Airo, Miss Grass, Fernway, Justice Grown & more!",
     vip: "",
     shop: "Shop",
     href: "yumawaynj",
