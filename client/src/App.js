@@ -23,6 +23,7 @@ import Menu from './pages/storeFinder/menu/menu'
 // NAV AND FOOTER COMPONENTS
 import NavBar from './components/navbar/navBar'
 import Footer from './components/footer/footer'
+import Notifications from "./components/notifications/notifications";
 
 //AGE GATE
 import AgeGateModal from './components/AgeGateModal/AgeGateModal'
@@ -30,7 +31,6 @@ import ageGateLogic from './components/AgeGateModal/ageGateLogic'
 import { createPortal } from "react-dom"
 
 function App() {
-
   //  AGE GATE MODAL
   const [showAgeGate,setAgeGate] = useState([""])
   useEffect(() => {
@@ -77,6 +77,9 @@ function App() {
     <Router basename="/">
       {/* NAVBAR found in Components */}
       <NavBar></NavBar>
+      <Notifications></Notifications>
+      {/* ALERT NOTIFICATION */}
+      {/* AGE GATE */}
       <div className="holder">
         <div id="ageGateBackground"></div>
 
