@@ -1,4 +1,8 @@
+// component to display notifications for the user about our rebranding and new site launch
+
 import React, {useState} from "react";
+
+
 
 const Notifications = () => {
 
